@@ -1,0 +1,281 @@
+.default_size { width: 1024px; height: 768px; }
+.default_width { width: 1024px; }
+.default_height { height: 768px; }
+
+.abs { position: absolute; }
+
+.left_top { left: 0px; top: 0px; }
+
+.visible { display: block; opacity: 1; }
+.invisible { display: none; opacity: 0; }
+
+.table { display: table; }
+.cell { display: table-cell; }
+
+.hcenter { text-align: center; }
+.vmiddle { vertical-align: middle; }
+
+.transitable { transition: all 500ms linear; }
+
+.bg_capa { background-image: url(../img/bg_capa.png); }
+.bg_intro { background-image: url(../img/bg_intro.png); }
+.bg_alvenaria { background-image: url(../img/bg_alvenaria.png); }
+.bg_indigena { background-image: url(../img/bg_habindigena.png); }
+.bg_madeira { background-image: url(../img/bg_madeira.png); }
+.bg_sape { background-image: url(../img/bg_sape.png); }
+
+.stamp { width: 149px; height: 159px; left: 0px; top: 10px; background-image: url(../img/img_stamp.png); }
+
+.btn_start { width: 120px; height: 120px; background-image: url(../img/btn_iniciar_up.png); }
+.no-touch .btn_start:hover { background-image: url(../img/btn_iniciar_down.png); }
+
+.btn_home { width: 71px; height: 71px; background-image: url(../img/btn_home_up.png); }
+.no-touch .btn_home:hover { background-image: url(../img/btn_home_down.png); }
+
+.btn_previous { width: 71px; height: 71px; background-image: url(../img/btn_prev_up.png); }
+.no-touch .btn_previous:hover { background-image: url(../img/btn_prev_down.png); }
+
+.btn_next { width: 71px; height: 71px; background-image: url(../img/btn_next_up.png); }
+.no-touch .btn_next:hover { background-image: url(../img/btn_next_down.png); }
+
+.btn_bambu { background-image: url(../img/btn_bambu_up.png); }
+.no-touch .btn_bambu:hover { background-image: url(../img/btn_bambu_down.png); }
+
+.btn_barro { background-image: url(../img/btn_barro_up.png); }
+.no-touch .btn_barro:hover { background-image: url(../img/btn_barro_down.png); }
+
+.btn_blocodepedra { background-image: url(../img/btn_blocodepedra_up.png); }
+.no-touch .btn_blocodepedra:hover { background-image: url(../img/btn_blocodepedra_down.png); }
+
+.btn_cimento { background-image: url(../img/btn_cimento_up.png); }
+.no-touch .btn_cimento:hover { background-image: url(../img/btn_cimento_down.png); }
+
+.btn_cipo { background-image: url(../img/btn_cipo_up.png); }
+.no-touch .btn_cipo:hover { background-image: url(../img/btn_cipo_down.png); }
+
+.btn_cola { background-image: url(../img/btn_cola_up.png); }
+.no-touch .btn_cola:hover { background-image: url(../img/btn_cola_down.png); }
+
+.btn_corda { background-image: url(../img/btn_corda_up.png); }
+.no-touch .btn_corda:hover { background-image: url(../img/btn_corda_down.png); }
+
+.btn_madeira { background-image: url(../img/btn_madeira_up.png); }
+.no-touch .btn_madeira:hover { background-image: url(../img/btn_madeira_down.png); }
+
+.btn_palha { background-image: url(../img/btn_palha_up.png); }
+.no-touch .btn_palha:hover { background-image: url(../img/btn_palha_down.png); }
+
+.btn_palmeira { background-image: url(../img/btn_palmeira_up.png); }
+.no-touch .btn_palmeira:hover { background-image: url(../img/btn_palmeira_down.png); }
+
+.btn_parafuso { background-image: url(../img/btn_parafuso_up.png); }
+.no-touch .btn_parafuso:hover { background-image: url(../img/btn_parafuso_down.png); }
+
+.btn_prego { background-image: url(../img/btn_prego_up.png); }
+.no-touch .btn_prego:hover { background-image: url(../img/btn_prego_down.png); }
+
+.btn_sape { background-image: url(../img/btn_sape_up.png); }
+.no-touch .btn_sape:hover { background-image: url(../img/btn_sape_down.png); }
+
+.btn_telha { background-image: url(../img/btn_telha_up.png); }
+.no-touch .btn_telha:hover { background-image: url(../img/btn_telha_down.png); }
+
+.btn_tijolo { background-image: url(../img/btn_tijolo_up.png); }
+.no-touch .btn_tijolo:hover { background-image: url(../img/btn_tijolo_down.png); }
+
+.btn_troncodearvore { background-image: url(../img/btn_troncodearvore_up.png); }
+.no-touch .btn_troncodearvore:hover { background-image: url(../img/btn_troncodearvore_down.png); }
+
+.btn_viga { background-image: url(../img/btn_viga_up.png); }
+.no-touch .btn_viga:hover { background-image: url(../img/btn_viga_down.png); }
+
+.btn_yes { width: 71px; height: 71px; background-image: url(../img/btn_yes_up.png); font: 36px Yanone-Bold; color: #000000; line-height: 71px; text-align: center; }
+.no-touch .btn_yes:hover { background-image: url(../img/btn_yes_down.png); color: #e4ebf7; }
+
+.btn_no { width: 71px; height: 71px; background-image: url(../img/btn_no_up.png); font: 36px Yanone-Bold; color: #000000; line-height: 71px; text-align: center; }
+.no-touch .btn_no:hover { background-image: url(../img/btn_no_down.png); color: #e4ebf7; }
+
+.btn_close { width: 71px; height: 71px; background-image: url(../img/btn_fechar_up.png); }
+.no-touch .btn_close:hover { background-image: url(../img/btn_fechar_down.png); }
+
+.construcao_alvenaria_1 { background-image: url(../img/img_alvenaria_etapa1.png); }
+.construcao_alvenaria_2 { background-image: url(../img/img_alvenaria_etapa2.png); }
+.construcao_alvenaria_3 { background-image: url(../img/img_alvenaria_etapa3.png); }
+.construcao_alvenaria_4 { background-image: url(../img/img_alvenaria_etapa4.png); }
+.construcao_alvenaria_5 { background-image: url(../img/img_alvenaria_etapa5.png); }
+
+.construcao_indigena_1 { background-image: url(../img/img_habindigena_etapa1.png); }
+.construcao_indigena_2 { background-image: url(../img/img_habindigena_etapa2.png); }
+.construcao_indigena_3 { background-image: url(../img/img_habindigena_etapa3.png); }
+.construcao_indigena_4 { background-image: url(../img/img_habindigena_etapa4.png); }
+.construcao_indigena_5 { background-image: url(../img/img_habindigena_etapa5.png); }
+
+.construcao_sape_1 { background-image: url(../img/img_sape_etapa1.png); }
+.construcao_sape_2 { background-image: url(../img/img_sape_etapa2.png); }
+.construcao_sape_3 { background-image: url(../img/img_sape_etapa3.png); }
+.construcao_sape_4 { background-image: url(../img/img_sape_etapa4.png); }
+.construcao_sape_5 { background-image: url(../img/img_sape_etapa5.png); }
+
+.construcao_madeira_1 { background-image: url(../img/img_madeira_etapa1.png); }
+.construcao_madeira_2 { background-image: url(../img/img_madeira_etapa2.png); }
+.construcao_madeira_3 { background-image: url(../img/img_madeira_etapa3.png); }
+.construcao_madeira_4 { background-image: url(../img/img_madeira_etapa4.png); }
+.construcao_madeira_5 { background-image: url(../img/img_madeira_etapa5.png); }
+
+#stage { background: #9ed3e5; }
+
+#coversign { background-image: url(../img/img_capa.png); }
+
+#covercontainer {
+    width: 511px;
+    height: 375px;
+    left: 255px;
+    top: 152px;
+}
+
+#covertext {
+    font: 144px Yanone-Bold;
+    color: #e77063;
+}
+
+#coverbutton {
+    left: 452px;
+    bottom: 50px;
+}
+
+#introbox {
+    width: 373px;
+    height: 420px;
+    left: 500px;
+    top: 0px;
+    background-image: url(../img/box_intro.png);
+}
+
+#introtext {
+    width: 273px;
+    left: 50px;
+    bottom: 50px;
+    font: 30px Yanone-Regular;
+    color: #474768;
+    line-height: 30px;
+}
+
+#introsigns {
+    width: 908px;
+    height: 261px;
+    left: 58px;
+    bottom: 0px;
+    text-align: center;
+}
+
+#introlist { left: 58px; list-style: none; }
+
+#introlist > li { float: left; display: block-inline; width: 227px; height: 261px; background: transparent url(../img/btn_placa_up.png) no-repeat center center; color: #e77063; }
+.no-touch #introlist > li:hover { background-image: url(../img/btn_placa_down.png); color: #e4ebf7; }
+
+#introlist > li > .listcontainer { width: 142px; height: 104px; position: relative; left: 41px; top: 29px; }
+
+#introlist > li > .listcontainer > .listtext { font: 32px Yanone-Bold; }
+
+#gamebox {
+    width: 322px;
+    height: 302px;
+    left: 500px;
+    top: 0px;
+    background-image: url(../img/box_enunciado.png);
+}
+
+#gametext {
+    width: 250px;
+    left: 35px;
+    bottom: 35px;
+    font: 30px Yanone-Regular;
+    color: #474768;
+    line-height: 36px;
+}
+
+#gameimage {
+    width: 387px;
+    height: 242px;
+    left: 25px;
+    top: 150px;
+}
+
+#gamehome {
+    right: 10px;
+    top: 100px;
+}
+
+#gameoptionscontainer {
+    width: 824px;
+    height: 363px;
+    left: 82px;
+    bottom: 15px;
+    overflow: hidden;
+}
+
+#gameoptionslist {
+    width: 100%;
+    height: 363px;
+    -webkit-column-count: 3;
+}
+
+#gameoptionslist > li {
+    width: 149px;
+    height: 74px;
+    font: 24px Yanone-Regular;
+    color: #474768;
+    line-height: 48px;
+    text-align: center;
+    padding-left: 112px;
+    padding-top: 47px;
+}
+
+#gameprevious {
+    left: 15px;
+    bottom: 150px;
+}
+
+#gamenext {
+    right: 15px;
+    bottom: 150px;
+}
+
+#gameoverlay {
+    background: rgba(0, 0, 0, 0.6) url(../img/box_feedback.png) no-repeat center center;
+}
+
+#gameoverlaybox {
+    width: 753px;
+    height: 151px;
+    left: 135px;
+    top: 259px;
+    background-image: url(../img/box_feedback2.png);
+}
+
+#gameoverlaycontainer {
+    width: 695px;
+    height: 129px;
+    left: 28px;
+    top: 11px;
+}
+
+#gameoverlaytext {
+    font: 28px Yanone-Regular;
+    color: #474768;
+}
+
+#gameoverlayyes {
+    left: 411px;
+    top: 423px;
+}
+
+#gameoverlayno {
+    left: 541px;
+    top: 423px;
+}
+
+#gameoverlayclose {
+    left: 476px;
+    top: 423px;
+}

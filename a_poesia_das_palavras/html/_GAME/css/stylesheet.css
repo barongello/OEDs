@@ -1,0 +1,426 @@
+/* ##### CSS Principal ##### */
+.button {
+    width:;
+}
+
+#gameStage {
+    width: 1024px;
+    height: 768px;
+    background: url(../img/stage_background.png);
+    z-index: 0;
+}
+
+#gameScene0 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url(../img/0_background.gif);
+    background-position: center 100px;
+    background-repeat: no-repeat;
+    background-size: 3639px 701px;
+}
+
+#gameScene0 > .title {
+    width: 638px;
+    height: 336px;
+    position: relative;
+    left: 193px;
+    top: 216px;    
+    background: url(../img/0_title_background.png);
+}
+
+#gameScene0 > .title > .button {
+    width: 194px;
+    height: 54px;
+    background: url(../img/button_background.png);
+    background-position: 0px 0px;
+    position: relative;
+    left: 222px;
+    top: 247px;
+    cursor: pointer;    
+}
+
+#gameScene0 > .title > .button:hover {
+    background-position: 194px 0px;
+}
+
+#gameScene1 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/1_background.png);
+    display: none;
+    z-index: 2;
+}
+
+#gameScene1 > .title {
+    width: 418px;
+    height: 190px;
+    position: relative;
+    left: 256px;
+    top: 256px;
+    background: url(../img/1_title.png);
+}
+
+#gameScene1 > .pic {
+    border: 5px solid #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    width: 147px;
+    height: 220px;
+    cursor: pointer;
+}
+
+#gameScene1 > .pic0 {
+    left: 5px;
+    top: 300px;
+    background: url(../img/1_pic0.jpg);
+}
+
+#gameScene1 > .pic1 {
+    left: 142px;
+    top: 380px;
+    background: url(../img/1_pic1.jpg);
+}
+
+#gameScene1 > .pic2 {
+    left: 283px;
+    top: 310px;
+    background: url(../img/1_pic2.jpg);
+}
+
+#gameScene1 > .pic3 {
+    left: 427px;
+    top: 375px;
+    background: url(../img/1_pic3.jpg);
+}
+
+#gameScene1 > .pic4 {
+    left: 570px;
+    top: 305px;
+    background: url(../img/1_pic4.jpg);
+}
+
+#gameScene1 > .pic5 {
+    left: 715px;
+    top: 385px;
+    background: url(../img/1_pic5.jpg);
+}
+
+#gameScene1 > .pic6 {
+    left: 857px;
+    top: 300px;
+    background: url(../img/1_pic6.jpg);
+}
+
+#gameScene1 > .disabled {
+    opacity: 0.7;
+    z-index: 2;
+}
+
+#gameScene1 > .enabled {
+    opacity: 1.0;
+    z-index: 3;
+}
+
+#gameScene1 > .pic > .check {
+    width: 43px;
+    height: 43px;
+    position: relative;
+    left: 51px;
+    top: 198px;
+    background: url(../img/1_check.png);
+}
+
+#gameScene1 > .pic > .disabled {
+    display: none;
+}
+
+#gameScene1 > .instructions {
+    width: 329px;
+    height: 20px;
+    position: absolute;
+    left: 347px;
+    top: 628px;
+    background: url(../img/1_instructions.png);
+}
+
+#gameScene1 > .next {
+    background-image: url(../img/1_next_button.png);
+    width: 121px;
+    height: 43px;
+    position: absolute;
+    left: 850px;
+    bottom: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+#gameScene1 > .next:hover {
+    background-position: 121px 0px;
+}
+
+#gameScene1 > .explanation > .button {
+    background-image: url(../img/1_close_button.png);
+    width: 102px;
+    height: 43px;
+    position: absolute;
+    right: 75px;
+    top: 780px;
+    cursor: pointer;
+}
+
+#gameScene1 > .explanation > .button:hover {
+    background-position: 102px 0px;
+}
+
+#gameScene1 > .explanation {
+    width: 2048px;
+    height: 1536px;
+    position: absolute;
+    left: -1024px;
+    top: -768px;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+}
+
+#gameScene1 > .explanation > .pic {
+    width: 560px;
+    height: 424px;
+    position: absolute;
+    left: 1060px;
+    top: 810px;
+    background-color: #ffffff;
+    transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    -webkit-box-shadow: 0px 0px 25px 5px #333333;
+    box-shadow: 0px 0px 25px 5px #333333;
+    background-position: center center;
+    background-repeat: no-repeat;    
+}
+
+#gameScene1 > .explanation > .pic0 {
+    background-image: url(../img/1_explanation0.jpg);
+}
+
+#gameScene1 > .explanation > .pic1 {
+    background-image: url(../img/1_explanation1.jpg);
+}
+
+#gameScene1 > .explanation > .pic2 {
+    background-image: url(../img/1_explanation2.jpg);
+}
+
+#gameScene1 > .explanation > .pic3 {
+    background-image: url(../img/1_explanation3.jpg);
+}
+
+#gameScene1 > .explanation > .pic4 {
+    background-image: url(../img/1_explanation4.jpg);
+}
+
+#gameScene1 > .explanation > .pic5 {
+    background-image: url(../img/1_explanation5.jpg);
+}
+
+#gameScene1 > .explanation > .pic6 {
+    background-image: url(../img/1_explanation6.jpg);
+}
+
+#gameScene1 > .explanation > .text {
+    padding: 15px 15px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 600px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 50px 0px #333333;
+    box-shadow: 0px 0px 50px 0px #333333;
+    color: #3c6263;
+    font-size: 12pt;
+    font-family: Arial;
+}
+
+#gameScene1 > .explanation > .text > p {
+    display: none;
+}
+
+#gameScene2 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 5;
+}
+
+#gameScene2 > .title {
+    width: 311px;
+    height: 75px;
+    background-image: url(../img/2_title.png);
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+#gameScene2 > .question {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    color: #3c6263;
+    font-family: Arial;
+    font-size: 14pt;
+}
+
+#gameScene2 > .question0 {
+    left: 50px;
+    top: 150px;
+}
+
+#gameScene2 > .question1 {
+    left: 50px;
+    top: 290px;
+}
+
+#gameScene2 > .question2 {
+    left: 50px;
+    top: 430px;
+}
+
+#gameScene2 > .question3 {
+    left: 50px;
+    top: 550px;
+}
+
+#gameScene2 > .question4 {
+    left: 565px;
+    top: 30px;
+}
+
+#gameScene2 > .question5 {
+    left: 565px;
+    top: 230px;
+}
+
+#gameScene2 > .question6 {
+    left: 565px;
+    top: 390px;
+}
+
+#gameScene2 > .question > .box {
+    border: 2px solid #3c6263;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#gameScene2 > .answer {
+    width: 204px;
+    height: 54px;
+    -webkit-box-shadow: 0px 0px 50px 0px #333333;
+    box-shadow: 0px 0px 50px 0px #333333;
+    display: table;
+    background: #ffffff;
+    cursor: pointer;
+    position: absolute;
+}
+
+#gameScene2 > .answer > .text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #3c6263;
+    font-family: Arial;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+#gameScene2 > .back {
+    background-image: url(../img/2_button_back.png);
+    width: 170px;
+    height: 44px;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+#gameScene2 > .back:hover {
+    background-position: 170px 0px;
+}
+
+#gameScene2 > .validate {
+    background-image: url(../img/2_button_validate.png);
+    width: 132px;
+    height: 132px;
+    position: absolute;
+    left: 675px;
+    bottom: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+#gameScene2 > .validate:hover {
+    background-position: 132px 0px;
+}
+
+#gameScene2 > .question > .tip {
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    color: #6a0b0b;
+    font-family: Arial;
+    font-size: 14pt;
+    padding-left: 30px;
+    padding-top: 9px;
+}
+
+#gameScene2 > .question > .correct {
+    background: url(../img/2_correct.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+}
+
+#gameScene2 > .question > .wrong {
+    background: url(../img/2_wrong.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+
+#gameScene2 > .question > .text {
+    position: absolute;
+    left: 0px;
+    top: 59px;
+}
+
+#gameScene2 > .congratulations {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+    z-index: 7;
+    background: url(../img/2_congrats.png);
+    width: 1024px;
+    height: 768px;
+}
+
+#gameScene2 > .congratulations > .restart {
+    background-image: url(../img/2_button_restart.png);
+    width: 152px;
+    height: 43px;
+    position: absolute;
+    left: 436px;
+    top: 395px;
+    cursor: pointer;
+}
+
+#gameScene2 > .congratulations > .restart:hover {
+    background-position: 152px 0px;
+}

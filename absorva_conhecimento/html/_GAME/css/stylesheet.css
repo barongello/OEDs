@@ -1,0 +1,488 @@
+body {
+    background: #000000;
+}
+
+div#gameContent {
+    width: 1025px;
+    height: 768px;
+    margin: auto auto auto auto;
+    background: #000000 url(../img/background.png);
+    z-index: 0;
+}
+
+div#gameStage {
+    width: 1025px;
+    height: 650px;
+    top: 59px;
+    position: relative;
+    margin: auto auto;
+    background: transparent url(../img/background_stage.png);
+    z-index: 1;
+}
+
+div#gameStage > div.scene_fixed.background_overlay {
+    width: 1025px;
+    height: 650px;
+    background: transparent url(../img/background_stage_overlay.png);
+    z-index: 2;
+}
+
+div#gameStage > div.startPos {
+    z-index: -1;
+}
+
+div#gameStage > div.scene_fixed.title {
+    width: 349px;
+    height: 36px;
+    background: transparent url(../img/scene_fixed_title.png);
+    position: absolute;
+    left: 25px;
+}
+
+div#gameStage > div.scene_fixed.title.startPos {
+    top: 0px;
+    opacity: 0;
+}
+
+div#gameStage > div.scene_fixed.title.runningPos {
+    top: 25px;
+    opacity: 1;
+    z-index: 3;
+}
+
+div#gameStage > div.scene_fixed.title.endPos {
+    top: 50px;
+    opacity: 0;
+}
+
+div#gameStage > div.scene_fixed.green_line {
+    width: 628px;
+    height: 6px;
+    background: transparent url(../img/scene_fixed_green_line.png);
+    position: absolute;
+    left: 384px;
+}
+
+div#gameStage > div.scene_fixed.green_line.startPos {
+    top: 30px;
+    opacity: 0;
+    z-index: 3;                
+}
+
+div#gameStage > div.scene_fixed.green_line.runningPos {
+    top: 55px;
+    opacity: 1;
+}
+
+div#gameStage > div.scene_fixed.green_line.endPos {
+    top: 80px;
+    opacity: 0;
+}
+
+div#gameStage > div.scene_1.textbox {
+    width: 900px;
+    height: 380px;
+    background: transparent url(../img/scene_1_textbox.png) no-repeat center center;
+    position: absolute;
+    left: 70px;
+}
+
+div#gameStage > div.scene_1.textbox.startPos {
+    top: 125px;
+    opacity: 0;
+}
+
+div#gameStage > div.scene_1.textbox.runningPos {
+    top: 150px;
+    opacity: 1;
+}
+
+div#gameStage > div.scene_1.textbox.endPos {
+    top: 175px;
+    opacity: 0;
+}
+
+div#gameStage > div.scene_1.textbox > div.textbox_content {
+    position: absolute;
+    top: 33px;
+    left: 35px;
+    width: 814px;
+    height: 377px;
+    font-family: Helvetica;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+div#gameStage > div.scene_1.textbox > div.button {
+    bottom: 45px;
+}
+
+div#gameStage > div.scene_2.scheme {
+    width: 457px;
+    height: 445px;
+    background: transparent url(../img/scene_2_scheme.png) no-repeat center center;
+    position: absolute;
+    right: 100px;
+}
+
+div#gameStage > div.scene_2.scheme.startPos {
+    top: 95px;
+    opacity: 0;
+}
+
+div#gameStage > div.scene_2.scheme.runningPos {
+    top: 120px;
+    opacity: 1;
+}
+
+div#gameStage > div.scene_2.scheme.endPos {
+    top: 145px;
+    opacity: 0;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent {
+    width: 50px;
+    height: 55px;
+    position: absolute;
+    background: transparent url(../img/scene_2_scheme_solvent.gif) no-repeat center center;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent.solvent_pos_1 {
+    left: 10px;
+    top: 50px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent.solvent_pos_2 {
+    left: 60px;
+    top: 150px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent.solvent_pos_3 {
+    left: 10px;
+    top: 250px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent.solvent_pos_4 {
+    left: 60px;
+    top: 350px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent.solvent_pos_5 {
+    left: 150px;
+    top: 100px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent.solvent_pos_6 {
+    left: 100px;
+    top: 200px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent.solvent_pos_7 {
+    left: 150px;
+    top: 300px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent.solvent_pos_8 {
+    left: 260px;
+    top: 50px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent.solvent_pos_9 {
+    left: 375px;
+    top: 70px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent.solvent_pos_10 {
+    left: 340px;
+    top: 140px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent.solvent_pos_11 {
+    left: 260px;
+    top: 190px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent.solvent_pos_12 {
+    left: 360px;
+    top: 220px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent.solvent_pos_13 {
+    left: 335px;
+    top: 285px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solvent.solvent_pos_14 {
+    left: 280px;
+    top: 340px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solute {
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    background: transparent url(../img/scene_2_scheme_solute.gif) no-repeat center center;
+}
+
+div#gameStage > div.scene_2.scheme > div.solute.solute_pos_1 {
+    left: 75px;
+    top: 75px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solute.solute_pos_2 {
+    left: 100px;
+    top: 250px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solute.solute_pos_3 {
+    left: 260px;
+    top: 125px;
+}
+
+div#gameStage > div.scene_2.scheme > div.solute.solute_pos_4 {
+    left: 385px;
+    top: 350px;
+}
+
+div#gameStage > div.scene_2.scheme > div.cation {
+    width: 43px;
+    height: 31px;
+    position: absolute;
+    background: transparent url(../img/scene_2_scheme_cation.gif) no-repeat center center;
+}
+
+div#gameStage > div.scene_2.scheme > div.cation.cation_pos_1 {
+    left: 150px;
+    top: 55px;
+}
+
+div#gameStage > div.scene_2.scheme > div.cation.cation_pos_2 {
+    left: 65px;
+    top: 310px;
+}
+
+div#gameStage > div.scene_2.scheme > div.cation.cation_pos_3 {
+    left: 320px;
+    top: 90px;
+}
+
+div#gameStage > div.scene_2.scheme > div.cation.cation_pos_4 {
+    left: 280px;
+    top: 250px;
+}
+
+div#gameStage > div.scene_2.legend_solvent {
+    position: absolute;
+    width: 74px;
+    height: 99px;
+    background: transparent url(../img/scene_2_legend_solvent.png) no-repeat center center;
+    right: 14px;
+}
+
+div#gameStage > div.scene_2.legend_solvent.startPos {
+    top: 200px;
+    opacity: 0;
+}
+
+div#gameStage > div.scene_2.legend_solvent.runningPos {
+    top: 225px;
+    opacity: 1;
+}
+
+div#gameStage > div.scene_2.legend_solvent.endPos {
+    top: 250px;
+    opacity: 0;
+}
+
+div#gameStage > div.scene_2.legend_solute {
+    position: absolute;
+    width: 54px;
+    height: 96px;
+    background: transparent url(../img/scene_2_legend_solute.png) no-repeat center center;
+    right: 24px;
+}
+
+div#gameStage > div.scene_2.legend_solute.startPos {
+    top: 350px;
+    opacity: 0;
+}
+
+div#gameStage > div.scene_2.legend_solute.runningPos {
+    top: 375px;
+    opacity: 1;
+}
+
+div#gameStage > div.scene_2.legend_solute.endPos {
+    top: 400px;
+    opacity: 0;
+}
+
+div#gameStage > div.scene_2.textbox {
+    width: 405px;
+    height: 511px;
+    background: transparent url(../img/scene_2_textbox.png) no-repeat center center;
+    position: absolute;
+    left: 37px;
+}
+
+div#gameStage > div.scene_2.textbox.startPos {
+    top: 95px;
+    opacity: 0;
+}
+
+div#gameStage > div.scene_2.textbox.runningPos {
+    top: 120px;
+    opacity: 1;
+}
+
+div#gameStage > div.scene_2.textbox.endPos {
+    top: 135px;
+    opacity: 0;
+}
+
+div#gameStage > div.scene_2.textbox > div.textbox_content {
+    position: absolute;
+    top: 11px;
+    left: 35px;
+    width: 317px;
+    height: 377px;
+    font-family: Helvetica;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+div#gameStage > div.scene_2.textbox > div.button {
+    bottom: 65px;
+}
+
+div.button {
+    width: 39px;
+    height: 32px;
+    position: absolute;
+    background-color: transparent;
+    background-image: url(../img/button_back_next.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+div.button.back {
+    background-position: 0px 0px;
+    left: 35px;
+}
+
+div.button.next {
+    background-position: -39px 0px;
+    right: 45px;
+}
+
+#gameSimulator {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+#gameCanvas {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#gameCanvas.startPos {
+    opacity: 0;
+}
+
+#gameCanvas.runningPos {
+    opacity: 1;
+}
+
+#gameCanvas.endPos {
+    opacity: 0;
+}
+
+.control {
+    opacity: 0;
+}
+
+#explanationText {
+    width: 974px;
+    height: 20px;
+    position: absolute;
+    left: 25px;
+    top: 150px;
+    font-family: Arial;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bt_minus {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    background-color: transparent;
+    background-image: url(../img/sim_bt_m.png);
+    background-repeat: no-repeat;
+    background-position: -35px 0px;
+    cursor: pointer;
+}
+
+.bt_minus.bt_disabled {
+    background-position: 0px 0px;
+}
+
+.bt_plus {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    background-color: transparent;
+    background-image: url(../img/sim_bt_p.png);
+    background-repeat: no-repeat;
+    background-position: -35px 0px;
+    cursor: pointer;
+}
+
+.bt_plus.bt_disabled {
+    background-position: 0px 0px;
+}
+
+#bt_l_h2o_p { left: 182px; bottom: 143px; }
+#bt_l_h2o_m { left: 227px; bottom: 143px; }
+#bt_l_salt_p { left: 182px; bottom: 93px; }
+#bt_l_salt_m { left: 227px; bottom: 93px; }
+
+#bt_r_h2o_p { right: 75px; bottom: 143px; }
+#bt_r_h2o_m { right: 30px; bottom: 143px; }
+#bt_r_salt_p { right: 75px; bottom: 93px; }
+#bt_r_salt_m { right: 30px; bottom: 93px; }
+
+#endSimulator {
+    position: absolute;
+    background: transparent url(../img/scene_3_button_back.png) no-repeat center center;
+    width: 228px;
+    height: 61px;
+    left: 400px;
+    background-size: 92%;
+    cursor: pointer;
+}
+
+#endSimulator.startPos {
+    top: 564px;
+    opacity: 0;
+}
+
+#endSimulator.runningPos {
+    top: 589px;
+    opacity: 1;
+}
+
+#endSimulator.runningPos:hover {
+    background-size: 100%;
+}
+
+#endSimulator.endPos {
+    top: 614px;
+    opacity: 0;
+}

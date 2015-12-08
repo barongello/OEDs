@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/btns.css" />
+        <link rel="stylesheet" href="css/icos.css" />
+        <link rel="stylesheet" href="css/main.css" />
+
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/trinity_clockwork.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <title>Tigres Asiáticos</title>
+    </head>
+
+    <body>
+        <div id="stage" class="default_size abs left_top">
+            <div id="board" class="default_size abs left_top overflow_hidden_y visible">
+                <div id="bmap" class="default_width abs left_top bg_no_repeat bg_center_center transitable">
+                    <div id="btnBMIco1" data-country="cingapura" class="abs btn ico ico_cingapura small"></div>
+                    <div id="btnBMIco2" data-country="coreia" class="abs btn ico ico_coreia small"></div>
+                    <div id="btnBMIco3" data-country="filipinas" class="abs btn ico ico_filipinas small"></div>
+                    <div id="btnBMIco4" data-country="indonesia" class="abs btn ico ico_indonesia small"></div>
+                    <div id="btnBMIco5" data-country="malasia" class="abs btn ico ico_malasia small"></div>
+                    <div id="btnBMIco6" data-country="taihong" class="abs btn ico ico_taihong small"></div>
+                    <div id="btnBMIco7" data-country="tailandia" class="abs btn ico ico_tailandia small"></div>
+                    <div id="btnBMIco8" data-country="vietna" class="abs btn ico ico_vietna small"></div>
+                </div>
+
+                <div id="btnBMore" class="abs btn btn_mais"></div>
+                <div id="btnBTutorial" class="abs btn btn_tutorial"></div>
+
+                <div id="btnBUp" class="abs horizontal_center btn btn_cima"></div>
+                <div id="btnBDown" class="abs horizontal_center btn btn_baixo"></div>
+            </div>
+
+            <div id="content" class="default_size abs left_top transitable invisible">
+                <div id="cico" class="abs ico ico_coreia big"></div>
+
+                <div id="ctitle" class="abs title"></div>
+
+                <div id="btnCHistory" data-type="history" class="abs btn btn_historico">HISTÓRICO</div>
+                <div id="btnCEconomy" data-type="economy" class="abs btn btn_economia">ECONOMIA</div>
+                <div id="btnCCulture" data-type="culture" class="abs btn btn_cultura">CULTURA</div>
+                <div id="btnCEnvironment" data-type="environment" class="abs btn btn_meioambiente">MEIO AMBIENTE</div>
+
+                <div id="ccard" class="abs bg_no_repeat bg_center_center media">
+                    <div id="ccmedia" class="abs vertical_middle">
+                        <img id="btnCCMImage" src="" class="btn" />
+                        <div id="ccmlegend"></div>
+                    </div>
+                    <div id="cctext" class="abs vertical_middle"></div>
+                </div>
+
+                <div id="btnCClose" class="abs btn btn_close"></div>
+            </div>
+
+            <div id="cover" class="default_size abs left_top bg_no_repeat transitable visible">
+                <div id="btnCStart" class="abs btn btn_iniciar">
+                    Iniciar
+                </div>
+            </div>
+
+            <div id="popUpIntroTutorial" class="default_size abs left_top bg_no_repeat bg_center_center transitable invisible">
+                <div id="puitText" class="abs horizontal_center_vertical_middle"></div>
+
+                <div id="btnPUITClose" class="abs btn btn_close"></div>
+            </div>
+
+            <div id="more" class="default_size abs left_top transitable invisible">
+                <div id="mtitle" class="abs title">SAIBA MAIS...</div>
+
+                <div id="mpanel" class="abs overflow_hidden_x">
+                    <div id="mpbanner" class="abs left_top transitable">
+                        <div id="mpbimage1" class="bg_no_repeat bg_center_center"></div>
+                        <div id="mpbimage2" class="bg_no_repeat bg_center_center"></div>
+                    </div>
+                </div>
+
+                <div id="btnMPLeft" class="abs btn btn_esquerda"></div>
+                <div id="btnMPRight" class="abs btn btn_direita"></div>
+                <div id="btnMPClose" class="abs btn btn_close"></div>
+            </div>
+        </div>
+
+        <div id="_load">
+            <img src="img/btn_baixo_down.png" preload="auto" />
+            <img src="img/btn_baixo_up.png" preload="auto" />
+            <img src="img/btn_cima_down.png" preload="auto" />
+            <img src="img/btn_cima_up.png" preload="auto" />
+            <img src="img/btn_close_down.png" preload="auto" />
+            <img src="img/btn_close_up.png" preload="auto" />
+            <img src="img/btn_cultura_up.png" preload="auto" />
+            <img src="img/btn_direita_down.png" preload="auto" />
+            <img src="img/btn_direita_up.png" preload="auto" />
+            <img src="img/btn_economia_up.png" preload="auto" />
+            <img src="img/btn_esquerda_down.png" preload="auto" />
+            <img src="img/btn_esquerda_up.png" preload="auto" />
+            <img src="img/btn_historico_up.png" preload="auto" />
+            <img src="img/btn_iniciar_down.png" preload="auto" />
+            <img src="img/btn_iniciar_up.png" preload="auto" />
+            <img src="img/btn_mais_down.png" preload="auto" />
+            <img src="img/btn_mais_up.png" preload="auto" />
+            <img src="img/btn_meioambiente_up.png" preload="auto" />
+            <img src="img/btn_menu_down.png" preload="auto" />
+            <img src="img/btn_tutorial_down.png" preload="auto" />
+            <img src="img/btn_tutorial_up.png" preload="auto" />
+            <img src="img/ico_cingapura_big.png" preload="auto" />
+            <img src="img/ico_cingapura_small.png" preload="auto" />
+            <img src="img/ico_coreia_big.png" preload="auto" />
+            <img src="img/ico_coreia_small.png" preload="auto" />
+            <img src="img/ico_filipinas_big.png" preload="auto" />
+            <img src="img/ico_filipinas_small.png" preload="auto" />
+            <img src="img/ico_indonesia_big.png" preload="auto" />
+            <img src="img/ico_indonesia_small.png" preload="auto" />
+            <img src="img/ico_malasia_big.png" preload="auto" />
+            <img src="img/ico_malasia_small.png" preload="auto" />
+            <img src="img/ico_taihong_big.png" preload="auto" />
+            <img src="img/ico_taihong_small.png" preload="auto" />
+            <img src="img/ico_tailandia_big.png" preload="auto" />
+            <img src="img/ico_tailandia_small.png" preload="auto" />
+            <img src="img/ico_vietna_big.png" preload="auto" />
+            <img src="img/ico_vietna_small.png" preload="auto" />
+            <img src="img/img_capa.png" preload="auto" />
+            <img src="img/img_cingapura_01.png" preload="auto" />
+            <img src="img/img_coreia_01.png" preload="auto" />
+            <img src="img/img_coreia_02.png" preload="auto" />
+            <img src="img/img_filipinas_01.png" preload="auto" />
+            <img src="img/img_filipinas_02.png" preload="auto" />
+            <img src="img/img_indonesia_01.png" preload="auto" />
+            <img src="img/img_indonesia_02.png" preload="auto" />
+            <img src="img/img_malasia_01.png" preload="auto" />
+            <img src="img/img_malasia_02.png" preload="auto" />
+            <img src="img/img_saibamais_pg1.png" preload="auto" />
+            <img src="img/img_saibamais_pg2.png" preload="auto" />
+            <img src="img/img_taihong_01.png" preload="auto" />
+            <img src="img/img_taihong_02.png" preload="auto" />
+            <img src="img/img_tailandia_01.png" preload="auto" />
+            <img src="img/img_vietna_01.png" preload="auto" />
+            <img src="img/mapa_full.png" preload="auto" />
+            <img src="img/shape_title_big.png" preload="auto" />
+            <img src="img/shape_white_popup.png" preload="auto" />
+            <img src="img/shape_white_popup_2.png" preload="auto" />
+            <img src="img/thumb_cingapura_01.png" preload="auto" />
+            <img src="img/thumb_indonesia_01.png" preload="auto" />
+            <img src="img/thumb_taihong_01.png" preload="auto" />
+            <img src="img/thumb_tailandia_01.png" preload="auto" />
+            <img src="img/thumb_vietna_01.png" preload="auto" />
+            <video src="video/cingapura_01.mp4" preload="auto" />
+            <video src="video/indonesia_01.mp4" preload="auto" />
+            <video src="video/taihong_01.mp4" preload="auto" />
+            <video src="video/tailandia_01.mp4" preload="auto" />
+            <video src="video/vietna_01.mp4" preload="auto" />
+        </div>
+
+        <script type="text/javascript" src="capa.js">
+            logo: 0
+        </script>
+    </body>
+</html>

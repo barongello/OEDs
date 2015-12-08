@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/main.css" />
+
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <title></title>
+    </head>
+
+    <body>
+        <div id="stage">
+            <div id="intro">
+                <div id="introTitle">
+                    <div id="introTitleText">
+                        VAMOS ADIVINHAR OS NOMES DOS ANIMAIS?
+                    </div>
+
+                    <div id="introTitleStart"></div>
+                </div>
+            </div>
+
+            <div id="menu">
+                <div id="menuHeader">
+                    <div id="menuHeaderText">
+                        CLIQUEM NO AMBIENTE TERRESTRE OU NO AQUÁTICO PARA VER OS ANIMAIS.
+                    </div>
+                </div>
+
+                <div id="menuHabitat0" class="habitatButton" habitat="0">
+                    <div class="habitatText">TERRESTRE</div>
+                </div>
+                <div id="menuHabitat1" class="habitatButton" habitat="1">
+                    <div class="habitatText">AQUÁTICO</div>
+                </div>
+
+                <div id="menuSubtitleText">
+                    A ESCALA DOS ANIMAIS É APENAS ILUSTRATIVA. ELES NÃO ESTÃO REPRESENTADOS NO TAMANHO REAL.
+                </div>
+            </div>
+
+            <div id="habitat0" class="habitat" habitat="0">
+                <div id="habitatHeader0" class="habitatHeader">
+                    <div id="habitatHeaderText0" class="habitatHeaderText">
+                        CLIQUEM NOS ANIMAIS PARA<br />
+                        DESCOBRIR O NOME DELES.
+                    </div>
+                </div>
+
+                <div id="animal00" animal="girafa" class="animal girafa"></div>
+                <div id="animal01" animal="elefante" class="animal elefante"></div>
+                <div id="animal02" animal="zebra" class="animal zebra"></div>
+                <div id="animal03" animal="camelo" class="animal camelo"></div>
+                <div id="animal04" animal="tatu" class="animal tatu"></div>
+                <div id="animal05" animal="macaco" class="animal macaco"></div>
+                <div id="animal06" animal="panda" class="animal panda"></div>
+
+                <div id="smallLogo0" class="smallLogo"></div>
+                <div id="backButton0" class="backButton"></div>
+            </div>
+
+            <div id="habitat1" class="habitat" habitat="1">
+                <div id="habitatHeader1" class="habitatHeader">
+                    <div id="habitatHeaderText1" class="habitatHeaderText">
+                        CLIQUEM NOS ANIMAIS PARA<br />
+                        DESCOBRIR O NOME DELES.
+                    </div>
+                </div>
+
+                <div id="animal10" animal="golfinho" class="animal golfinho"></div>
+                <div id="animal11" animal="polvo" class="animal polvo"></div>
+                <div id="animal12" animal="tartaruga" class="animal tartaruga"></div>
+                <div id="animal13" animal="peixe" class="animal peixe"></div>
+                <div id="animal14" animal="foca" class="animal foca"></div>
+                <div id="animal15" animal="pinguim" class="animal pinguim"></div>
+                <div id="animal16" animal="baleia" class="animal baleia"></div>
+
+                <div id="smallLogo1" class="smallLogo"></div>
+                <div id="backButton1" class="backButton"></div>
+            </div>
+
+            <div id="animalGame">
+                <div id="gameHeader">
+                    <div id="gameHeaderContent">
+                        <div id="gameHeaderText">
+                            Dummy Text
+                        </div>
+                    </div>
+                </div>
+
+                <div id="gameBox">
+                    <div id="animalName">Dummy Name</div>
+                    <div id="option0" class="option">Dummy Option</div>
+                    <div id="option1" class="option">Dummy Option</div>
+                    <div id="option2" class="option">Dummy Option</div>
+                    <div id="gameAudio" class="audioButton"></div>
+                </div>
+
+                <div id="gameImage"></div>
+
+                <div id="gameInfo" class="infoButton"></div>
+
+                <div id="gameBackButton" class="backButton"></div>
+            </div>
+        </div>
+
+        <div id="_load">
+            <img src="img/baleia_animada_1.png" />
+            <img src="img/baleia_animada_2.png" />
+            <img src="img/baleia_animada_3.png" />
+            <img src="img/bg_iniciar.png" />
+            <img src="img/bg_menu.png" />
+            <img src="img/box_popup1.png" />
+            <img src="img/box_popup2.png" />
+            <img src="img/btn_info_down.png" />
+            <img src="img/btn_info_up.png" />
+            <img src="img/btn_iniciar_down.png" />
+            <img src="img/btn_iniciar_up.png" />
+            <img src="img/btn_menu1_down.png" />
+            <img src="img/btn_menu1_up.png" />
+            <img src="img/btn_menu2_down.png" />
+            <img src="img/btn_menu2_up.png" />
+            <img src="img/btn_opcao_down.png" />
+            <img src="img/btn_opcao_up.png" />
+            <img src="img/btn_som_down.png" />
+            <img src="img/btn_som_up.png" />
+            <img src="img/btn_voltar_down.png" />
+            <img src="img/btn_voltar_up.png" />
+            <img src="img/camelo_animado_1.png" />
+            <img src="img/camelo_animado_2.png" />
+            <img src="img/camelo_animado_3.png" />
+            <img src="img/elefante_animado_1.png" />
+            <img src="img/elefante_animado_2.png" />
+            <img src="img/elefante_animado_3.png" />
+            <img src="img/foca_animada_1.png" />
+            <img src="img/foca_animada_2.png" />
+            <img src="img/foca_animada_3.png" />
+            <img src="img/girafa_animada_1.png" />
+            <img src="img/girafa_animada_2.png" />
+            <img src="img/girafa_animada_3.png" />
+            <img src="img/golfinho_animado_1.png" />
+            <img src="img/golfinho_animado_2.png" />
+            <img src="img/golfinho_animado_3.png" />
+            <img src="img/img_01_girafa.png" />
+            <img src="img/img_02_elefante.png" />
+            <img src="img/img_03_zebra.png" />
+            <img src="img/img_04_camelo.png" />
+            <img src="img/img_05_tatu.png" />
+            <img src="img/img_06_macaco.png" />
+            <img src="img/img_07_panda.png" />
+            <img src="img/img_08_golfinho.png" />
+            <img src="img/img_09_polvo.png" />
+            <img src="img/img_10_tartaruga.png" />
+            <img src="img/img_11_peixe.png" />
+            <img src="img/img_12_foca.png" />
+            <img src="img/img_13_pinguim.png" />
+            <img src="img/img_14_baleia.png" />
+            <img src="img/img_bg_agua.png" />
+            <img src="img/img_bg_terrestre.png" />
+            <img src="img/img_box_1.png" />
+            <img src="img/img_box_2.png" />
+            <img src="img/img_box_2error_v2.png" />
+            <img src="img/img_box_2win_v2.png" />
+            <img src="img/img_logo_capa.png" />
+            <img src="img/img_logo_menor.png" />
+            <img src="img/macaco_animado_1.png" />
+            <img src="img/macaco_animado_2.png" />
+            <img src="img/macaco_animado_3.png" />
+            <img src="img/panda_animado_1.png" />
+            <img src="img/panda_animado_2.png" />
+            <img src="img/peixe_animado_1.png" />
+            <img src="img/peixe_animado_2.png" />
+            <img src="img/peixe_animado_3.png" />
+            <img src="img/pinguim_animado_1.png" />
+            <img src="img/pinguim_animado_2.png" />
+            <img src="img/pinguim_animado_3.png" />
+            <img src="img/polvo_animado_1.png" />
+            <img src="img/polvo_animado_2.png" />
+            <img src="img/polvo_animado_3.png" />
+            <img src="img/tartaruga_animada_1.png" />
+            <img src="img/tartaruga_animada_2.png" />
+            <img src="img/tartaruga_animada_3.png" />
+            <img src="img/tatu_animado_1.png" />
+            <img src="img/tatu_animado_2.png" />
+            <img src="img/tatu_animado_3.png" />
+            <img src="img/zebra_animada_1.png" />
+            <img src="img/zebra_animada_2.png" />
+            <img src="img/zebra_animada_3.png" />
+        </div>
+
+        <script src="capa.js">
+            logo: 0
+        </script>
+    </body>
+
+</html>

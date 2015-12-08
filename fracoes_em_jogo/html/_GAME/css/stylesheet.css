@@ -1,0 +1,577 @@
+/* ##### CSS Principal ##### */
+
+#gameStage {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#gameIntro {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: transparent url(../img/intro_background.png);
+}
+
+#gameIntro > #introCard {
+    width: 741px;
+    height: 477px;
+    position: absolute;
+    left: 141px;
+    top: 145px;
+    background: transparent url(../img/intro_card.png);
+}
+
+#gameIntro > #introCard > #introCardImage {
+    width: 480px;
+    height: 360px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background: transparent url(../img/intro_img.png);
+}
+
+#gameIntro > #introCard > #introCardCredits {
+    width: 195px;
+    height: 56px;
+    position: absolute;
+    top: 390px;
+    left: 120px;
+    background-color: transparent;
+    background-image: url(../img/intro_card_button_credits.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    cursor: pointer;
+}
+
+#gameIntro > #introCard > #introCardCredits:hover {
+    background-position: -195px 0px;
+}
+
+#gameIntro > #introCard > #introCardHelp {
+    width: 195px;
+    height: 56px;
+    position: absolute;
+    top: 390px;
+    left: 315px;
+    background-color: transparent;
+    background-image: url(../img/intro_card_button_help.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    cursor: pointer;
+}
+
+#gameIntro > #introCard > #introCardHelp:hover {
+    background-position: -195px 0px;
+}
+
+#gameIntro > #introCard > #introCardText {
+    width: 165px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    right: 33px;
+    font-family: Arial;
+    font-size: 12pt;
+}
+
+#gameIntro > #introCard > #introCardStart {
+    width: 129px;
+    height: 129px;
+    position: absolute;
+    top: 231px;
+    right: 51px;
+    background-color: transparent;
+    background-image: url(../img/intro_card_button_start.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    cursor: pointer;
+}
+
+#gameIntro > #introCard > #introCardStart:hover {
+    background-position: -129px 0px;
+}
+
+#gameIntro > #gameCredits {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 1024px;
+    top: 0px;
+    background: transparent url(../img/credits.png);
+}
+
+#gameCredits > #creditsBack {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-family: Arial;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+}
+
+#gameCredits > #creditsBack:hover {
+    color: #e3a915;
+}
+
+#gameHelp {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 1024px;
+    top: 0px;
+    background: transparent url(../img/intro_background.png);
+}
+
+#gameHelp > #helpCard {
+    width: 741px;
+    height: 477px;
+    position: absolute;
+    left: 141px;
+    top: 145px;
+    background: transparent url(../img/intro_card.png);
+}
+
+#gameHelp > #helpCard > #helpCardBack {
+    position: absolute;
+    left: 30px;
+    top: 65px;
+    font-family: Arial;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+}
+
+#gameHelp > #helpCard > #helpCardBack:hover {
+    color: #e3a915;
+}
+
+#gameHelp > #helpCard > #helpCardTitle {
+    width: 455px;
+    height: 55px;
+    position: absolute;
+    right: 0px;
+    top: 52px;
+    background: transparent url(../img/help_title.png);
+}
+
+#gameHelp > #helpCard > #helpCardImage {
+    width: 240px;
+    height: 180px;
+    position: absolute;
+    left: 30px;
+    top: 150px;
+    background-color: transparent;
+    background-image: url(../img/intro_img.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+#gameHelp > #helpCard > #helpCardText {
+    width: 400px;
+    position: absolute;
+    top: 195px;
+    right: 30px;
+    font-family: Arial;
+    font-size: 12pt;
+}
+
+#gameBoard {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: transparent url(../img/background.png);
+    display: none;
+}
+
+#questionTitle {
+    width: 315px;
+    height: 140px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.question_title_0 { background-image: url(../img/question_title_0.png); }
+.question_title_1 { background-image: url(../img/question_title_1.png); }
+.question_title_2 { background-image: url(../img/question_title_2.png); }
+.question_title_3 { background-image: url(../img/question_title_3.png); }
+.question_title_4 { background-image: url(../img/question_title_4.png); }
+.question_title_5 { background-image: url(../img/question_title_5.png); }
+.question_title_6 { background-image: url(../img/question_title_6.png); }
+.question_title_7 { background-image: url(../img/question_title_7.png); }
+.question_title_8 { background-image: url(../img/question_title_8.png); }
+.question_title_9 { background-image: url(../img/question_title_9.png); }
+.question_title_10 { background-image: url(../img/question_title_10.png); }
+.question_title_11 { background-image: url(../img/question_title_11.png); }
+.question_title_12 { background-image: url(../img/question_title_12.png); }
+
+#boundBox {
+    width: 635px;
+    height: 635px;
+    position: absolute;
+    left: 194px;
+    top: 100px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.boundbox_0 { background-image: url(../img/board_0.png); }
+.boundbox_1 { background-image: url(../img/board_1.png); }
+.boundbox_2 { background-image: url(../img/board_2.png); }
+.boundbox_3 { background-image: url(../img/board_3.png); }
+.boundbox_4 { background-image: url(../img/board_4.png); }
+.boundbox_5 { background-image: url(../img/board_5.png); }
+.boundbox_6 { background-image: url(../img/board_6.png); }
+.boundbox_7 { background-image: url(../img/board_7.png); }
+
+.box {
+    width: 127px;
+    height: 127px;
+    position: absolute;
+    cursor: default;
+}
+
+.box_1 { background-image: url(../img/box_1.png); }
+.box_2 { background-image: url(../img/box_2.png); }
+.box_3 { background-image: url(../img/box_3.png); }
+.box_4 { background-image: url(../img/box_4.png); }
+.box_5 { background-image: url(../img/box_5.png); }
+.box_6 { background-image: url(../img/box_6.png); }
+.box_7 { background-image: url(../img/box_7.png); }
+.box_8 { background-image: url(../img/box_8.png); }
+
+.numerator, .slash, .denominator {
+    width: 127px;
+    font-family: Arial;
+    font-size: 20pt;
+    font-weight: bold;
+    display: table;
+    color: #ffffff;
+}
+
+.numerator, .denominator {
+    height: 58px;
+}
+
+.numerator > .text {
+    vertical-align: bottom;
+}
+
+.slash {
+    height: 10px;
+}
+
+.slash_positive {
+    background: transparent url(../img/fraction_slash_positive.png) no-repeat center center;
+}
+
+.slash_negative {
+    background: transparent url(../img/fraction_slash_negative.png) no-repeat center center;
+}
+
+.denominator > .text {
+    padding-top: 3px;
+    vertical-align: top;
+}
+
+.numerator > .text, .denominator > .text {
+    display: table-cell;
+    text-align: center;
+}
+
+#gameBoard > #boardExit {
+    width: 128px;
+    height: 71px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    background-color: transparent;
+    background-image: url(../img/board_button_exit.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    cursor: pointer;
+}
+
+#gameBoard > #boardExit:hover {
+    background-position: -128px 0px;
+}
+
+#gameBoard > #correctAnswer {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgba(72, 37, 16, 0.6) url(../img/correct_background.png) no-repeat center 200px;
+    display: none;
+}
+
+#gameBoard > #correctAnswer > #correctFormula {
+    width: 190px;
+    height: 84px;
+    position: absolute;
+    left: 320px;
+    top: 350px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.formula_0 { background-image: url(../img/formula_0.png); }
+.formula_1 { background-image: url(../img/formula_1.png); }
+.formula_2 { background-image: url(../img/formula_2.png); }
+.formula_3 { background-image: url(../img/formula_3.png); }
+.formula_4 { background-image: url(../img/formula_4.png); }
+.formula_5 { background-image: url(../img/formula_5.png); }
+.formula_6 { background-image: url(../img/formula_6.png); }
+.formula_7 { background-image: url(../img/formula_7.png); }
+.formula_8 { background-image: url(../img/formula_8.png); }
+.formula_9 { background-image: url(../img/formula_9.png); }
+.formula_10 { background-image: url(../img/formula_10.png); }
+.formula_11 { background-image: url(../img/formula_11.png); }
+.formula_12 { background-image: url(../img/formula_12.png); }
+
+#gameBoard > #correctAnswer > #correctBox {
+    width: 127px;
+    height: 127px;
+    position: absolute;
+    left: 550px;
+    top: 320px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+}
+
+#gameBoard > #correctAnswer > #correctBox.box_1 { background-image: url(../img/box_1.png); }
+#gameBoard > #correctAnswer > #correctBox.box_2 { background-image: url(../img/box_2.png); }
+#gameBoard > #correctAnswer > #correctBox.box_3 { background-image: url(../img/box_3.png); }
+#gameBoard > #correctAnswer > #correctBox.box_4 { background-image: url(../img/box_4.png); }
+#gameBoard > #correctAnswer > #correctBox.box_5 { background-image: url(../img/box_5.png); }
+#gameBoard > #correctAnswer > #correctBox.box_6 { background-image: url(../img/box_6.png); }
+#gameBoard > #correctAnswer > #correctBox.box_7 { background-image: url(../img/box_7.png); }
+#gameBoard > #correctAnswer > #correctBox.box_8 { background-image: url(../img/box_8.png); }
+
+#gameBoard > #correctAnswer > #correctContinue {
+    width: 198px;
+    height: 71px;
+    position: absolute;
+    left: 413px;
+    bottom: 200px;
+    background-color: transparent;
+    background-image: url(../img/feedback_continue.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    cursor: pointer;
+}
+
+#gameBoard > #correctAnswer > #correctContinue:hover {
+    background-position: -198px 0px;
+}
+
+#gameBoard > #wrongAnswer {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgba(72, 37, 16, 0.6) url(../img/wrong_background.png) no-repeat center 200px;
+    display: none;
+}
+
+#gameBoard > #wrongAnswer > #wrongContinue {
+    width: 198px;
+    height: 71px;
+    position: absolute;
+    left: 413px;
+    bottom: 200px;
+    background-color: transparent;
+    background-image: url(../img/feedback_continue.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    cursor: pointer;
+}
+
+#gameBoard > #wrongAnswer > #wrongContinue:hover {
+    background-position: -198px 0px;
+}
+
+#gameBoard > #finishGame {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgba(72, 37, 16, 0.6) url(../img/finish_background.png) no-repeat center 200px;
+    display: none;
+}
+
+#gameBoard > #finishGame > #finishContinue {
+    width: 198px;
+    height: 71px;
+    position: absolute;
+    left: 413px;
+    bottom: 200px;
+    background-color: transparent;
+    background-image: url(../img/feedback_continue.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    cursor: pointer;
+}
+
+#gameBoard > #finishGame > #finishContinue:hover {
+    background-position: -198px 0px;
+}
+
+#gameMenu {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: transparent url(../img/background.png);
+    display: none;
+}
+
+#gameMenu > #title_part_1 {
+    width: 331px;
+    height: 132px;
+    position: absolute;
+    left: 330px;
+    top: 145px;
+    background: transparent url(../img/menu_title_part_1.png);
+}
+
+#gameMenu > #title_part_2 {
+    width: 502px;
+    height: 168px;
+    position: absolute;
+    left: 265px;
+    top: 200px;
+    background: transparent url(../img/menu_title_part_2.png);
+}
+
+#gameMenu > #title_letter_j {
+    width: 113px;
+    height: 111px;
+    position: absolute;
+    left: 515px;
+    top: 228px;
+    background: transparent url(../img/menu_title_letter_j.png);
+}
+
+#gameMenu > #title_letter_o_1 {
+    width: 113px;
+    height: 111px;
+    position: absolute;
+    left: 400px;
+    top: 228px;
+    background: transparent url(../img/menu_title_letter_o_1.png);
+}
+
+#gameMenu > #title_letter_g {
+    width: 113px;
+    height: 111px;
+    position: absolute;
+    left: 285px;
+    top: 228px;
+    background: transparent url(../img/menu_title_letter_g.png);
+}
+
+#gameMenu > #title_letter_o_2 {
+    width: 113px;
+    height: 111px;
+    position: absolute;
+    left: 630px;
+    top: 228px;
+    background: transparent url(../img/menu_title_letter_o_2.png);
+}
+
+#gameMenu > .level {
+    height: 40px;
+    padding-right: 50px;
+    position: absolute;
+    line-height: 35px;
+    bottom: 100px;
+    background-color: transparent;
+    background-image: url(../img/menu_radio.png);
+    background-repeat: no-repeat;
+    background-position: right 0px;
+    font-family: Arial;
+    font-size: 14pt;
+    font-weigth: bold;
+    cursor: pointer;
+}
+
+#gameMenu > .level.enabled {
+    background-position: right -40px;
+}
+
+#gameMenu > #level_easy {
+    left: 150px;
+}
+
+#gameMenu > #level_medium {
+    left: 300px;
+}
+
+#gameMenu > #level_hard {
+    left: 470px;
+}
+
+#gameMenu > #menuStart {
+    width: 198px;
+    height: 81px;
+    position: absolute;
+    top: 605px;
+    right: 135px;
+    background-color: transparent;
+    background-image: url(../img/menu_start.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    cursor: pointer;
+}
+
+#gameMenu > #menuStart:hover {
+    background-position: -198px 0px;
+}
+
+#sound_control {
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    top: 25px;
+    right: 85px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    cursor: pointer;
+}
+
+#sound_control:hover {
+    background-position: -41px 0px;
+}
+
+#sound_control.enabled {
+    background-image: url(../img/sound_enabled.png);
+}
+
+#sound_control.disabled {
+    background-image: url(../img/sound_disabled.png);
+}

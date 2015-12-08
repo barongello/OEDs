@@ -1,0 +1,35 @@
+.btn_baixo { width: 50px; height: 50px; background-image: url('../img/btn_baixo_up.png'); }
+.btn_baixo:hover { background-image: url('../img/btn_baixo_down.png'); }
+
+.btn_cima { width: 50px; height: 50px; background-image: url('../img/btn_cima_up.png'); }
+.btn_cima:hover { background-image: url('../img/btn_cima_down.png'); }
+
+.btn_close { width: 79px; height: 62px; background-image: url('../img/btn_close_up.png'); }
+.btn_close:hover { background-image: url('../img/btn_close_down.png'); }
+
+.btn_cultura { width: 173px; height: 64px; background-image: url('../img/btn_cultura_up.png'); }
+.btn_cultura:hover { background-image: url('../img/btn_menu_down.png'); }
+
+.btn_direita { width: 50px; height: 50px; background-image: url('../img/btn_direita_up.png'); }
+.btn_direita:hover { background-image: url('../img/btn_direita_down.png'); }
+
+.btn_economia { width: 173px; height: 64px; background-image: url('../img/btn_economia_up.png'); }
+.btn_economia:hover { background-image: url('../img/btn_menu_down.png'); }
+
+.btn_esquerda { width: 50px; height: 50px; background-image: url('../img/btn_esquerda_up.png'); }
+.btn_esquerda:hover { background-image: url('../img/btn_esquerda_down.png'); }
+
+.btn_historico { width: 173px; height: 64px; background-image: url('../img/btn_historico_up.png'); }
+.btn_historico:hover { background-image: url('../img/btn_menu_down.png'); }
+
+.btn_iniciar { width: 149px; height: 57px; background-image: url('../img/btn_iniciar_up.png'); }
+.btn_iniciar:hover { background-image: url('../img/btn_iniciar_down.png'); }
+
+.btn_mais { width: 62px; height: 79px; background-image: url('../img/btn_mais_up.png'); }
+.btn_mais:hover { background-image: url('../img/btn_mais_down.png'); }
+
+.btn_meioambiente { width: 173px; height: 64px; background-image: url('../img/btn_meioambiente_up.png'); }
+.btn_meioambiente:hover { background-image: url('../img/btn_menu_down.png'); }
+
+.btn_tutorial { width: 62px; height: 79px; background-image: url('../img/btn_tutorial_up.png'); }
+.btn_tutorial:hover { background-image: url('../img/btn_tutorial_down.png'); }

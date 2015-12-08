@@ -1,0 +1,54 @@
+{
+    "useGameTimer": true,
+    "showGameTimer": false,
+    "timePerGame": 120,
+
+    "useQuestionTimer": true,
+    "showQuestionTimer": true,
+    "timePerQuestion": 60,
+
+    "gameBackground": "game_background.png",
+    "showScore": true,
+    "titleText": "Quiz de Hist&oacute;ria",
+    "startButtonText": "Iniciar",
+    "runningButtonText": "Mostrar Imagem",
+    "runningClickedButtonText": "Esconder Imagem",
+    "nextButtonText": "",
+    "instructionImage": "game_instructions_background.png",
+    "instructionText": "",
+    "resultTitle": "Resultado",
+    "resultMultiUseButtonText": "Reiniciar",
+
+    "questions": [
+        {
+            "backgroundImage": "question_1_background.png",
+            "text": "Quest&atilde;o 1",
+            "hintImage": "question_1_hint.png",
+            "explanationImage": "question_1_explanation.png",
+            "options": {
+                "0": "Sim",
+                "1": "N&atilde;o"
+            },
+            "rightAnswer": 0,
+            "stopOnError": true
+        },
+        {
+            "backgroundImage": "question_2_background.png",
+            "text": "Quest&atilde;o 2",
+            "hintImage": "question_2_hint.png",
+            "explanationImage": "question_2_explanation.png",
+            "options": {
+                "0": "Sim",
+                "1": "N&atilde;o"
+            },
+            "rightAnswer": 1,
+            "stopOnError": true
+        }
+    ],
+
+    "endMessages": [
+        "Voc&ecirc; foi mal!",
+        "Mediano, poderia ser melhor!",
+        "Parab&eacute;ns, muito bom!"
+    ]
+}

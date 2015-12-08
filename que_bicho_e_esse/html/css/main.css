@@ -1,0 +1,480 @@
+#stage {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #7bdddb;
+}
+
+#intro {
+    width: 1024px;
+    height: 768px;
+    background-image: url(../img/bg_iniciar.png);
+}
+
+#introTitle {
+    width: 725px;
+    height: 422px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-image: url(../img/img_logo_capa.png);
+}
+
+#introTitleText {
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+    font: 22px OpenSans-Bold;
+    color: #0f3450;
+}
+
+#introTitleStart {
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    background-image: url(../img/btn_iniciar_up.png);
+}
+
+#introTitleStart:hover {
+    background-image: url(../img/btn_iniciar_down.png);
+}
+
+#menu {
+    width: 1024px;
+    height: 768px;
+    background-image: url(../img/bg_menu.png);
+    display: none;
+}
+
+#menuHeader {
+    width: 1024px;
+    height: 96px;
+    background-image: url(../img/img_box_2.png);
+}
+
+.boxerrado {
+    width: 1024px;
+    height: 96px;
+    background-image: url(../img/img_box_2error_v2.png) !important;
+}
+
+.boxcorreto {
+    width: 1024px;
+    height: 96px;
+    background-image: url(../img/img_box_2win_v2.png) !important;
+}
+
+#menuHeaderText {
+    width: 100%;
+    height: 100%;
+    font: 20px OpenSans-Bold;
+    color: #0f3450;
+    text-align: center;
+    line-height: 70px;
+}
+
+#menuHabitat0 {
+    width: 370px;
+    height: 371px;
+    position: absolute;
+    left: 100px;
+    top: 216px;
+    background-image: url(../img/btn_menu1_up.png);
+}
+
+#menuHabitat0:hover {
+    background-image: url(../img/btn_menu1_down.png);
+}
+
+#menuHabitat1 {
+    width: 370px;
+    height: 371px;
+    position: absolute;
+    right: 100px;
+    top: 216px;
+    background-image: url(../img/btn_menu2_up.png);
+}
+
+#menuHabitat1:hover {
+    background-image: url(../img/btn_menu2_down.png);
+}
+
+.habitatText {
+    width: 370px;
+    height: 42px;
+    position: absolute;
+    left: 0px;
+    bottom: -50px;
+    font: 42px OpenSans-Bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+#menuSubtitleText {
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    font: 18px OpenSans-Bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+#habitat0 {
+    background-image: url(../img/img_bg_terrestre.png);
+}
+
+#habitat1 {
+    background-image: url(../img/img_bg_agua.png);
+}
+
+.habitat {
+    width: 1024px;
+    height: 768px;
+    display: none;
+}
+
+.backButton {
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    background-image: url(../img/btn_voltar_up.png);
+}
+
+.backButton:hover {
+    background-image: url(../img/btn_voltar_down.png);
+}
+
+#backButton0 {
+    left: 10px;
+    top: 10px;
+}
+
+#backButton1 {
+    left: 10px;
+    top: 10px;
+}
+
+.animal {
+    position: absolute;
+}
+
+#animal00 {
+    width: 342px;
+    height: 602px;
+    left: 140px;
+    top: 0px;
+}
+
+.girafa {
+    background-image: url(../img/img_01_girafa.png);
+}
+
+#animal01 {
+    width: 330px;
+    height: 336px;
+    left: 460px;
+    top: 240px;
+}
+
+.elefante {
+    background-image: url(../img/img_02_elefante.png);
+}
+
+#animal02 {
+    width: 260px;
+    height: 240px;
+    left: 744px;
+    top: 345px;
+}
+
+.zebra {
+    background-image: url(../img/img_03_zebra.png);
+}
+
+#animal03 {
+    width: 380px;
+    height: 336px;
+    left: -45px;
+    top: 385px;
+}
+
+.camelo {
+    background-image: url(../img/img_04_camelo.png);
+}
+
+#animal04 {
+    width: 161px;
+    height: 104px;
+    left: 275px;
+    top: 645px;
+}
+
+.tatu {
+    background-image: url(../img/img_05_tatu.png);
+}
+
+#animal05 {
+    width: 128px;
+    height: 184px;
+    left: 495px;
+    top: 540px;
+}
+
+.macaco {
+    background-image: url(../img/img_06_macaco.png);
+}
+
+#animal06 {
+    width: 200px;
+    height: 204px;
+    left: 719px;
+    top: 555px;
+}
+
+.panda {
+    background-image: url(../img/img_07_panda.png);
+}
+
+#animal10 {
+    width: 320px;
+    height: 320px;
+    left: 0px;
+    top: 235px;
+}
+
+.golfinho {
+    background-image: url(../img/img_08_golfinho.png);
+}
+
+#animal11 {
+    width: 230px;
+    height: 194px;
+    left: 500px;
+    top: 190px;
+}
+
+.polvo {
+    background-image: url(../img/img_09_polvo.png);
+}
+
+#animal12 {
+    width: 170px;
+    height: 110px;
+    left: 310px;
+    top: 385px;
+}
+
+.tartaruga {
+    background-image: url(../img/img_10_tartaruga.png);
+}
+
+#animal13 {
+    width: 150px;
+    height: 56px;
+    left: 570px;
+    top: 460px;
+}
+
+.peixe {
+    background-image: url(../img/img_11_peixe.png);
+}
+
+#animal14 {
+    width: 190px;
+    height: 170px;
+    left: 800px;
+    top: 415px;
+}
+
+.foca {
+    background-image: url(../img/img_12_foca.png);
+}
+
+#animal15 {
+    width: 119px;
+    height: 178px;
+    left: 815px;
+    top: 195px;
+}
+
+.pinguim {
+    background-image: url(../img/img_13_pinguim.png);
+}
+
+#animal16 {
+    width: 767px;
+    height: 202px;
+    left: 10px;
+    top: 530px;
+}
+
+.baleia {
+    background-image: url(../img/img_14_baleia.png);
+}
+
+.smallLogo {
+    width: 239px;
+    height: 149px;
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    background-image: url(../img/img_logo_menor.png);
+}
+
+.habitatHeader {
+    width: 470px;
+    height: 107px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-image: url(../img/img_box_1.png);
+}
+
+.habitatHeaderText {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font: 20px OpenSans-Bold;
+    color: #0f3450;
+    line-height: 24px;
+}
+
+#animalGame {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.92);
+    display: none;
+}
+
+#gameBackButton {
+    left: 10px;
+    top: 10px;
+}
+
+.infoButton {
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    background-image: url(../img/btn_info_up.png);
+}
+
+.infoButton:hover {
+    background-image: url(../img/btn_info_down.png);
+}
+
+.audioButton {
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    background-image: url(../img/btn_som_up.png);
+}
+
+.audioButton:hover {
+    background-image: url(../img/btn_som_down.png);
+}
+
+#gameHeader {
+    width: 1024px;
+    height: 96px;
+    background-image: url(../img/img_box_2.png);
+}
+
+#gameHeaderContent {
+    width: 790px;
+    height: 60px;
+    position: absolute;
+    left: 125px;
+    top: 5px;
+    display: table;
+}
+
+#gameHeaderText {
+    font: 19px OpenSans-Bold;
+    color: #0f3450;
+    line-height: 21px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#gameImage {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: fit;
+}
+
+#gameBox {
+    width: 510px;
+    height: 375px;
+    position: absolute;
+}
+
+#animalGame.habitat_0 > #gameBox {
+    background-image: url(../img/box_popup1.png);
+}
+
+#animalGame.habitat_1 > #gameBox {
+    background-image: url(../img/box_popup2.png);
+}
+
+#animalName {
+    width: 350px;
+    height: 71px;
+    position: absolute;
+    left: 50px;
+    top: 15px;
+    font: 53px OpenSans-Bold;
+    color: #232323;
+    text-align: center;
+    line-height: 71px;
+}
+
+.option {
+    width: 473px;
+    height: 86px;
+    position: absolute;
+    left: 18px;
+    background-image: url(../img/btn_opcao_up.png);
+    font: 50px TheOnlyException-Regular;
+    color: #232323;
+    text-align: center;
+    line-height: 86px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.option:hover {
+    background-image: url(../img/btn_opcao_down.png);
+    color: #f8f7cc;
+}
+
+#option0 {
+    top: 96px;
+}
+
+#option1 {
+    top: 180px;
+}
+
+#option2 {
+    top: 265px;
+}
+
+#gameAudio {
+    right: 15px;
+    top: 15px;
+}
+
+#gameImage {
+  -webkit-transition: background-image 300ms linear;
+  -moz-transition: background-image 300ms linear;
+  -o-transition: background-image 300ms linear;
+  transition: background-image 300ms linear;
+}

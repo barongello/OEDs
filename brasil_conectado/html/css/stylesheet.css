@@ -1,0 +1,195 @@
+/* ##### CSS Principal ##### */
+
+#gameStage {
+    width: 1024px;
+    height: 768px;
+    background: transparent url(../img/background.png) no-repeat center center;
+    font-family: Arial;
+    color: #ffffff;
+}
+
+#gameStage > #mapButtons {
+    position: absolute;
+    left: 29px;
+    top: 152px;
+    width: 967px;
+    height: 83px;
+    padding-left: 10px;
+}
+
+#gameStage > #mapButtons > .button {
+    height: 83px;
+    float: left;
+    font-size: 12pt;
+    font-weight: bold;
+    line-height: 83px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 46px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+#gameStage > #mapButtons > .notchecked {
+    background-image: url(../img/checkbox_notchecked.png);
+}
+
+#gameStage > #mapButtons > .checked {
+    background-image: url(../img/checkbox_checked.png);
+}
+
+#gameStage > #map {
+    position: absolute;
+    left: 51px;
+    top: 323px;
+    width: 435px;
+    height: 410px;
+}
+
+#gameStage > #map.map0 {
+    background-image: url(../img/map_0.png);
+}
+
+#gameStage > #map.map1 {
+    background-image: url(../img/map_1.jpg);
+}
+
+#gameStage > #map.map2 {
+    background-image: url(../img/map_2.jpg);
+}
+
+#gameStage > #map.map3 {
+    background-image: url(../img/map_3.jpg);
+}
+
+#gameStage > #map.map4 {
+    background-image: url(../img/map_4.jpg);
+}
+
+#gameStage > #map > #legend {
+    position: absolute;
+    bottom: 0px;
+    left: -10px;
+    width: 176px;
+}
+
+#gameStage > #map.map0 > #legend {
+    height: 0px;
+    background: transparent;
+}
+
+#gameStage > #map.map1 > #legend {
+    height: 139px;
+    background: transparent url(../img/legend_map_1.png);
+}
+
+#gameStage > #map.map2 > #legend {
+    height: 47px;
+    background: transparent url(../img/legend_map_2.png);
+}
+
+#gameStage > #map.map3 > #legend {
+    height: 93px;
+    background: transparent url(../img/legend_map_3.png);
+}
+
+#gameStage > #map.map4 > #legend {
+    height: 93px;
+    background: transparent url(../img/legend_map_4.png);
+}
+
+#gameStage > #questionBox {
+    position: absolute;
+    left: 567px;
+    top: 322px;
+    width: 428px;
+    height: 421px;
+}
+
+#gameStage > #questionBox > #question {
+    font-size: 14pt;
+    height: 76px;
+    color: #000000;
+}
+
+#gameStage > #questionBox > .answer {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+    padding-left: 36px;
+    padding-top: 12px;
+    padding-right: 10px;
+    padding-bottom: 12px;
+    line-height: 23px;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+#gameStage > #questionBox > .notchecked {
+    background-image: url(../img/checkbox_notchecked.png);
+}
+
+#gameStage > #questionBox > .checked {
+    background-image: url(../img/checkbox_checked.png);
+}
+
+#gameFeedback {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1024px;
+    height: 768px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99999;
+}
+
+#gameFeedback > #popup {
+    -webkit-border-radius: 7px;
+    -webkit-border-bottom-right-radius: 17px;
+    -moz-border-radius: 7px;
+    -moz-border-radius-bottomright: 17px;
+    border-radius: 7px;
+    border-bottom-right-radius: 17px;
+    width: 750px;
+    height: 190px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+#gameFeedback > .right {
+    background-color: #3b9055;
+}
+
+#gameFeedback > .wrong {
+    background-color: #9e3836;
+}
+
+#gameFeedback > #popup > #text {
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 14pt;
+    line-height: 25px;
+}
+
+#gameFeedback > #popup > #next {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 137px;
+    height: 33px;
+    cursor: pointer;
+    background: transparent url(../img/feedback_next.png);
+}

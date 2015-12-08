@@ -1,0 +1,277 @@
+/* CSS Principal*/
+
+#gameStage {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: transparent url(../img/bg.png);
+}
+
+#questionStage {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+#question {
+    width: 966px;
+    height: 450px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    background: rgba(197, 192, 172, 0.6);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#qimage {
+    width: 483px;
+    height: 343px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#qtext {
+    width: 438px;
+    height: 420px;
+    position: absolute;
+    left: 513px;
+    top: 15px;
+    font-family: Arial;
+    font-size: 16pt;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+#qlarrow {
+    width: 70px;
+    height: 62px;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    background: transparent url(../img/arrow_0.png);
+    cursor: pointer;
+}
+
+#qmagnifier {
+    left: 224px;
+    bottom: 14px;
+}
+
+#qrarrow {
+    width: 70px;
+    height: 62px;
+    position: absolute;
+    left: 428px;
+    bottom: 15px;
+    background: transparent url(../img/arrow_1.png);
+    cursor: pointer;
+}
+
+#answer0 {
+    width: 420px;
+    height: 263px;
+    position: absolute;
+    left: 84px;
+    bottom: 20px;
+    background: rgba(197, 192, 172, 0.6);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#answer1 {
+    width: 420px;
+    height: 263px;
+    position: absolute;
+    left: 520px;
+    bottom: 20px;
+    background: rgba(197, 192, 172, 0.6);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.ianswer {
+    width: 380px;
+    height: 243px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.magnifier {
+    position: absolute;
+    bottom: 0px;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.lmagnifier {
+    width: 69px;
+    height: 67px;
+    left: -34px;
+    background-image: url(../img/magnifier_0.png);
+}
+
+.rmagnifier {
+    width: 69px;
+    height: 67px;
+    right: -34px;
+    background-image: url(../img/magnifier_1.png);
+}
+
+.cmagnifier {
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/magnifier_2.png);
+}
+
+#zoom {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+#bzoom {
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    background: transparent url(../intro_files/img/btn-fechar.png) no-repeat center center;
+    cursor: pointer;
+}
+
+#czoom {
+    width: 860px;
+    height: 600px;
+    position: absolute;
+    left: 82px;
+    top: 84px;
+    background: rgba(197, 192, 172, 1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#izoom {
+    width: 830px;
+    height: 570px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#feedbackStage {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+#cfeedback {
+    width: 966px;
+    height: 373px;
+    position: absolute;
+    left: 30px;
+    top: 83px;
+    background: rgba(197, 192, 172, 0.6);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#afeedback1 {
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+#afeedback2 {
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.ifeedback {
+    width: 400px;
+    height: 320px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#mfeedback {
+    width: 880px;
+    height: 220px;
+    position: absolute;
+    left: 71px;
+    bottom: 48px;
+    -webkit-border-radius: 10px 10px 20px 10px;
+    -moz-border-radius: 10px 10px 20px 10px;
+    border-radius: 10px 10px 20px 10px;
+    display: table;
+}
+
+#tfeedback {
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 22pt;
+    font-weight: bold;
+    padding: 15px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#nfeedback {
+    width: 112px;
+    height: 34px;
+    position: absolute;
+    right: 73px;
+    bottom: 47px;
+    background: transparent url(../intro_files/img/btn-proxima.png);
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 16pt;
+    font-weight: bold;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+}

@@ -1,0 +1,75 @@
+.default_size { width: 1024px; height: 768px; }
+.default_width { width: 1024px; }
+.default_height { height: 768px; }
+
+.abs { position: absolute; }
+
+.left_top { left: 0px; top: 0px; }
+
+.overflow_hidden_x { overflow-x: hidden; }
+.overflow_hidden_y { overflow-y: hidden; }
+.overflow_hidden_x_y { overflow: hidden; }
+
+.visible { display: block; opacity: 1; }
+.invisible { display: none; opacity: 0; }
+
+.table { display: table; }
+.cell { display: table-cell; }
+
+.hcenter { text-align: center; }
+.vmiddle { vertical-align: middle; }
+
+.horizontal_center {
+                 left: 50%;
+            transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -fx-transform: translateX(-50%);
+}
+.vertical_middle {
+                  top: 50%;
+            transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -fx-transform: translateY(-50%);
+}
+.horizontal_center_vertical_middle {
+                 left: 50%;
+                  top: 50%;
+            transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -fx-transform: translate(-50%, -50%);
+}
+
+.transitable {
+            transition: all 500ms linear;
+        -ms-transition: all 500ms linear;
+         -o-transition: all 500ms linear;
+       -moz-transition: all 500ms linear;
+    -webkit-transition: all 500ms linear;
+        -fx-transition: all 500ms linear;
+}
+
+.bg_no_repeat { background-repeat: no-repeat; }
+.bg_repeat_x { background-repeat: repeat-x; }
+.bg_repeat_y { background-repeat: repeat-y; }
+.bg_repeat_xy { background-repeat: repeat; }
+
+.bg_left_top { background-position: left top; }
+.bg_center_top { background-position: center top; }
+.bg_right_top { background-position: right top; }
+
+.bg_left_center { background-position: left center; }
+.bg_center_center { background-position: center center; }
+.bg_right_center { background-position: right center; }
+
+.bg_left_bottom { background-position: left bottom; }
+.bg_center_bottom { background-position: center bottom; }
+.bg_right_bottom { background-position: right bottom; }

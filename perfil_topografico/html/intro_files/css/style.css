@@ -1,0 +1,337 @@
+html{
+  height: 768px;
+  overflow: hidden;
+}
+
+body {
+  outline: none !important;
+  transform-origin: top left;
+  -ms-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important; 
+  -ms-user-select: none !important;     
+  user-select: none !important; 
+  behavior: url(intro_files/css/PIE.htc);
+}
+
+#OED{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 1024px;
+  height: 768px;
+  padding: 0;
+  overflow: hidden;
+}
+
+#OUP-container{
+  position: relative;
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+}
+
+div#OUP-capa{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 1024px;
+  height: 768px;
+  background-color: #002147;
+  z-index: 9999;
+}
+
+img#OUP-logo-intro{
+  display: block;
+  opacity: 0;
+  margin: 0 auto;
+  margin-top: 351px; 
+}
+
+#OUP-intro{
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: #002147;
+  width: 1024px;
+  height: 768px;
+  line-height: 37px;
+  z-index: 9999;  
+  overflow: hidden;
+}
+
+#OUP-cabecalho{
+  padding-top: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#OUP-logo{
+  float: left;
+  padding: 0 40px 0 40px;
+  border-right: 2px solid #fff;
+}
+
+#OUP-titulo{
+  float: left;
+  width: 625px;
+  margin: 0 40px;
+  font-family: Arial;
+  font-size: 42px;
+  color: #FFffFF;
+  line-height: 70px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#OUP-foto{
+  float: left;
+  margin: 70px 0 0 50px;
+  width: 590px;
+}
+
+.OUP-txt-descr{
+  font-family: Arial;
+  font-size: 26px;
+  color: #FFffFF;
+}
+
+#OUP-descr{
+  float: right;
+  margin: 70px 15px 0 0;
+  width: 325px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+#OUP-descr-instr{
+  text-align: justify;
+}
+
+#OUP-container-init{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 310px;
+  height: 180px;
+  padding: 30px 0 0 30px;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  border-radius: 30px 0 0 0;
+  behavior: url(intro_files/css/PIE.htc);
+}
+
+.OUP-txt-btn{
+  cursor: pointer;
+  float: left;
+  font-family: Arial;
+  font-size: 30px;
+  line-height: 62px;
+  color: #FFffFF;
+  margin-left: 30px;
+}
+
+#OUP-btn-play{
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#OUP-btn-play img {
+  cursor: pointer;
+  float: left;
+}
+
+#OUP-btn-instr{
+  overflow: hidden;
+}
+
+#OUP-btn-instr img {
+  cursor: pointer;
+  float: left;
+}
+
+#OUP-container-instr{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 1024px;
+  height: 768px;
+  background-color: #002147;
+  z-index: 99999;
+}
+
+#OUP-instr{
+  position: relative;
+  width: 775px;
+  min-height: 165px;
+  margin: 0 auto;
+  margin-top: 280px;
+  padding: 25px;
+  border: 2px solid #fff;
+  border-radius: 22px;
+  background-color: #717ebd;
+  behavior: url(intro_files/css/PIE.htc);
+}
+
+#OUP-titulo-instr{
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#OUP-btn-fechar{
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+}
+
+#OUP-container-creditos{
+  display: none;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #904949;
+  border-radius: 15px;
+  background-color: #E7B513;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1018px;
+  height: 762px;
+  overflow: hidden;
+  z-index: 999999;
+  behavior: url(intro_files/css/PIE.htc);
+}
+
+#OUP-creditos{
+  width: 925px;
+  height: 630px;
+  margin: 0 auto;
+  margin-top: -30px;
+  border-radius: 5px;
+  behavior: url(intro_files/css/PIE.htc);
+}
+
+#OUP-textbox{
+  display: block;
+  width: 600px;
+  height: 610px;
+  margin: 0 auto;
+  padding: 80px 30px 0;
+  text-align: center;
+}
+
+#OUP-texto1, #OUP-texto2{
+  font-family: Arial, Helvetica;
+  font-size: 18px;
+  line-height: 27px;
+  color:#002147;
+  width: 50%;
+  float: left;
+}
+
+#OUP-texto i {
+  display: block;
+}
+
+#OUP-texto-titulo{
+	font-size: 34px;
+	color: #002147;
+	margin-left: 40%;
+  margin-top: 50px;
+	font-weight: bold;
+	font-family: Arial, Helvetica;
+}
+
+#OUP-voltar-creditos{
+  position: absolute;
+  width: 58px;
+  height: 50px;
+  top: 0;
+  right: -5px;
+  border: none;
+  background: url("../img/btn-fechar.png") no-repeat center top;
+  cursor: pointer;
+}
+
+#OUP-btn-instr-flut{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 983px;
+  cursor: pointer;
+}
+
+#OUP-box-fim{
+  position: absolute;
+  top: 190px;
+  left: 252px;
+  width: 515px;
+  height: 277px;
+  background: url('../img/box-fim.png') no-repeat top center;
+  text-align: center;
+  font-family: Arial;
+  z-index: 999;
+}
+
+#OUP-mensagem-final{
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  width: 430px;
+  min-height: 50px;
+}
+
+
+#OUP-btn-reiniciar{
+  float: left;
+  background: url('../img/btn-reiniciar.png') no-repeat top center;
+  width: 206px;
+  height: 60px;
+  cursor: pointer;
+  border: none;
+  margin-left: 160px;
+}
+
+
+#OUP-btn-creditos{
+  float: left;
+  background: url('../img/btn-creditos.png') no-repeat top center;
+  width: 112px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+  margin-left: 12px;
+  margin-top: 27px;
+}
+
+#OUP-texticulo-final{
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#OUP-shadow-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+#OUP-box-container{
+  position: relative;
+  width: 1024px;
+  height: 768px;
+  margin: 0 auto;
+  overflow: hidden;
+}

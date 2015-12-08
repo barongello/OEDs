@@ -1,0 +1,681 @@
+#gameStage {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #059a85 url(../img/stage_bg.png) no-repeat center center;
+}
+
+#gameStage > #gameScene1 {
+    width: 1024px;
+    height: 768px;
+    background: #059a85 url(../img/scene1_bg.png) no-repeat center center;
+}
+
+#gameStage > #gameScene1 > #coverTitle {
+    width: 954px;
+    height: 599px;
+    position: absolute;
+    background: transparent url(../img/scene1_cover.png) no-repeat center center;
+    left: 35px;
+    top: 0px;
+}
+
+#gameStage > #gameScene1 > #coverImage {
+    width: 265px;
+    height: 220px;
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    background: transparent url(../img/film.png) no-repeat center center;
+}
+
+#gameStage > #gameScene1 > #coverButton {
+    width: 234px;
+    height: 70px;
+    position: absolute;
+    left: 395px;
+    bottom: 125px;
+    background: transparent url(../img/btn_start_up.png) no-repeat center center;
+    color: #cb524b;
+    font-family: Dosis-Bold;
+    font-size: 48px;
+    line-height: 70px;
+    text-align: center;
+}
+
+#gameStage > #gameScene1 > #coverButton:hover {
+    background: transparent url(../img/btn_start_down.png) no-repeat center center;
+    color: #ffffff;
+}
+
+#gameStage > #gameScene2 {
+    width: 1024px;
+    height: 768px;
+    background: #059a85 url(../img/scene2_bg.png) no-repeat center center;
+    display: none;
+}
+
+#gameStage > #gameScene2 > #upperBox {
+    width: 680px;
+    height: 132px;
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    background: url(../img/scene2_box.png);
+}
+
+#gameStage > #gameScene2 > #upperBox > #upperBoxText {
+    width: 610px;
+    height: 85px;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    font-family: Dosis-Bold;
+    font-size: 22px;
+    color: #232221;
+    line-height: 26.4px;
+}
+
+#gameStage > #gameScene2 > #boyPhotographer {
+    width: 268px;
+    height: 649px;
+    position: absolute;
+    left: 20px;
+    top: 59px;
+    background: transparent url(../img/scene2_boy.png) no-repeat center center;
+}
+
+#gameStage > #gameScene2 > #redRectangle {
+    width: 605px;
+    height: 505px;
+    position: absolute;
+    right: 85px;
+    top: 131px;
+    background: transparent url(../img/scene2_rectangle.png) no-repeat center center;
+}
+
+#gameStage > #gameScene2 > #redRectangle > #explanationText {
+    width: 560px;
+    height: 455px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: Dosis-Bold;
+    font-size: 24px;
+    color: #ffffff;
+    padding: 30px 20px 20px 25px;
+    line-height: 32px;
+}
+
+#gameStage > #gameScene2 > #redRectangle > #startButton {
+    width: 234px;
+    height: 70px;
+    position: absolute;
+    left: 185px;
+    bottom: 40px;
+    background: transparent url(../img/btn_start_up.png) no-repeat center center;
+    color: #cb524b;
+    font-family: Dosis-Bold;
+    font-size: 48px;
+    line-height: 70px;
+    text-align: center;
+}
+
+#gameStage > #gameScene2 > #redRectangle > #startButton:hover {
+    background: transparent url(../img/btn_start_down.png) no-repeat center center;
+    color: #ffffff;
+}
+
+#gameStage > #gameScene2 > #redRectangle > #startImage {
+    width: 265px;
+    height: 220px;
+    position: absolute;
+    right: -20px;
+    bottom: -5px;
+    background: transparent url(../img/film.png) no-repeat center center;
+}
+
+#gameStage > #gameScene3 {
+    width: 1024px;
+    height: 768px;
+    display: none;
+}
+
+#gameStage > #gameScene3 > #questionHeader {
+    width: 1024px;
+    height: 167px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: transparent url(../img/scene3_header.png) no-repeat center center;
+}
+
+#gameStage > #gameScene3 > #questionHeader > #headerText {
+    width: 974px;
+    height: 117px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: Dosis-Bold;
+    font-size: 22px;
+    color: #232221;
+    padding: 25px 25px 25px 25px;
+    line-height: 26.4px;
+}
+
+#gameStage > #gameScene3 > #questionContent {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#gameStage > #gameScene3 > #questionContent > #alternativeBox {
+    width: 453px;
+    height: 126px;
+    position: absolute;
+    left: 285px;
+    top: 276px;
+    background: transparent url(../img/scene3_box.png) no-repeat center center;
+}
+
+#gameStage > #gameScene3 > #questionContent > #alternativeBox > #alternativeText {
+    width: 375px;
+    height: 76px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: Dosis-Bold;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 25px 20px 25px 20px;
+    line-height: 24px;
+}
+
+#gameStage > #gameScene3 > #questionContent > #alternativeBox > #confirmButton {
+    width: 131px;
+    height: 72px;
+    position: absolute;
+    left: 161px;
+    bottom: -33px;
+    background: transparent url(../img/btn_confirm_up.png) no-repeat center center;
+    color: #cb524b;
+    font-family: Dosis-Bold;
+    font-size: 20px;
+    line-height: 72px;
+    text-align: center;
+}
+
+#gameStage > #gameScene3 > #questionContent > #alternativeBox > #confirmButton:hover {
+    background-image: url(../img/btn_confirm_down.png);
+    color: #ffffff;
+}
+
+#gameStage > #gameScene3 > #questionContent > #questionImage {
+    width: 511px;
+    height: 407px;
+    position: absolute;
+    left: 256px;
+    top: 155px;
+    -webkit-transform: rotate(-3deg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#gameStage > #gameScene3 > #questionContent > #questionImage > #questionZoomIn {
+    width: 77px;
+    height: 78px;
+    position: absolute;
+    left: -38px;
+    top: -39px;
+    background-image: url(../img/btn_zoomin_up_v2.png);
+}
+
+#gameStage > #gameScene3 > #questionContent > #questionImage > #questionZoomIn:hover {
+    background-image: url(../img/btn_zoomin_down_v2.png);
+}
+
+#gameStage > #gameScene3 > #questionContent > input[type="radio"] {
+    display: none;
+}
+
+#gameStage > #gameScene3 > #questionContent > input[type="radio"] + label {
+    width: 403px;
+    height: 70px;
+    position: absolute;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#gameStage > #gameScene3 > #questionContent > .audioButton {
+    width: 77px;
+    height: 70px;
+    position: absolute;
+    background: transparent url(../img/btn_audio_up.png) no-repeat center center;
+}
+
+#gameStage > #gameScene3 > #questionContent > .audioButton:hover {
+    background-image: url(../img/btn_audio_down.png);
+}
+
+#gameStage > #gameScene3 > #questionContent > #radioAnswer0 + label {
+    left: 20px;
+    bottom: 110px;
+}
+
+#gameStage > #gameScene3 > #questionContent > #audioButton0 {
+    left: 423px;
+    bottom: 110px;
+}
+
+#gameStage > #gameScene3 > #questionContent > #radioAnswer1 + label {
+    right: 97px;
+    bottom: 110px;
+}
+
+#gameStage > #gameScene3 > #questionContent > #audioButton1 {
+    right: 20px;
+    bottom: 110px;
+}
+
+#gameStage > #gameScene3 > #questionContent > #radioAnswer2 + label {
+    left: 272px;
+    bottom: 20px;
+}
+
+#gameStage > #gameScene3 > #questionContent > #audioButton2 {
+    left: 675px;
+    bottom: 20px;
+}
+
+#gameStage > #gameScene3 > #questionContent > #radioAnswer0 + label > #answer0Text,
+#gameStage > #gameScene3 > #questionContent > #radioAnswer1 + label > #answer1Text,
+#gameStage > #gameScene3 > #questionContent > #radioAnswer2 + label > #answer2Text {
+    width: 383px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: Dosis-Bold;
+    font-size: 20px;
+    color: #232221;
+    padding: 10px 10px 10px 10px;
+}
+
+#gameStage > #gameScene3 > #questionContent > input[type="radio"].answer_color_0 + label {
+    background-image: url(../img/btn_color_0_up.png);
+}
+
+#gameStage > #gameScene3 > #questionContent > input[type="radio"].answer_color_0:checked + label {
+    background-image: url(../img/btn_color_0_down.png);
+}
+
+#gameStage > #gameScene3 > #questionContent > input[type="radio"].answer_color_1 + label {
+    background-image: url(../img/btn_color_1_up.png);
+}
+
+#gameStage > #gameScene3 > #questionContent > input[type="radio"].answer_color_1:checked + label {
+    background-image: url(../img/btn_color_1_down.png);
+}
+
+#gameStage > #gameScene3 > #questionContent > input[type="radio"].answer_color_2 + label {
+    background-image: url(../img/btn_color_2_up.png);
+}
+
+#gameStage > #gameScene3 > #questionContent > input[type="radio"].answer_color_2:checked + label {
+    background-image: url(../img/btn_color_2_down.png);
+}
+
+#gameStage > #gameScene3 > #previousButton {
+    width: 77px;
+    height: 78px;
+    position: absolute;
+    left: 10px;
+    top: 140px;
+    background: transparent url(../img/btn_previous_up.png) no-repeat center center;
+}
+
+#gameStage > #gameScene3 > #previousButton:hover {
+    background-image: url(../img/btn_previous_down.png);
+}
+
+#gameStage > #gameScene3 > #nextButton {
+    width: 77px;
+    height: 78px;
+    position: absolute;
+    right: 10px;
+    top: 140px;
+    background: transparent url(../img/btn_next_up.png) no-repeat center center;
+}
+
+#gameStage > #gameScene3 > #nextButton:hover {
+    background-image: url(../img/btn_next_down.png);
+}
+
+#gameStage > #gameScene3 > #zoomOverlay {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    background-position: 30px center;
+    display: none;
+}
+
+#gameStage > #gameScene3 > #zoomOverlay > #questionZoomOut {
+    width: 77px;
+    height: 78px;
+    position: absolute;
+    right: 30px;
+    top: 345px;
+    background-image: url(../img/btn_zoomout_up_v2.png);
+}
+
+#gameStage > #gameScene3 > #zoomOverlay > #questionZoomOut:hover {
+    background-image: url(../img/btn_zoomout_down_v2.png);
+}
+
+#gameStage > #gameScene3 > #feedbackOverlay {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: none;
+}
+
+#gameStage > #gameScene3 > #feedbackOverlay.positive {
+    background-image: url(../img/box_feedback_positive.png);
+}
+
+#gameStage > #gameScene3 > #feedbackOverlay.negative {
+    background-image: url(../img/box_feedback_negative.png);
+}
+
+#gameStage > #gameScene3 > #feedbackOverlay.positive {
+    background-image: url(../img/box_feedback_positive.png);
+}
+
+#gameStage > #gameScene3 > #feedbackOverlay > #feedbackText {
+    width: 304px;
+    height: 129px;
+    position: absolute;
+    left: 335px;
+    top: 445px;
+    font-family: Dosis-Bold;
+    font-size: 22px;
+    color: #232221;
+    padding: 20px 10px 10px 30px;
+    line-height: 26.4px;
+}
+
+#gameStage > #gameScene3 > #feedbackOverlay > #closeButton {
+    width: 72px;
+    height: 74px;
+    position: absolute;
+    right: 200px;
+    top: 110px;
+    background: transparent url(../img/btn_close_up.png) no-repeat center center;
+}
+
+#gameStage > #gameScene3 > #feedbackOverlay > #closeButton:hover {
+    background-image: url(../img/btn_close_down.png);
+}
+
+#gameStage > #gameScene4 {
+    width: 1024px;
+    height: 768px;
+    display: none;
+}
+
+#gameStage > #gameScene4 > #scene4Content {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#gameStage > #gameScene4 > #scene4Content > #summaryHeader {
+    width: 1024px;
+    height: 167px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: transparent url(../img/scene3_header.png) no-repeat center center;
+}
+
+#gameStage > #gameScene4 > #scene4Content > #summaryHeader > #summaryText {
+    width: 974px;
+    height: 117px;
+    position: absolute;
+    left: 0px;
+    top: -15px;
+    font-family: Dosis-Bold;
+    font-size: 21px;
+	line-height:125%;	
+    color: #232221;
+    padding: 25px 25px 25px 25px;
+}
+
+#gameStage > #gameScene4 > #scene4Content > #thumb0,
+#gameStage > #gameScene4 > #scene4Content > #thumb1,
+#gameStage > #gameScene4 > #scene4Content > #thumb2,
+#gameStage > #gameScene4 > #scene4Content > #thumb3,
+#gameStage > #gameScene4 > #scene4Content > #thumb4 {
+    width: 266px;
+    height: 216px;
+    position: absolute;
+}
+
+#gameStage > #gameScene4 > #scene4Content > #thumb0 {
+    left: 99px;
+    top: 230px;
+}
+
+#gameStage > #gameScene4 > #scene4Content > #thumb1 {
+    left: 379px;
+    top: 230px;
+}
+
+#gameStage > #gameScene4 > #scene4Content > #thumb2 {
+    left: 659px;
+    top: 230px;
+}
+
+#gameStage > #gameScene4 > #scene4Content > #thumb3 {
+    left: 239px;
+    top: 460px;
+}
+
+#gameStage > #gameScene4 > #scene4Content > #thumb4 {
+    left: 519px;
+    top: 460px;
+}
+
+#gameStage > #gameScene4 > #scene4Content > #thumb0 > #thumb0status,
+#gameStage > #gameScene4 > #scene4Content > #thumb1 > #thumb1status,
+#gameStage > #gameScene4 > #scene4Content > #thumb2 > #thumb2status,
+#gameStage > #gameScene4 > #scene4Content > #thumb3 > #thumb3status,
+#gameStage > #gameScene4 > #scene4Content > #thumb4 > #thumb4status {
+    width: 51px;
+    height: 53px;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#gameStage > #gameScene4 > #scene4Content > #thumb0.status_right > #thumb0status,
+#gameStage > #gameScene4 > #scene4Content > #thumb1.status_right > #thumb1status,
+#gameStage > #gameScene4 > #scene4Content > #thumb2.status_right > #thumb2status,
+#gameStage > #gameScene4 > #scene4Content > #thumb3.status_right > #thumb3status,
+#gameStage > #gameScene4 > #scene4Content > #thumb4.status_right > #thumb4status {
+    background-image: url(../img/status_right_up.png);
+}
+
+#gameStage > #gameScene4 > #scene4Content > #thumb0.status_right:hover > #thumb0status,
+#gameStage > #gameScene4 > #scene4Content > #thumb1.status_right:hover > #thumb1status,
+#gameStage > #gameScene4 > #scene4Content > #thumb2.status_right:hover > #thumb2status,
+#gameStage > #gameScene4 > #scene4Content > #thumb3.status_right:hover > #thumb3status,
+#gameStage > #gameScene4 > #scene4Content > #thumb4.status_right:hover > #thumb4status {
+    background-image: url(../img/status_right_down.png);
+}
+
+#gameStage > #gameScene4 > #scene4Content > #thumb0.status_wrong > #thumb0status,
+#gameStage > #gameScene4 > #scene4Content > #thumb1.status_wrong > #thumb1status,
+#gameStage > #gameScene4 > #scene4Content > #thumb2.status_wrong > #thumb2status,
+#gameStage > #gameScene4 > #scene4Content > #thumb3.status_wrong > #thumb3status,
+#gameStage > #gameScene4 > #scene4Content > #thumb4.status_wrong > #thumb4status {
+    background-image: url(../img/status_wrong_up.png);
+}
+
+#gameStage > #gameScene4 > #scene4Content > #thumb0.status_wrong:hover > #thumb0status,
+#gameStage > #gameScene4 > #scene4Content > #thumb1.status_wrong:hover > #thumb1status,
+#gameStage > #gameScene4 > #scene4Content > #thumb2.status_wrong:hover > #thumb2status,
+#gameStage > #gameScene4 > #scene4Content > #thumb3.status_wrong:hover > #thumb3status,
+#gameStage > #gameScene4 > #scene4Content > #thumb4.status_wrong:hover > #thumb4status {
+    background-image: url(../img/status_wrong_down.png);
+}
+
+#gameStage > #gameScene4 > #scene4Content > #backToGameButton {
+    width: 77px;
+    height: 78px;
+    position: absolute;
+    left: 10px;
+    top: 140px;
+    background: transparent url(../img/btn_previous_up.png) no-repeat center center;
+}
+
+#gameStage > #gameScene4 > #scene4Content > #backToGameButton:hover {
+    background-image: url(../img/btn_previous_down.png);
+}
+
+#gameStage > #gameScene4 > #summaryFeedback {
+    width: 1024px;
+    height: 768px;
+    display: none;
+}
+
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackHeader {
+    width: 1024px;
+    height: 167px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: transparent url(../img/scene3_header.png) no-repeat center center;
+}
+
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackHeader > #summaryFeedbackHeaderText {
+    width: 974px;
+    height: 117px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: Dosis-Bold;
+    font-size: 22px;
+    color: #232221;
+    padding: 25px 25px 25px 25px;
+}
+
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackImage {
+    width: 511px;
+    height: 407px;
+    position: absolute;
+    left: 256px;
+    top: 155px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackCorrectAnswer {
+    width: 512px;
+    height: 169px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: transparent url(../img/img_answer_correct.png) no-repeat center center;
+}
+
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackSelectedAnswer {
+    width: 512px;
+    height: 169px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackCorrectAnswer > #correctAnswerTitle,
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackSelectedAnswer > #selectedAnswerTitle {
+    width: 482px;
+    height: 42px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-family: Dosis-Bold;
+    font-size: 42px;
+    color: #ffffff;
+}
+
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackSelectedAnswer.status_right {
+    background-image: url(../img/img_answer_correct.png);
+}
+
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackSelectedAnswer.status_wrong {
+    background-image: url(../img/img_answer_wrong.png);
+}
+
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackCorrectAnswer > #correctAnswerText,
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackSelectedAnswer > #selectedAnswerText {
+    width: 383px;
+    height: 50px;
+    position: absolute;
+    left: 16px;
+    top: 74px;
+    font-family: Dosis-Bold;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px 10px 10px 10px;
+}
+
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackCorrectAnswer > #correctAnswerAudioButton,
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackSelectedAnswer > #selectedAnswerAudioButton {
+    width: 77px;
+    height: 70px;
+    position: absolute;
+    right: 16px;
+    top: 74px;
+    background: transparent url(../img/btn_audio_up.png) no-repeat center center;
+}
+
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackCorrectAnswer > #correctAnswerAudioButton:hover,
+#gameStage > #gameScene4 > #summaryFeedback > #summaryFeedbackSelectedAnswer > #selectedAnswerAudioButton:hover {
+    background-image: url(../img/btn_audio_down.png);
+}
+
+#gameStage > #gameScene4 > #summaryFeedback > #backToSummaryButton {
+    width: 77px;
+    height: 78px;
+    position: absolute;
+    left: 10px;
+    top: 140px;
+    background: transparent url(../img/btn_previous_up.png) no-repeat center center;
+}
+
+#gameStage > #gameScene4 > #summaryFeedback > #backToSummaryButton:hover {
+    background-image: url(../img/btn_previous_down.png);
+}

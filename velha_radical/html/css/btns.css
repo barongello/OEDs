@@ -1,0 +1,88 @@
+.btn_fechar { width: 62px; height: 62px; background-image: url('../img/btn_fechar_up.png'); }
+.btn_fechar:hover { background-image: url('../img/btn_fechar_down.png'); }
+
+.btn_help_up { width: 62px; height: 62px; background-image: url('../img/btn_help_up.png'); }
+.btn_help_down { width: 62px; height: 62px; background-image: url('../img/btn_help_down.png'); }
+
+.btn_home { width: 62px; height: 62px; background-image: url('../img/btn_home_up.png'); }
+.btn_home:hover { background-image: url('../img/btn_home_down.png'); }
+
+.btn_iniciar { width: 222px; height: 70px; background-image: url('../img/btn_iniciar_up.png'); }
+.btn_iniciar:hover { background-image: url('../img/btn_iniciar_down.png'); }
+
+.btn_jogador1 { width: 229px; height: 170px; background-image: url('../img/btn_jogador1_up.png'); }
+.btn_jogador1:hover { background-image: url('../img/btn_jogador1_down.png'); }
+
+.btn_jogador2 { width: 229px; height: 170px; background-image: url('../img/btn_jogador2_up.png'); }
+.btn_jogador2:hover { background-image: url('../img/btn_jogador2_down.png'); }
+
+.btn_n0 { width: 140px; height: 47px; background-image: url('../img/btn_n0_up.png'); }
+.btn_n0:hover { background-image: url('../img/btn_nall_down.png'); }
+
+.btn_n1 { width: 70px; height: 70px; background-image: url('../img/btn_n1_up.png'); }
+.btn_n1:hover { background-image: url('../img/btn_nall_down.png'); }
+
+.btn_n2 { width: 70px; height: 70px; background-image: url('../img/btn_n2_up.png'); }
+.btn_n2:hover { background-image: url('../img/btn_nall_down.png'); }
+
+.btn_n3 { width: 70px; height: 70px; background-image: url('../img/btn_n3_up.png'); }
+.btn_n3:hover { background-image: url('../img/btn_nall_down.png'); }
+
+.btn_n4 { width: 70px; height: 70px; background-image: url('../img/btn_n4_up.png'); }
+.btn_n4:hover { background-image: url('../img/btn_nall_down.png'); }
+
+.btn_n5 { width: 70px; height: 70px; background-image: url('../img/btn_n5_up.png'); }
+.btn_n5:hover { background-image: url('../img/btn_nall_down.png'); }
+
+.btn_n6 { width: 70px; height: 70px; background-image: url('../img/btn_n6_up.png'); }
+.btn_n6:hover { background-image: url('../img/btn_nall_down.png'); }
+
+.btn_n7 { width: 70px; height: 70px; background-image: url('../img/btn_n7_up.png'); }
+.btn_n7:hover { background-image: url('../img/btn_nall_down.png'); }
+
+.btn_n8 { width: 70px; height: 70px; background-image: url('../img/btn_n8_up.png'); }
+.btn_n8:hover { background-image: url('../img/btn_nall_down.png'); }
+
+.btn_n9 { width: 70px; height: 70px; background-image: url('../img/btn_n9_up.png'); }
+.btn_n9:hover { background-image: url('../img/btn_nall_down.png'); }
+
+.btn_ncubo { width: 140px; height: 47px; background-image: url('../img/btn_ncubo_up.png'); }
+.btn_ncubo:hover { background-image: url('../img/btn_ncubo_down.png'); }
+
+.btn_nfracao { width: 140px; height: 47px; background-image: url('../img/btn_nfracao_up.png'); }
+.btn_nfracao:hover { background-image: url('../img/btn_nfracao_down.png'); }
+
+.btn_nlimpar { width: 280px; height: 47px; background-image: url('../img/btn_nlimpar_up.png'); }
+.btn_nlimpar:hover { background-image: url('../img/btn_nlimpar_down.png'); }
+
+.btn_nmais { width: 70px; height: 70px; background-image: url('../img/btn_nmais_up.png'); }
+.btn_nmais:hover { background-image: url('../img/btn_nall_down.png'); }
+
+.btn_nmenos { width: 70px; height: 70px; background-image: url('../img/btn_nmenos_up.png'); }
+.btn_nmenos:hover { background-image: url('../img/btn_nall_down.png'); }
+
+.btn_npotencia { width: 140px; height: 47px; background-image: url('../img/btn_npotencia_up.png'); }
+.btn_npotencia:hover { background-image: url('../img/btn_npotencia_down.png'); }
+
+.btn_nquadrado { width: 140px; height: 47px; background-image: url('../img/btn_nquadrado_up.png'); }
+.btn_nquadrado:hover { background-image: url('../img/btn_nquadrado_down.png'); }
+
+.btn_nradical { width: 140px; height: 47px; background-image: url('../img/btn_nradical_up.png'); }
+.btn_nradical:hover { background-image: url('../img/btn_nradical_down.png'); }
+
+.btn_nvirgula { width: 70px; height: 70px; background-image: url('../img/btn_nvirgula_up.png'); }
+.btn_nvirgula:hover { background-image: url('../img/btn_nall_down.png'); }
+
+.btn_ok { width: 62px; height: 62px; background-image: url('../img/btn_ok_up.png'); }
+.btn_ok:hover { background-image: url('../img/btn_ok_down.png'); }
+.btn_ok.disabled { background-image: url('../img/btn_ok_down.png'); }
+.btn_ok.disabled:hover { background-image: url('../img/btn_ok_down.png'); }
+
+.btn_potenciacao { width: 229px; height: 170px; background-image: url('../img/btn_potenciacao_up.png'); }
+.btn_potenciacao:hover { background-image: url('../img/btn_potenciacao_down.png'); }
+
+.btn_potenradic { width: 229px; height: 170px; background-image: url('../img/btn_potenradic_up.png'); }
+.btn_potenradic:hover { background-image: url('../img/btn_potenradic_down.png'); }
+
+.btn_radiciacao { width: 229px; height: 170px; background-image: url('../img/btn_radiciacao_up.png'); }
+.btn_radiciacao:hover { background-image: url('../img/btn_radiciacao_down.png'); }

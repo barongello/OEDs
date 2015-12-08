@@ -1,0 +1,26 @@
+.ico.small { width: 91px; height: 129px; }
+.ico.big { width: 169px; height: 294px; }
+
+.ico_cingapura.small { background-image: url('../img/ico_cingapura_small.png'); }
+.ico_cingapura.big { background-image: url('../img/ico_cingapura_big.png'); }
+
+.ico_coreia.small { background-image: url('../img/ico_coreia_small.png'); }
+.ico_coreia.big { background-image: url('../img/ico_coreia_big.png'); }
+
+.ico_filipinas.small { background-image: url('../img/ico_filipinas_small.png'); }
+.ico_filipinas.big { background-image: url('../img/ico_filipinas_big.png'); }
+
+.ico_indonesia.small { background-image: url('../img/ico_indonesia_small.png'); }
+.ico_indonesia.big { background-image: url('../img/ico_indonesia_big.png'); }
+
+.ico_malasia.small { background-image: url('../img/ico_malasia_small.png'); }
+.ico_malasia.big { background-image: url('../img/ico_malasia_big.png'); }
+
+.ico_taihong.small { background-image: url('../img/ico_taihong_small.png'); }
+.ico_taihong.big { background-image: url('../img/ico_taihong_big.png'); }
+
+.ico_tailandia.small { background-image: url('../img/ico_tailandia_small.png'); }
+.ico_tailandia.big { background-image: url('../img/ico_tailandia_big.png'); }
+
+.ico_vietna.small { background-image: url('../img/ico_vietna_small.png'); }
+.ico_vietna.big { background-image: url('../img/ico_vietna_big.png'); }

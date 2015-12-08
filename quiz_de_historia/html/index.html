@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Quiz de Hist&oacute;ria</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.2.custom.min.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
+        <script type="text/javascript">
+            GAME.customMultiUseButtonHandle = function (event, button) {
+                if ($(button).hasClass('startButton')) {
+                    this.canInteract = false;
+                    $(button).removeClass('startButton').addClass('showPicture');
+                    
+                    this.startGame();
+                }
+                else if ($(button).hasClass('showPicture')) {
+                    if ($('#gameSeal').css('opacity') == 1)
+                        this.hideContainer(function () {
+                            GAME.setMultiUseButtonHTML(GAME.DATA.runningButtonText);
+                        });
+                    else if ($('#gameSeal').css('opacity') == 0)
+                        this.showContainer(function () {
+                            GAME.setMultiUseButtonHTML(GAME.DATA.runningClickedButtonText);
+                        });
+                }
+                else if ($(button).hasClass('restartGame')) {
+                    $(button).removeClass('restartGame').addClass('startButton');
+                    GAME.resetGame();
+                    GAME.canInteract = true;
+                }
+            };
+        </script>
+    </head>
+
+    <body>
+        <div id="gameContent">
+            <div id="gameStage">
+                <div id="gameBackground"></div>
+                <div id="gameFrame"></div>
+                <div id="gameQuestionTimer">
+                    <div class="minute"></div>
+                    <div class="hour"></div>
+                </div>
+                <div id="gameScore">
+                    <div>
+                        Acertos: <span class="right">0</span><br />
+                        Erros: <span class="wrong">0</span>
+                    </div>
+                </div>
+                <div id="gameAnnounce">
+                    <div>Quiz de Hist&oacute;ria</div>
+                </div>
+                <div id="gameMultiUseButton">
+                    <div>
+                        Iniciar
+                    </div>
+                </div>
+                <div id="gameSeal">
+                    <div class="container">
+                        <div>Instru&ccedil;&otilde;es</div>
+                    </div>
+                </div>
+                <div id="gameOptions">
+                    <div class="questionOption">Sim</div>
+                    <div class="questionOption">N&atilde;o</div>
+                </div>
+                <div id="gameNext">
+                    <div>
+                        Avan&ccedil;ar
+                    </div>
+                </div>
+                <div id="gameExplanation">
+                    <div class="explanationClose"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

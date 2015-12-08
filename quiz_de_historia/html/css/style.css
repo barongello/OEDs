@@ -1,0 +1,250 @@
+body {
+    background: #000000;
+}
+
+div#gameContent {
+    width: 1024px;
+    height: 768px;
+    margin: auto auto auto auto;
+    z-index: 0;
+}
+
+div#gameStage {
+    width: 1024px;
+    height: 768px;
+    position: relative;
+    margin: auto auto auto auto;
+    z-index: 1;
+    background: transparent url(../img/game_stage_background.png) no-repeat center center;
+}
+
+div#gameBackground {
+    width: 1024px;
+    height: 768px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+
+div#gameFrame {
+    width: 1024px;
+    height: 768px;
+    background: transparent url(../img/game_frame.png) no-repeat center center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+}
+
+div#gameQuestionTimer {
+    background: transparent url(../img/game_question_timer_background.png) no-repeat center center;
+    position: absolute;
+    left: 63px;
+    bottom: 12px;
+    width: 167px;
+    height: 166px;
+    z-index: 4;
+}
+
+div#gameQuestionTimer > div.minute {
+    width: 8px;
+    height: 92px;
+    position: absolute;
+    left: 78px;
+    top: 38px;
+    background: transparent url(../img/game_question_timer_minute.png) no-repeat center top;
+}
+
+div#gameQuestionTimer > div.hour {
+    width: 8px;
+    height: 52px;
+    position: absolute;
+    left: 78px;
+    top: 58px;
+    background: transparent url(../img/game_question_timer_hour.png) no-repeat center top;
+}
+
+div#gameScore {
+    background: transparent url(../img/game_score_background.png) no-repeat center center;
+    width: 198px;
+    height: 165px;
+    position: absolute;
+    right: 43px;
+    bottom: 13px;
+    z-index: 4;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 20pt;
+    display: table;
+}
+
+div#gameScore > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div#gameScore > div > span.right {
+    color: #008000;
+}
+
+div#gameScore > div > span.wrong {
+    color: #FF0000;
+}
+
+div#gameAnnounce {
+    width: 635px;
+    height: 159px;
+    position: absolute;
+    left: 26px;
+    top: 18px;
+    background: transparent url(../img/game_announce_background.png) no-repeat center center;
+    z-index: 4;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 20pt;
+    color: #FFFFFF;
+    display: table;
+}
+
+div#gameAnnounce > div {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div#gameMultiUseButton {
+    background: transparent url(../img/game_show_detail.png) no-repeat center center;
+    width: 197px;
+    height: 159px;
+    position: absolute;
+    right: 41px;
+    top: 17px;
+    z-index: 4;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 20pt;
+    display: table;
+    cursor: pointer;
+}
+
+div#gameMultiUseButton > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div#gameSeal {
+    position: absolute;
+    left: 450px;
+    top: 178px;
+    width: 550px;
+    height: 440px;
+    background: transparent url(../img/game_seal_background.png) no-repeat center center;
+    z-index: 4;
+}
+
+div#gameSeal > div.container {
+    position: absolute;
+    left: 64px;
+    top: 62px;
+    width: 418px;
+    height: 305px;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 20pt;
+    display: table;
+}
+
+div#gameSeal > div.container > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div#gameOptions {
+    width: 375px;
+    height: 114px;
+    position: absolute;
+    left: 320px;
+    bottom: 18px;
+    z-index: 4;
+    display: table;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 20pt;
+    opacity: 0;
+}
+
+div#gameOptions > div.questionOption {
+    background: transparent url(../img/game_question_option.png) no-repeat center top;
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+div#gameOptions > div.questionOption:hover {
+    color: #000000;
+}
+
+div#gameOptions > div.questionOption.right {
+    background-position: center center;
+}
+
+div#gameOptions > div.questionOption.wrong {
+    background-position: center bottom;
+}
+
+div#gameNext {
+    width: 160px;
+    height: 40px;
+    background-image: url(../img/game_button_next.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center top;
+    position: absolute;
+    left: 800px;
+    bottom: 190px;
+    display: table;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 20pt;
+    opacity: 0;
+    cursor: pointer;
+}
+
+div#gameNext:hover {
+    background-position: center bottom;
+    color: #000000;
+}
+
+div#gameNext > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div#gameExplanation {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+    opacity: 0;
+}
+
+div#gameExplanation > div.explanationClose {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    background: transparent url(../img/game_explanation_close.png) no-repeat center center;
+}

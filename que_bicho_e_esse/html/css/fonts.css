@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'TheOnlyException-Regular';
+    src: url('../font/theonlyexception-webfont.eot');
+    src: url('../font/theonlyexception-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/theonlyexception-webfont.woff') format('woff'),
+         url('../font/theonlyexception-webfont.ttf') format('truetype'),
+         url('../font/theonlyexception-webfont.svg#the_only_exceptionregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../font/opensans-regular-webfont.eot');
+    src: url('../font/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/opensans-regular-webfont.woff') format('woff'),
+         url('../font/opensans-regular-webfont.ttf') format('truetype'),
+         url('../font/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSans-Italic';
+    src: url('../font/opensans-italic-webfont.eot');
+    src: url('../font/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/opensans-italic-webfont.woff') format('woff'),
+         url('../font/opensans-italic-webfont.ttf') format('truetype'),
+         url('../font/opensans-italic-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSans-BoldItalic';
+    src: url('../font/opensans-bolditalic-webfont.eot');
+    src: url('../font/opensans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/opensans-bolditalic-webfont.woff') format('woff'),
+         url('../font/opensans-bolditalic-webfont.ttf') format('truetype'),
+         url('../font/opensans-bolditalic-webfont.svg#open_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../font/opensans-bold-webfont.eot');
+    src: url('../font/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/opensans-bold-webfont.woff') format('woff'),
+         url('../font/opensans-bold-webfont.ttf') format('truetype'),
+         url('../font/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,44 @@
+.default_size { width: 1024px; height: 768px; }
+.default_width { width: 1024px; }
+.default_height { height: 768px; }
+
+.border_box { box-sizing: border-box; }
+
+.abs { position: absolute; }
+
+.left_top { left: 0px; top: 0px; }
+
+.visible { display: block; opacity: 1; }
+.invisible { display: none; opacity: 0; }
+
+.table { display: table; }
+.row { display: table-row; }
+.cell { display: table-cell; }
+
+.hcenter { text-align: center; }
+.vmiddle { vertical-align: middle; }
+
+.transitable {
+            transition: all 500ms linear;
+        -ms-transition: all 500ms linear;
+         -o-transition: all 500ms linear;
+       -moz-transition: all 500ms linear;
+    -webkit-transition: all 500ms linear;
+}
+
+.bg_no_repeat { background-repeat: no-repeat; }
+.bg_repeat { background-repeat: repeat; }
+.bg_repeat_x { background-repeat: repeat-x; }
+.bg_repeat_y { background-repeat: repeat-y; }
+
+.bg_left_top { background-position: left top; }
+.bg_center_top { background-position: center top; }
+.bg_right_top { background-position: right top; }
+
+.bg_left_center { background-position: left center; }
+.bg_center_center { background-position: center center; }
+.bg_right_center { background-position: right center; }
+
+.bg_left_bottom { background-position: left bottom; }
+.bg_center_bottom { background-position: center bottom; }
+.bg_right_bottom { background-position: right bottom; }

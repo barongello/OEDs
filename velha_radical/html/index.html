@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/btns.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/expression.css" />
+        <link rel="stylesheet" href="css/questions.css" />
+
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/expression.js"></script>
+        <script type="text/javascript" src="js/audio.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <title></title>
+    </head>
+
+    <body>
+        <div id="stage" class="default_size abs left_top">
+            <div id="cover" class="default_size abs left_top bg_no_repeat bg_center_center transitable visible">
+                <div id="cimage" class="default_size abs left_top bg_no_repeat bg_center_center"></div>
+                <div id="btnCStart" class="abs btn btn_iniciar">Iniciar</div>
+            </div>
+
+            <div id="options" class="default_size abs left_top bg_no_repeat bg_center_center transitable invisible">
+                <div id="otitle" class="default_width abs bg_no_repeat bg_center_center"></div>
+                <div id="opage1" class="abs transitable visible">
+                    <div id="otitle1">Selecione o número de jogadores.</div>
+                    <div id="btnOPlayers1" players="1" class="abs btn btn_jogador1">
+                        <div class="oline1">1</div>
+                        <div class="oline2">Jogador</div>
+                    </div>
+                    <div id="btnOPlayers2" players="2" class="abs btn btn_jogador2">
+                        <div class="oline1">2</div>
+                        <div class="oline2">Jogadores</div>
+                    </div>
+                </div>
+                <div id="opage2" class="abs transitable invisible">
+                    <div id="otitle2">Vamos começar? Escolha uma das opções abaixo.</div>
+                    <div id="btnOPower" difficulty="1" class="abs btn btn_potenciacao">
+                        <div class="oline1"></div>
+                        <div class="oline2">Potenciação</div>
+                    </div>
+                    <div id="btnORadix" difficulty="2" class="abs btn btn_radiciacao">
+                        <div class="oline1"></div>
+                        <div class="oline2">Radiciação</div>
+                    </div>
+                    <div id="btnOPowerRadix" difficulty="3" class="abs btn btn_potenradic">
+                        <div class="oline1"></div>
+                        <div class="oline2">Potenciação<br />e Radiciação</div>
+                    </div>
+                </div>
+                <div id="otricot" class="default_width abs bg_no_repeat bg_center_center"></div>
+                <div id="btnOHome" class="abs btn btn_home"></div>
+            </div>
+
+            <div id="board" class="default_size abs left_top bg_no_repeat bg_center_center transitable invisible">
+                <div id="bband" class="abs default_height left_top bg_no_repeat bg_center_center">
+                    <div id="btitle" class="abs left_top bg_no_repeat bg_center_center"></div>
+                    <div id="bcalculator" class="abs">
+                        <div id="btnBC7" number="7" class="btn btn_n7">7</div>
+                        <div id="btnBC8" number="8" class="btn btn_n8">8</div>
+                        <div id="btnBC9" number="9" class="btn btn_n9">9</div>
+                        <div id="btnBCMinus" number="minus" class="btn btn_nmenos">-</div>
+                        <div id="btnBC4" number="4" class="btn btn_n4">4</div>
+                        <div id="btnBC5" number="5" class="btn btn_n5">5</div>
+                        <div id="btnBC6" number="6" class="btn btn_n6">6</div>
+                        <div id="btnBCPlus" number="plus" class="btn btn_nmais">+</div>
+                        <div id="btnBC1" number="1" class="btn btn_n1">1</div>
+                        <div id="btnBC2" number="2" class="btn btn_n2">2</div>
+                        <div id="btnBC3" number="3" class="btn btn_n3">3</div>
+                        <div id="btnBCComma" number="comma" class="btn btn_nvirgula">,</div>
+                        <div id="btnBCRadix" number="radix" class="btn btn_nradical">Radical</div>
+                        <div id="btnBC0" number="0" class="btn btn_n0">0</div>
+                        <div id="btnBCSquare" number="square" class="btn btn_nquadrado">Quadrado</div>
+                        <div id="btnBCCube" number="cube" class="btn btn_ncubo">Cubo</div>
+                        <div id="btnBCFraction" number="fraction" class="btn btn_nfracao">Fração</div>
+                        <div id="btnBCPower" number="power" class="btn btn_npotencia">Potência</div>
+                        <div id="btnBCClear" number="clear" class="btn btn_nlimpar">Limpar</div>
+                    </div>
+                    <div id="btnBHome" class="abs btn btn_home"></div>
+                    <div id="btnBHelp" class="abs btn btn_help_up"></div>
+                </div>
+
+                <div id="bturn" class="abs"><span>1</span><span>ª RODADA</span></div>
+
+                <div id="bplayer" class="abs player_1">
+                    <div>Jogador&nbsp;</div>
+                </div>
+
+                <div id="bgrid" class="abs bg_no_repeat bg_center_center">
+                    <div id="bplace0" place="0" player="" class="abs bg_no_repeat bg_center_center transitable place line_0 column_0 diagonal_0">
+                        <div id="bquestion0" category="power" question="" class="question"></div>
+
+                        <div id="bexpression0" class="expression box">
+                            <div class="expression wrapper positive">
+                                <div class="expression signal">-</div>
+                                <div class="expression container normal">
+                                    <div class="expression bracket left"></div>
+                                    <div class="expression numbers">
+                                        <div class="expression numerator">&nbsp;&nbsp;&nbsp;</div>
+                                        <div class="expression denominator">&nbsp;&nbsp;&nbsp;</div>
+                                    </div>
+                                    <div class="expression bracket right"></div>
+                                    <div class="expression exponent">&nbsp;&nbsp;&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="btnBGPOK0" class="abs btn btn_ok disabled"></div>
+                    </div>
+
+                    <div id="bplace1" place="1" player="" class="abs bg_no_repeat bg_center_center transitable place line_0 column_1">
+                        <div id="bquestion1" category="power" question="" class="question"></div>
+
+                        <div id="bexpression1" class="expression box">
+                            <div class="expression wrapper positive">
+                                <div class="expression signal">-</div>
+                                <div class="expression container normal">
+                                    <div class="expression bracket left"></div>
+                                    <div class="expression numbers">
+                                        <div class="expression numerator">&nbsp;&nbsp;&nbsp;</div>
+                                        <div class="expression denominator">&nbsp;&nbsp;&nbsp;</div>
+                                    </div>
+                                    <div class="expression bracket right"></div>
+                                    <div class="expression exponent">&nbsp;&nbsp;&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="btnBGPOK1" class="abs btn btn_ok disabled"></div>
+                    </div>
+
+                    <div id="bplace2" place="2" player="" class="abs bg_no_repeat bg_center_center transitable place line_0 column_2 diagonal_1">
+                        <div id="bquestion2" category="power" question="" class="question"></div>
+
+                        <div id="bexpression2" class="expression box">
+                            <div class="expression wrapper positive">
+                                <div class="expression signal">-</div>
+                                <div class="expression container normal">
+                                    <div class="expression bracket left"></div>
+                                    <div class="expression numbers">
+                                        <div class="expression numerator">&nbsp;&nbsp;&nbsp;</div>
+                                        <div class="expression denominator">&nbsp;&nbsp;&nbsp;</div>
+                                    </div>
+                                    <div class="expression bracket right"></div>
+                                    <div class="expression exponent">&nbsp;&nbsp;&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="btnBGPOK2" class="abs btn btn_ok disabled"></div>
+                    </div>
+
+                    <div id="bplace3" place="3" player="" class="abs bg_no_repeat bg_center_center transitable place line_1 column_0">
+                        <div id="bquestion3" category="power" question="" class="question"></div>
+
+                        <div id="bexpression3" class="expression box">
+                            <div class="expression wrapper positive">
+                                <div class="expression signal">-</div>
+                                <div class="expression container normal">
+                                    <div class="expression bracket left"></div>
+                                    <div class="expression numbers">
+                                        <div class="expression numerator">&nbsp;&nbsp;&nbsp;</div>
+                                        <div class="expression denominator">&nbsp;&nbsp;&nbsp;</div>
+                                    </div>
+                                    <div class="expression bracket right"></div>
+                                    <div class="expression exponent">&nbsp;&nbsp;&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="btnBGPOK3" class="abs btn btn_ok disabled"></div>
+                    </div>
+
+                    <div id="bplace4" place="4" player="" class="abs bg_no_repeat bg_center_center transitable place line_1 column_1 diagonal_0 diagonal_1">
+                        <div id="bquestion4" category="power" question="" class="question"></div>
+
+                        <div id="bexpression4" class="expression box">
+                            <div class="expression wrapper positive">
+                                <div class="expression signal">-</div>
+                                <div class="expression container normal">
+                                    <div class="expression bracket left"></div>
+                                    <div class="expression numbers">
+                                        <div class="expression numerator">&nbsp;&nbsp;&nbsp;</div>
+                                        <div class="expression denominator">&nbsp;&nbsp;&nbsp;</div>
+                                    </div>
+                                    <div class="expression bracket right"></div>
+                                    <div class="expression exponent">&nbsp;&nbsp;&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="btnBGPOK4" class="abs btn btn_ok disabled"></div>
+                    </div>
+
+                    <div id="bplace5" place="5" player="" class="abs bg_no_repeat bg_center_center transitable place line_1 column_2">
+                        <div id="bquestion5" category="power" question="" class="question"></div>
+
+                        <div id="bexpression5" class="expression box">
+                            <div class="expression wrapper positive">
+                                <div class="expression signal">-</div>
+                                <div class="expression container normal">
+                                    <div class="expression bracket left"></div>
+                                    <div class="expression numbers">
+                                        <div class="expression numerator">&nbsp;&nbsp;&nbsp;</div>
+                                        <div class="expression denominator">&nbsp;&nbsp;&nbsp;</div>
+                                    </div>
+                                    <div class="expression bracket right"></div>
+                                    <div class="expression exponent">&nbsp;&nbsp;&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="btnBGPOK5" class="abs btn btn_ok disabled"></div>
+                    </div>
+
+                    <div id="bplace6" place="6" player="" class="abs bg_no_repeat bg_center_center transitable place line_2 column_0 diagonal_1">
+                        <div id="bquestion6" category="power" question="" class="question"></div>
+
+                        <div id="bexpression6" class="expression box">
+                            <div class="expression wrapper positive">
+                                <div class="expression signal">-</div>
+                                <div class="expression container normal">
+                                    <div class="expression bracket left"></div>
+                                    <div class="expression numbers">
+                                        <div class="expression numerator">&nbsp;&nbsp;&nbsp;</div>
+                                        <div class="expression denominator">&nbsp;&nbsp;&nbsp;</div>
+                                    </div>
+                                    <div class="expression bracket right"></div>
+                                    <div class="expression exponent">&nbsp;&nbsp;&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="btnBGPOK6" class="abs btn btn_ok disabled"></div>
+                    </div>
+
+                    <div id="bplace7" place="7" player="" class="abs bg_no_repeat bg_center_center transitable place line_2 column_1">
+                        <div id="bquestion7" category="power" question="" class="question"></div>
+
+                        <div id="bexpression7" class="expression box">
+                            <div class="expression wrapper positive">
+                                <div class="expression signal">-</div>
+                                <div class="expression container normal">
+                                    <div class="expression bracket left"></div>
+                                    <div class="expression numbers">
+                                        <div class="expression numerator">&nbsp;&nbsp;&nbsp;</div>
+                                        <div class="expression denominator">&nbsp;&nbsp;&nbsp;</div>
+                                    </div>
+                                    <div class="expression bracket right"></div>
+                                    <div class="expression exponent">&nbsp;&nbsp;&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="btnBGPOK7" class="abs btn btn_ok disabled"></div>
+                    </div>
+
+                    <div id="bplace8" place="8" player="" class="abs bg_no_repeat bg_center_center transitable place line_2 column_2 diagonal_0">
+                        <div id="bquestion8" category="power" question="" class="question"></div>
+
+                        <div id="bexpression8" class="expression box">
+                            <div class="expression wrapper positive">
+                                <div class="expression signal">-</div>
+                                <div class="expression container normal">
+                                    <div class="expression bracket left"></div>
+                                    <div class="expression numbers">
+                                        <div class="expression numerator">&nbsp;&nbsp;&nbsp;</div>
+                                        <div class="expression denominator">&nbsp;&nbsp;&nbsp;</div>
+                                    </div>
+                                    <div class="expression bracket right"></div>
+                                    <div class="expression exponent">&nbsp;&nbsp;&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="btnBGPOK8" class="abs btn btn_ok disabled"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="help" class="default_size abs left_top bg_no_repeat bg_center_center transitable invisible">
+                <div id="hbox" class="abs bg_no_repeat bg_center_center">
+                    Escolha a casa que deseja e resolva a
+                    operação corretamente utilizando o
+                    teclado virtual. Para as operações de
+                    multiplicação e divisão, responda na
+                    forma de uma só potência.
+                </div>
+                <div id="btnHClose" class="abs btn btn_help_down"></div>
+            </div>
+
+            <div id="error" class="default_size abs left_top bg_no_repeat transitable invisible">
+                <div id="etext" class="abs">
+                    Ops! Resposta errada.<br />
+                    <br />
+                    O correto é&nbsp;
+
+                    <div id="eexpression" class="expression box">
+                        <div class="expression wrapper positive">
+                            <div class="expression signal">-</div>
+                            <div class="expression container normal">
+                                <div class="expression bracket left"></div>
+                                <div class="expression numbers">
+                                    <div class="expression numerator">&nbsp;&nbsp;&nbsp;</div>
+                                    <div class="expression denominator">&nbsp;&nbsp;&nbsp;</div>
+                                </div>
+                                <div class="expression bracket right"></div>
+                                <div class="expression exponent">&nbsp;&nbsp;&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="btnEClose" class="abs btn btn_fechar"></div>
+            </div>
+
+            <div id="win" class="default_size abs left_top bg_no_repeat transitable invisible">
+                <div id="wtext" class="abs">
+                    Parabéns! O jogador <span>1</span> venceu!
+                </div>
+
+                <div id="btnWClose" class="abs btn btn_fechar"></div>
+            </div>
+
+            <div id="draw" class="default_size abs left_top bg_no_repeat transitable invisible">
+                <div id="dtext" class="abs">
+                    Deu velha! Ninguém ganhou essa<br />
+                    rodada!
+                </div>
+
+                <div id="btnDClose" class="abs btn btn_fechar"></div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="capa.js"></script>
+    </body>
+</html>

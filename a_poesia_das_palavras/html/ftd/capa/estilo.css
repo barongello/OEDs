@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('fonts/opensans-bold.eot');
+  src: url('fonts/opensans-bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/opensans-bold.woff') format('woff'),
+       url('fonts/opensans-bold.ttf') format('truetype'),
+       url('fonts/opensans-bold.svg#open_sansbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-regular-webfont.woff') format('woff'),
+         url('opensans-regular-webfont.ttf') format('truetype'),
+         url('fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html {
+  -moz-user-select: none !important;    
+  -ms-transform-origin: top left;
+  -ms-user-select: none !important;      
+  -webkit-transform-origin: top left;
+  -webkit-user-select: none !important;  
+  outline: none !important;
+  transform-origin: top left;
+  user-select: none !important;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+#_FTD_load {
+  background: #FFF url(load.gif) center no-repeat;
+  height: 768px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 1024px;
+  z-index: 98;
+}
+#_FTD_capa {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1024px;
+  z-index: 99;
+}
+#_FTD_capa div {
+  color: #fff;
+  height: 43px;
+  margin: 0 auto;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 43px;
+}
+#_FTD_capa div ul {
+  background:  url(bg.png);
+  height: 768px;
+  display: none;
+  position: absolute;
+  right: -4px;
+  top: -20px;
+  width: 310px;
+}
+#_FTD_capa div ul.fechada {
+  display: none;
+}
+#_FTD_capa div ul.aberta {
+  display: block;
+}
+#_FTD_capa div ul li {
+  border-bottom: 1px solid #474747;
+  font-family: open_sansbold;
+  font-size: 16px;
+  list-style: none;
+  margin-left: -40px;
+  opacity: 1;
+  padding: 20px;
+  text-transform: uppercase;
+  width: 310px;
+}  
+#_FTD_capa div ul li .icon {
+  background: url(sprite.png) 0 0 no-repeat;
+  display: block;
+  float: left;
+  height: 24px;
+  margin-right: 10px;
+  width: 24px;
+}
+#_FTD_capa div #_FTD_voltar.botao {
+  background: url(sprite.png) -2px -27px no-repeat;
+  height: 44px;
+  position: absolute;
+  text-align: right;
+  width: 44px;
+  z-index: 99;
+}
+#_FTD_capa div #_FTD_voltar.close {
+  background: url(sprite.png) -53px -27px no-repeat;
+  height: 44px;
+  position: absolute;
+  text-align: right;
+  width: 44px;
+  z-index: 99;
+}
+#_FTD_capa div ul li#_FTD_recarregar {
+  border-top: 1px solid #474747;
+  margin-top: 56px;
+}
+#_FTD_capa div ul li#_FTD_recarregar .icon {
+  background-position: -69px 0;
+}  
+#_FTD_capa div ul li#_FTD_fechar .icon {
+  background-position: -17px 0;
+}  
+#_FTD_capa div ul li#_FTD_creditos .icon {
+  background-position: -40px 0;
+}  
+#_FTD_capa div ul li#_FTD_ajuda .icon {
+  background-position: 0 0;
+  margin-right: 15px;
+  width: 20px;
+}  
+
+#_FTD_capa div ul li#_FTD_ajuda.active {
+  height: 470px;
+  position: relative;
+}
+
+#_FTD_capa div ul li#_FTD_ajuda.active dl {
+  font-family: open_sansregular;
+  height: 455px;
+  left: 0;
+  margin: 0;
+  overflow: auto;
+  padding-right: 20px;
+  position: absolute;
+  text-transform: none;
+  top: 50px;
+  width: 314px;
+}
+#_FTD_capa div ul li#_FTD_creditos.active {
+  height: 470px;
+  position: relative;
+}
+
+#_FTD_capa div ul li#_FTD_creditos.active dl {
+  font-family: open_sansregular;
+  height: 455px;
+  left: 0;
+  margin: 0;
+  overflow: auto;
+  padding-right: 20px;
+  position: absolute;
+  text-transform: none;
+  top: 50px;
+  width: 314px;
+}

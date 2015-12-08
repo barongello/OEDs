@@ -1,0 +1,326 @@
+/* ##### CSS Principal ##### */
+
+#gameStage {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: transparent url(../img/background.png);
+}
+
+#title {
+    width: 716px;
+    height: 80px;
+    position: absolute;
+    left: 154px;
+    top: 227px;
+    background: transparent url(../img/title.png);
+    display: none;
+    opacity: 0;
+}
+
+#instructions {
+    width: 604px;
+    height: 107px;
+    position: absolute;
+    left: 210px;
+    top: 290px;
+    background: transparent url(../img/instructions.png);
+    display: none;
+    opacity: 0;
+}
+
+#ruler {
+    width: 125px;
+    height: 768px;
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    background: transparent url(../img/ruler.png);
+    display: none;
+}
+
+.height {
+    height: 56px;
+    position: absolute;
+    left: 157px;
+    display: none;
+}
+
+.height_5 {
+    width: 178px;
+    top: 7px;
+    background: transparent url(../img/height_5.png);
+}
+
+.height_4 {
+    width: 354px;
+    top: 71px;
+    background: transparent url(../img/height_4.png);
+}
+
+.height_3 {
+    width: 466px;
+    top: 165px;
+    background: transparent url(../img/height_3.png);
+}
+
+.height_2 {
+    width: 648px;
+    top: 201px;
+    background: transparent url(../img/height_2.png);
+}
+
+.height_1 {
+    width: 779px;
+    top: 272px;
+    background: transparent url(../img/height_1.png);
+}
+
+.height_0 {
+    width: 860px;
+    top: 348px;
+}
+
+.height_0.enabled {
+    background: transparent url(../img/height_0_enabled.png);
+}
+
+.height_0.disabled {
+    background: transparent url(../img/height_0_disabled.png);
+}
+
+.height_-1 {
+    width: 697px;
+    top: 350px;
+    background: transparent url(../img/height_-1.png);
+}
+
+.height_-2 {
+    width: 387px;
+    top: 352px;
+    background: transparent url(../img/height_-2.png);
+}
+
+.height_-3 {
+    width: 204px;
+    top: 363px;
+    background: transparent url(../img/height_-3.png);
+}
+
+.height_-4 {
+    width: 778px;
+    top: 474px;
+    background: transparent url(../img/height_-4.png);
+}
+
+.height_-5 {
+    width: 604px;
+    top: 579px;
+    background: transparent url(../img/height_-5.png);
+}
+
+.height_-6 {
+    width: 432px;
+    top: 711px;
+    background: transparent url(../img/height_-6.png);
+}
+
+.height > .button {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.height_0.disabled > .button {
+    display: none;
+}
+
+.meter {
+    width: 10px;
+    position: absolute;
+    display: none;
+}
+
+#meter_2 {
+    background-color: #ffff01;
+    left: 220px;
+}
+
+#result {
+    position: absolute;
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight: bold;
+    display: none;
+    text-shadow: 0 0 10px #eeeeee, 0 -5px 10px #eeeeee,
+                0 5px 10px #eeeeee, -10px 0 20px #eeeeee,
+                10px 0 20px #eeeeee;
+}
+
+#back {
+    width: 318px;
+    height: 82px;
+    position: absolute;
+    top: 8px;
+    right: -70px;
+    background-color: transparent;
+    background-image: url(../img/back.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: none;
+}
+
+#back:hover {
+    background-position: -318px 0px;
+}
+
+#popup {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#popup > .button {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    background-color: transparent;
+    background-image: url(../img/close.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    cursor: pointer;
+}
+
+#popup > .button:hover {
+    background-position: -24px 0px;
+}
+
+.popup_5 {
+    background-image: url(../img/popup_5.png);
+    background-position: 273px 53px;
+}
+
+.popup_5 > .button {
+    left: 600px;
+    top: 53px;
+}
+
+.popup_4 {
+    background-image: url(../img/popup_4.png);
+    background-position: 449px 117px;
+}
+
+.popup_4 > .button {
+    left: 780px;
+    top: 120px;
+}
+
+.popup_3 {
+    background-image: url(../img/popup_3.png);
+    background-position: 561px 210px;
+}
+
+.popup_3 > .button {
+    left: 890px;
+    top: 210px;
+}
+
+.popup_2 {
+    background-image: url(../img/popup_2.png);
+    background-position: 398px 246px;
+}
+
+.popup_2 > .button {
+    left: 400px;
+    top: 245px;
+}
+
+.popup_1 {
+    background-image: url(../img/popup_1.png);
+    background-position: 528px 318px;
+}
+
+.popup_1 > .button {
+    left: 540px;
+    top: 320px;
+}
+
+.popup_0 {
+    background-image: url(../img/popup_0.png);
+    background-position: 610px -3px;
+}
+
+.popup_0 > .button {
+    left: 610px;
+    top: 8px;
+}
+
+.popup_-1 {
+    background-image: url(../img/popup_-1.png);
+    background-position: 446px 342px;
+}
+
+.popup_-1 > .button {
+    left: 445px;
+    top: 345px;
+}
+
+.popup_-2 {
+    background-image: url(../img/popup_-2.png);
+    background-position: 137px -1px;
+}
+
+.popup_-2 > .button {
+    left: 130px;
+    top: 5px;
+}
+
+.popup_-3 {
+    background-image: url(../img/popup_-3.png);
+    background-position: 299px 8px;
+}
+
+.popup_-3 > .button {
+    left: 630px;
+    top: 10px;
+}
+
+.popup_-4 {
+    background-image: url(../img/popup_-4.png);
+    background-position: 526px 122px;
+}
+
+.popup_-4 > .button {
+    left: 520px;
+    top: 120px;
+}
+
+.popup_-5 {
+    background-image: url(../img/popup_-5.png);
+    background-position: 352px 226px;
+}
+
+.popup_-5 > .button {
+    left: 350px;
+    top: 226px;
+}
+
+.popup_-6 {
+    background-image: url(../img/popup_-6.png);
+    background-position: 182px 359px;
+}
+
+.popup_-6 > .button {
+    left: 190px;
+    top: 365px;
+}

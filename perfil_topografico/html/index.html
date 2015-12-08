@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- #### IMPORTANTE ####
+    Não alterar a estrutura de pastas nem do HTML;
+    Descrições com '*' no inicio são de arquivos ou locais que não poderão ser retirados;
+-->
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+
+        <title></title>
+            
+        <!--CSS IMPORTS-->
+        <link rel="stylesheet" href="css/reset.css"/><!-- *Reseta o CSS do OED  -->
+        <link rel="stylesheet" href="css/stylesheet.css"/><!-- Arquivo de CSS principal do OED  -->
+
+        <!--SCRIPT IMPORTS-->
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script> <!-- Uso da Jquery recomendado -->
+        <script type="text/javascript" src="js/main.js"></script> <!-- Arquivo de JavaScript principal do OED -->
+        <script type="text/javascript" src="js/capa.js"></script> <!-- *Configurações da Capa -->
+        <script type="text/javascript" src='intro_files/js/insept.js'></script> <!--Inserindo a capa-->
+        
+    </head>
+
+    <body>
+        <section id="OED">
+            <!-- Insira conteúdo aqui -->
+            <div id="gameStage">
+                <div id="questionStage">
+                    <div id="question">
+                        <div id="qimage" class="mimage"></div>
+                        <div id="qtext"></div>
+                        <div id="qlarrow" avalue="-1"></div>
+                        <div id="qmagnifier" class="magnifier cmagnifier"></div>
+                        <div id="qrarrow" avalue="1"></div>
+                    </div>
+                    <div id="answer0">
+                        <div id="ianswer0" aid="0" class="mimage ianswer"></div>
+                        <div id="manswer0" class="magnifier lmagnifier"></div>
+                    </div>
+                    <div id="answer1">
+                        <div id="ianswer1" aid="1" class="mimage ianswer"></div>
+                        <div id="manswer1" class="magnifier rmagnifier"></div>
+                    </div>
+                </div>
+                
+                <div id="feedbackStage">
+                    <div id="cfeedback">
+                        <div id="afeedback1">
+                            <div id="ifeedback1" class="mimage ifeedback"></div>
+                            <div id="mfeedback1" class="magnifier lmagnifier"></div>
+                        </div>
+                        <div id="afeedback2">
+                            <div id="ifeedback2" class="mimage ifeedback"></div>
+                            <div id="mfeedback2" class="magnifier rmagnifier"></div>
+                        </div>
+                    </div>
+                    <div id="mfeedback">
+                        <div id="tfeedback"></div>
+                    </div>
+                    <div id="nfeedback">PRÓXIMA</div>
+                </div>
+                
+                <div id="zoom">
+                    <div id="czoom">
+                        <div id="izoom"></div>
+                    </div>
+                    <div id="bzoom"></div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

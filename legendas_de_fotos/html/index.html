@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="font/stylesheet.css" />
+        <link rel="stylesheet" href="css/main.css" />
+
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <title></title>
+    </head>
+
+    <body>
+        <div id="gameStage">
+            <div id="gameScene1">
+                <div id="coverTitle"></div>
+                <div id="coverImage"></div>
+                <div id="coverButton" class="btn_start">INICIAR</div>
+            </div>
+
+            <div id="gameScene2">
+                <div id="upperBox">
+                    <div id="upperBoxText">
+                        QUE TAL CONHECER UM POUCO MAIS DO BRASIL? LEIAM COM<br />
+                        ATENÇÃO AS INFORMAÇÕES ABAIXO ANTES DE INICIAR ESTA<br />
+                        VIAGEM.
+                    </div>
+                </div>
+                <div id="boyPhotographer"></div>
+                <div id="redRectangle">
+                    <div id="explanationText">
+                        ELISEU É UM JOVEM FOTÓGRAFO QUE RECEBEU<br />
+                        RECENTEMENTE UMA MISSÃO: VIAJAR POR ALGUMAS<br />
+                        CIDADES BRASILEIRAS ACOMPANHANDO UMA EQUIPE<br />
+                        DE JORNALISTAS QUE ESCREVERÃO UM GUIA<br />
+                        TURÍSTICO SOBRE O PAÍS.<br />
+                        <br />
+                        ELISEU NÃO SÓ TIRARÁ AS FOTOGRAFIAS DOS LUGARES<br />
+                        PELOS QUAIS PASSARÃO COMO TAMBÉM DEVERÁ CRIAR<br />
+                        AS LEGENDAS PARA CADA UMA DELAS. VAMOS<br />
+                        AJUDÁ-LO COM ISSO?<br />
+                    </div>
+
+                    <div id="startButton">INICIAR</div>
+                    <div id="startImage"></div>
+                </div>
+            </div>
+
+            <div id="gameScene3">
+                <div id="questionHeader">
+                    <div id="headerText">
+                        ESCOLHAM AS LEGENDAS QUE MELHOR CORRESPONDEM ÀS FOTOGRAFIAS QUE ELISEU TIROU. <br />
+                        NO FINAL DO JOGO, CONFIRAM SE VOCÊS ESCOLHERAM AS LEGENDAS CORRETAS PARA AS FOTOS.
+                    </div>
+                </div>
+
+                <div id="questionContent">
+                    <div id="alternativeBox">
+                        <div id="alternativeText">SELECTED ANSWER<br />LINE TWO</div>
+                        <div id="confirmButton">CONFIRMAR</div>
+                    </div>
+
+                    <div id="questionImage">
+                        <div id="questionZoomIn"></div>
+                    </div>
+
+                    <input type="radio" name="radioAnswer" id="radioAnswer0" class="answer_color_0" />
+                    <label for="radioAnswer0">
+                        <div id="answer0Text">Answer 0</div>
+                    </label>
+                    <div id="audioButton0" class="audioButton"></div>
+
+                    <input type="radio" name="radioAnswer" id="radioAnswer1" class="answer_color_1" />
+                    <label for="radioAnswer1">
+                        <div id="answer1Text">Answer 1</div>
+                    </label>
+                    <div id="audioButton1" class="audioButton"></div>
+
+                    <input type="radio" name="radioAnswer" id="radioAnswer2" class="answer_color_2" />
+                    <label for="radioAnswer2">
+                        <div id="answer2Text">Answer 2</div>
+                    </label>
+                    <div id="audioButton2" class="audioButton"></div>
+                </div>
+
+                <div id="previousButton"></div>
+
+                <div id="nextButton"></div>
+
+                <div id="zoomOverlay">
+                    <div id="questionZoomOut"></div>
+                </div>
+
+                <div id="feedbackOverlay">
+                    <div id="feedbackText"></div>
+                    <div id="closeButton"></div>
+                </div>
+            </div>
+
+            <div id="gameScene4">
+                <div id="scene4Content">
+                    <div id="summaryHeader">
+                        <div id="summaryText">
+                            VAMOS CONFERIR O TRABALHO QUE FIZERAM? VEJAM QUANTAS LEGENDAS ACERTARAM E <br />
+                             QUANTAS FICARAM DIFERENTES DAS LEGENDAS CRIADAS POR ELISEU. CLIQUEM NAS FOTOS PARA VER AS RESPOSTAS CORRETAS.
+                        </div>
+                    </div>
+
+                    <div id="thumb0">
+                        <div id="thumb0status"></div>
+                    </div>
+
+                    <div id="thumb1">
+                        <div id="thumb1status"></div>
+                    </div>
+
+                    <div id="thumb2">
+                        <div id="thumb2status"></div>
+                    </div>
+
+                    <div id="thumb3">
+                        <div id="thumb3status"></div>
+                    </div>
+
+                    <div id="thumb4">
+                        <div id="thumb4status"></div>
+                    </div>
+
+                    <div id="backToGameButton"></div>
+                </div>
+
+                <div id="summaryFeedback">
+                    <div id="summaryFeedbackHeader">
+                        <div id="summaryFeedbackHeaderText"></div>
+                    </div>
+
+                    <div id="summaryFeedbackImage"></div>
+
+                    <div id="summaryFeedbackCorrectAnswer">
+                        <div id="correctAnswerTitle">RESPOSTA CORRETA</div>
+                        <div id="correctAnswerText"></div>
+                        <div id="correctAnswerAudioButton"></div>
+                    </div>
+
+                    <div id="summaryFeedbackSelectedAnswer">
+                        <div id="selectedAnswerTitle">RESPOSTA ESCOLHIDA</div>
+                        <div id="selectedAnswerText"></div>
+                        <div id="selectedAnswerAudioButton"></div>
+                    </div>
+
+                    <div id="backToSummaryButton"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="_load">
+            <img src="img/box_feedback_negative.png" />
+            <img src="img/box_feedback_positive.png" />
+            <img src="img/btn_audio_down.png" />
+            <img src="img/btn_audio_up.png" />
+            <img src="img/btn_close_down.png" />
+            <img src="img/btn_close_up.png" />
+            <img src="img/btn_color_0_down.png" />
+            <img src="img/btn_color_0_up.png" />
+            <img src="img/btn_color_1_down.png" />
+            <img src="img/btn_color_1_up.png" />
+            <img src="img/btn_color_2_down.png" />
+            <img src="img/btn_color_2_up.png" />
+            <img src="img/btn_confirm_down.png" />
+            <img src="img/btn_confirm_up.png" />
+            <img src="img/btn_next_down.png" />
+            <img src="img/btn_next_up.png" />
+            <img src="img/btn_previous_down.png" />
+            <img src="img/btn_previous_up.png" />
+            <img src="img/btn_start_down.png" />
+            <img src="img/btn_start_up.png" />
+            <img src="img/btn_zoomin_down_v2.png" />
+            <img src="img/btn_zoomin_up_v2.png" />
+            <img src="img/btn_zoomout_down_v2.png" />
+            <img src="img/btn_zoomout_up_v2.png" />
+            <img src="img/film.png" />
+            <img src="img/img_answer_correct.png" />
+            <img src="img/img_answer_wrong.png" />
+            <img src="img/img_question_0.png" />
+            <img src="img/img_question_0_thumb.png" />
+            <img src="img/img_question_0_zoom.png" />
+            <img src="img/img_question_1.png" />
+            <img src="img/img_question_1_thumb.png" />
+            <img src="img/img_question_1_zoom.png" />
+            <img src="img/img_question_2.png" />
+            <img src="img/img_question_2_thumb.png" />
+            <img src="img/img_question_2_zoom.png" />
+            <img src="img/img_question_3.png" />
+            <img src="img/img_question_3_thumb.png" />
+            <img src="img/img_question_3_zoom.png" />
+            <img src="img/img_question_4.png" />
+            <img src="img/img_question_4_thumb.png" />
+            <img src="img/img_question_4_zoom.png" />
+            <img src="img/img_question_5.png" />
+            <img src="img/img_question_5_thumb.png" />
+            <img src="img/img_question_5_zoom.png" />
+            <img src="img/img_question_6.png" />
+            <img src="img/img_question_6_thumb.png" />
+            <img src="img/img_question_6_zoom.png" />
+            <img src="img/img_question_7.png" />
+            <img src="img/img_question_7_thumb.png" />
+            <img src="img/img_question_7_zoom.png" />
+            <img src="img/img_question_8.png" />
+            <img src="img/img_question_8_thumb.png" />
+            <img src="img/img_question_8_zoom.png" />
+            <img src="img/img_question_9.png" />
+            <img src="img/img_question_9_thumb.png" />
+            <img src="img/img_question_9_zoom.png" />
+            <img src="img/scene1_bg.png" />
+            <img src="img/scene1_cover.png" />
+            <img src="img/scene2_bg.png" />
+            <img src="img/scene2_box.png" />
+            <img src="img/scene2_boy.png" />
+            <img src="img/scene2_rectangle.png" />
+            <img src="img/scene3_box.png" />
+            <img src="img/scene3_header.png" />
+            <img src="img/stage_bg.png" />
+            <img src="img/status_right_down.png" />
+            <img src="img/status_right_up.png" />
+            <img src="img/status_wrong_down.png" />
+            <img src="img/status_wrong_up.png" />
+        </div>
+
+        <script src="capa.js">
+            capa : 0,
+            ajuda: 'É possível explorar o objeto de duas maneiras: <br>1. Escolher a legenda e confirmar a opção para receber o feedback na tela.<br>2. Escolher a legenda e clicar na seta do lado direito da tela para avançar e, no final, receber o feedback de todas as fotos.'
+        </script>
+    </body>	
+</html>

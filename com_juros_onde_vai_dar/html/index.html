@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- #### IMPORTANTE ####
+    Não alterar a estrutura de pastas nem do HTML;
+    Descrições com '*' no inicio são de arquivos ou locais que não poderão ser retirados;
+-->
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+
+        <title> </title>
+            
+        <!--CSS IMPORTS-->
+        <link rel="stylesheet" href="_GAME/css/reset.css"/><!-- *Reseta o CSS do OED  -->
+        <link rel="stylesheet" href="_GAME/css/stylesheet.css"/><!-- Arquivo de CSS principal do OED  -->
+
+        <!--SCRIPT IMPORTS-->
+        <script type="text/javascript" src="_GAME/js/jquery-1.10.2.min.js"></script><!-- Uso da Jquery recomendado -->
+        <script type="text/javascript" src="_GAME/js/jquery-ui.js"></script><!-- Uso da Jquery UI recomendado -->
+        <script type="text/javascript" src="_GAME/js/jquery.ui.touch-punch.js"></script>
+        <script type="text/javascript" src="_GAME/js/main.js"></script> <!-- Arquivo de JavaScript principal do OED -->
+    </head>
+
+    <body>
+        <!-- Conteúdo vem aqui -->
+        <div id="gameStage">
+            <div id="text1">Insira os dados do investimento ou da dívida e compare o efeito do juro sobre o valor recebido ou a pagar.</div>
+            <div id="text2">Valor inicial</div>
+            <div id="text3">R$</div>
+            <div id="text4">Meses</div>
+            <div id="text5">CASO 1</div>
+            <div id="text6">CASO 2</div>
+            <div id="text7">TAXA (%)</div>
+            <div id="text8">TAXA (%)</div>
+            <div id="text9">JURO</div>
+            <div id="text10">JURO</div>
+            <div id="text11">Simples</div>
+            <div id="text12">Composto</div>
+            <div id="text13">SIMULAR</div>
+            <div id="text14">Simples</div>
+            <div id="text15">Composto</div>
+            <div id="text16">Valor (R$)</div>
+            <div id="text17">CASO 1</div>
+            <div id="text18">Valor final (R$):</div>
+            <div id="text19">CASO 2</div>
+            <div id="text20">Valor final (R$):</div>
+            <div id="text21">0</div>
+            <div id="text22">Meses</div>
+            <div id="initial" class="textbox" maxlength="5" text=""></div>
+            <div id="months" class="textbox" maxlength="2" text=""></div>
+            <div id="tax1" class="textbox" maxlength="2" text=""></div>
+            <div id="tax2" class="textbox" maxlength="2" text=""></div>
+            <div id="interest1" class="interest simple" ></div>
+            <div id="interest2" class="interest simple"></div>
+            <div id="simulate"></div>
+            <div id="final1" class="final"></div>
+            <div id="final2" class="final"></div>
+            <canvas id="graph" width="920" height="360"></canvas>
+            <div id="calculatorOverlay">
+                <div id="calculator">
+                    <div id="button0" class="button" value="1"></div>
+                    <div id="button1" class="button" value="2"></div>
+                    <div id="button2" class="button" value="3"></div>
+                    <div id="button3" class="button" value="4"></div>
+                    <div id="button4" class="button" value="5"></div>
+                    <div id="button5" class="button" value="6"></div>
+                    <div id="button6" class="button" value="7"></div>
+                    <div id="button7" class="button" value="8"></div>
+                    <div id="button8" class="button" value="9"></div>
+                    <div id="button9" class="button" value="cancel"></div>
+                    <div id="button10" class="button" value="0"></div>
+                    <div id="button11" class="button" value="ok"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="capa.min.js"></script><!-- *Arquivo de JavaScript que carrega a capa FTD -->
+        <script type="text/javascript">
+            _capa.start();
+        </script>
+    </body>
+    
+</html>

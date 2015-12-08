@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/main.css" />
+
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <title></title>
+    </head>
+
+    <body>
+        <div id="stage" class="default_size abs left_top">
+            <div id="cover" class="default_size abs left_top transitable bg_capa visible">
+                <div id="coversign" class="default_size abs left_top">
+                    <div id="covercontainer" class="abs table">
+                        <div id="covertext" class="cell hcenter vmiddle">
+                            VAMOS MONTAR?
+                        </div>
+                    </div>
+                </div>
+
+                <div id="coverbutton" class="abs btn_start"></div>
+            </div>
+
+            <div id="intro" class="default_size abs left_top transitable bg_intro invisible">
+                <div id="introstamp" class="abs stamp"></div>
+
+                <div id="introbox" class="abs">
+                    <div id="introtext" class="abs">
+                        Olá!<br />
+                        <br />
+                        Vocês sabiam que existem diversos
+                        tipos de habitações e de materiais
+                        usados para construir essas habitações?
+                        Neste jogo, vamos conhecer um pouco
+                        sobre os tipos de habitações e alguns
+                        dos materiais utilizados em suas
+                        construções.
+                    </div>
+                </div>
+
+                <div id="introsigns" class="default_width abs">
+                    <ul id="introlist">
+                        <li tipo="alvenaria">
+                            <div class="table listcontainer">
+                                <div class="cell hcenter vmiddle listtext">
+                                    ALVENARIA
+                                </div>
+                            </div>
+                        </li>
+                        <li tipo="madeira">
+                            <div class="table listcontainer">
+                                <div class="cell hcenter vmiddle listtext">
+                                    CASA DE MADEIRA
+                                </div>
+                            </div>
+                        </li>
+                        <li tipo="sape">
+                            <div class="table listcontainer">
+                                <div class="cell hcenter vmiddle listtext">
+                                    CASA DE SAPÊ
+                                </div>
+                            </div>
+                        </li>
+                        <li tipo="indigena">
+                            <div class="table listcontainer">
+                                <div class="cell hcenter vmiddle listtext">
+                                    HABITAÇÃO INDÍGENA
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="game" class="default_size abs left_top transitable invisible">
+                <div id="gamestamp" class="abs stamp"></div>
+
+                <div id="gamebox" class="abs">
+                    <div id="gametext" class="abs">
+                        Olá!<br />
+                        Vocês sabiam que existem diversos<br />
+                        tipos de habitações e diversos tipos<br />
+                        de materiais usados para construir<br />
+                        essas habitações? Neste jogo, vamos<br />
+                        conhecer um pouco sobre os tipos de<br />
+                        habitações e alguns dos materiais<br />
+                        utilizados em suas construções.
+                    </div>
+                </div>
+
+                <div id="gameimage" class="abs"></div>
+
+                <div id="gamehome" class="abs btn_home"></div>
+
+                <div id="gameoptionscontainer" class="abs">
+                    <ul id="gameoptionslist" class="abs"></ul>
+                </div>
+
+                <div id="gameprevious" multiplier="-1" class="abs btn_previous"></div>
+
+                <div id="gamenext" multiplier="1" class="abs btn_next"></div>
+
+                <div id="gameoverlay" class="default_size abs left_top transitable invisible">
+                    <div id="gameoverlaybox" class="abs">
+                        <div id="gameoverlaycontainer" class="abs table">
+                            <div id="gameoverlaytext" class="cell vmiddle"></div>
+                        </div>
+                    </div>
+
+                    <div id="gameoverlayyes" class="abs btn_yes" value="1">SIM</div>
+
+                    <div id="gameoverlayno" class="abs btn_no" value="0">NÃO</div>
+
+                    <div id="gameoverlayclose" class="abs btn_close" value="-1"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="capa.js">
+            logo: 1
+        </script>
+    </body>
+
+</html>

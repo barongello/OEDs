@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- #### IMPORTANTE ####
+    Não alterar a estrutura de pastas nem do HTML;
+    Descrições com '*' no inicio são de arquivos ou locais que não poderão ser retirados;
+-->
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+
+        <title> </title>
+            
+        <!--CSS IMPORTS-->
+        <link rel="stylesheet" href="_GAME/css/reset.css"/><!-- *Reseta o CSS do OED  -->
+        <link rel="stylesheet" href="_GAME/css/stylesheet.css"/><!-- Arquivo de CSS principal do OED  -->
+
+        <!--SCRIPT IMPORTS-->
+        <script type="text/javascript" src="_GAME/js/jquery-1.10.2.min.js"></script><!-- Uso da Jquery recomendado -->
+        <script type="text/javascript" src="_GAME/js/jquery-ui.js"></script><!-- Uso da Jquery UI recomendado -->
+        <script type="text/javascript" src="_GAME/js/jquery.ui.touch-punch.js"></script>
+        <script type="text/javascript" src="_GAME/js/main.js"></script> <!-- Arquivo de JavaScript principal do OED -->
+    </head>
+
+    <body>
+        <!-- Conteúdo vem aqui -->
+        <audio id="sound_ambient" src="_GAME/mp3/sound_ambient.mp3" loop="true"></audio>
+        <audio id="sound_piece" src="_GAME/mp3/sound_piece.mp3"></audio>
+        
+        <div id="gameStage">
+            <div id="gameIntro">
+                <div id="introCard">
+                    <div id="introCardImage"></div>
+                    <div id="introCardCredits"></div>
+                    <div id="introCardHelp"></div>
+                    <div id="introCardText">Mova as peças corretamente e use boas estratégias para "libertar" os resultados.</div>
+                    <div id="introCardStart"></div>
+                </div>
+                <div id="gameCredits">
+                    <div id="creditsBack">Voltar</div>
+                </div>
+                <div id="gameHelp">
+                    <div id="helpCard">
+                        <div id="helpCardBack">Voltar</div>
+                        <div id="helpCardTitle"></div>
+                        <div id="helpCardImage"></div>
+                        <div id="helpCardText">Selecione o nível e clique em "Começar" para iniciar a partida. O objetivo do jogo é mover para fora do tabuleiro a peça que mostra o resultado da operação solicitada. Para movimentar uma peça, é necessário clicar sobre ela e arrastá-la para uma casa vazia que esteja ao seu lado.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="gameMenu">
+                <div id="title_part_2"></div>
+                <div id="title_part_1"></div>
+                <div id="title_letter_j"></div>
+                <div id="title_letter_o_1"></div>
+                <div id="title_letter_g"></div>
+                <div id="title_letter_o_2"></div>
+                <div id="level_easy" class="level enabled" levelid="0">Fácil</div>
+                <div id="level_medium" class="level" levelid="1">Médio</div>
+                <div id="level_hard" class="level" levelid="2">Difícil</div>
+                <div id="menuStart"></div>
+            </div>
+            
+            <div id="gameBoard">
+                <div id="questionTitle"></div>
+                <div id="boundBox">
+                    <div id="box1" boxid="1" class="box box_1">
+                        <div class="numerator"><div class="text"></div></div>
+                        <div class="minus"></div>
+                        <div class="slash"></div>
+                        <div class="denominator"><div class="text"></div></div>
+                    </div>
+                    <div id="box2" boxid="2" class="box box_2">
+                        <div class="numerator"><div class="text"></div></div>
+                        <div class="minus"></div>
+                        <div class="slash"></div>
+                        <div class="denominator"><div class="text"></div></div>
+                    </div>
+                    <div id="box3" boxid="3" class="box box_3">
+                        <div class="numerator"><div class="text"></div></div>
+                        <div class="minus"></div>
+                        <div class="slash"></div>
+                        <div class="denominator"><div class="text"></div></div>
+                    </div>
+                    <div id="box4" boxid="4" class="box box_4">
+                        <div class="numerator"><div class="text"></div></div>
+                        <div class="minus"></div>
+                        <div class="slash"></div>
+                        <div class="denominator"><div class="text"></div></div>
+                    </div>
+                    <div id="box5" boxid="5" class="box box_5">
+                        <div class="numerator"><div class="text"></div></div>
+                        <div class="minus"></div>
+                        <div class="slash"></div>
+                        <div class="denominator"><div class="text"></div></div>
+                    </div>
+                    <div id="box6" boxid="6" class="box box_6">
+                        <div class="numerator"><div class="text"></div></div>
+                        <div class="minus"></div>
+                        <div class="slash"></div>
+                        <div class="denominator"><div class="text"></div></div>
+                    </div>
+                    <div id="box7" boxid="7" class="box box_7">
+                        <div class="numerator"><div class="text"></div></div>
+                        <div class="minus"></div>
+                        <div class="slash"></div>
+                        <div class="denominator"><div class="text"></div></div>
+                    </div>
+                    <div id="box8" boxid="8" class="box box_8">
+                        <div class="numerator"><div class="text"></div></div>
+                        <div class="minus"></div>
+                        <div class="slash"></div>
+                        <div class="denominator"><div class="text"></div></div>
+                    </div>
+                </div>
+
+                <div id="boardExit"></div>
+
+                <div id="correctAnswer">
+                    <div id="correctFormula"></div>
+                    <div id="correctBox"></div>
+                    <div id="correctContinue"></div>
+                </div>
+                <div id="wrongAnswer">
+                    <div id="wrongContinue"></div>
+                </div>
+                <div id="finishGame">
+                    <div id="finishContinue"></div>
+                </div>
+            </div>
+
+            <div id="sound_control" class="enabled"></div>
+        </div>
+
+        
+        
+        <script src="capa.min.js"></script><!-- *Arquivo de JavaScript que carrega a capa FTD -->
+        <script type="text/javascript">
+            _capa.start();
+        </script>
+    </body>
+    
+</html>

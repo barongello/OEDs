@@ -1,0 +1,151 @@
+.title {
+    min-width: 231px;
+    height: 104px;
+    background-image: url('../img/shape_title_big.png');
+    background-repeat: repeat-x;
+    font: 65px 'Economica-Bold';
+    line-height: 104px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+#board { background-color: #0b1a23; }
+#bmap {
+    height: 1002px;
+    background-image: url('../img/mapa_full.png');
+}
+#btnBMIco1 { left: 110px; top: 665px; }
+#btnBMIco2 { left: 400px; top: 30px; }
+#btnBMIco3 { left: 400px; top: 470px; }
+#btnBMIco4 { left: 660px; top: 740px; }
+#btnBMIco5 { left: 275px; top: 635px; }
+#btnBMIco6 { left: 345px; top: 290px; }
+#btnBMIco7 { left: 35px; top: 420px; }
+#btnBMIco8 { left: 170px; top: 495px; }
+#btnBMore { right: 0px; top: 150px; }
+#btnBTutorial { right: 0px; top: 244px; }
+#btnBUp { top: 10px; display: none; }
+#btnBDown { bottom: 10px; }
+
+#content { background-color: rgba(11, 26, 35, 0.95); }
+#cico { left: 31px; top: 87px; }
+#ctitle { left: 202px; top: 117px; }
+#content .btn:not(.btn_close) {
+    left: 29px;
+    font: 30px 'Economica-Bold';
+    line-height: 64px;
+    padding-left: 9px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #262626;
+    box-sizing: border-box;
+}
+#content .btn:not(.btn_close):hover { color: #ffffff; }
+#content .btn:not(.btn_close).disabled { background-image: url('../img/btn_menu_down.png'); color: #ffffff; }
+#btnCHistory { top: 407px; }
+#btnCEconomy { top: 476px; }
+#btnCCulture { top: 545px; }
+#btnCEnvironment { top: 614px; }
+#ccard {
+    left: 202px;
+    top: 221px;
+    width: 792px;
+    height: 460px;
+    background-image: url('../img/shape_white_popup.png');
+}
+#cctext {
+    width: 100%;
+    font: 24px 'Economica-Regular';
+    line-height: 29px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #000000;
+    box-sizing: border-box;
+    display: none;
+}
+#ccard.text #cctext, #ccard.media #cctext { display: block; }
+#ccmedia {
+    width: 427px;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: none;
+}
+#ccard.media #ccmedia { display: block; }
+#btnCCMImage {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#ccmlegend {
+    font: 22px 'Economica-Regular';
+    line-height: 26px;
+    margin-top: 5px;
+    color: #000000;
+}
+#ccard.media #cctext {
+    width: 335px;
+    left: 457px;
+    font: 22px 'Economica-Regular';
+    line-height: 26px;
+    color: #000000;
+}
+#btnCClose { right: 29px; top: 159px; }
+
+#cover {
+    background: rgba(11, 26, 35, 0.95) url('../img/img_capa.png') no-repeat center 45px;
+    font: 37px 'Economica-Bold';
+    line-height: 57px;
+    text-align: center;
+    color: #ffffff;
+}
+#btnCStart { left: 437px; bottom: 45px; }
+
+#popUpIntroTutorial {
+    background-color: rgba(11, 26, 35, 0.95);
+    background-image: url('../img/shape_white_popup_2.png');
+}
+#puitText {
+    width: 530px;
+    font: 30px 'Economica-Regular';
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #000000;
+    box-sizing: border-box;
+}
+#btnPUITClose { right: 246px; top: 79px; }
+
+#more { background-color: rgba(11, 26, 35, 0.95); }
+#mtitle { left: 10px; top: 34px; }
+#mpanel {
+    left: 10px;
+    bottom: 35px;
+    width: 1004px;
+    height: 595px;
+}
+#mpbanner { width: 2008px; height: 595px; }
+#mpbimage1 {
+    width: 1004px;
+    height: 595px;
+    float: left;
+    background-image: url('../img/img_saibamais_pg1.png');
+}
+#mpbimage2 {
+    width: 1004px;
+    height: 595px;
+    float: left;
+    background-image: url('../img/img_saibamais_pg2.png');
+}
+#btnMPLeft {
+    left: 5px;
+    top: 410px;
+    display: none;
+}
+#btnMPRight { right: 5px; top: 410px; }
+#btnMPClose {
+    right: 9px;
+    top: 76px;
+}

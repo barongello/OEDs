@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- #### IMPORTANTE ####
+    Não alterar a estrutura de pastas nem do HTML;
+    Descrições com '*' no inicio são de arquivos ou locais que não poderão ser retirados;
+-->
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+
+        <title></title>
+            
+        <!--CSS IMPORTS-->
+        <link rel="stylesheet" href="css/reset.css"/><!-- *Reseta o CSS do OED  -->
+        <link rel="stylesheet" href="css/stylesheet.css"/><!-- Arquivo de CSS principal do OED  -->
+
+        <!--SCRIPT IMPORTS-->
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script><!-- Uso da Jquery recomendado -->
+        <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script><!-- Script para converter eventos touch em eventos de mouse e manter a compatibilidade -->
+        <script type="text/javascript" src="js/main.js"></script> <!-- Arquivo de JavaScript principal do OED -->
+        <script type="text/javascript" src="js/capa.js"></script><!-- *Configurações da Capa -->
+        <script type="text/javascript" src="intro_files/js/insept.js"></script> <!-- *Arquivo de inicialização da capa -->
+    </head>
+
+    <body>
+        <section id="OED">
+            <div id="gameStage">
+                <div id="mapButtons">
+                    <div class="button notchecked" mapid="1">Rendimento</div>
+                    <div class="button notchecked" mapid="2">Distribuição da população</div>
+                    <div class="button notchecked" mapid="3">Rede de transporte</div>
+                    <div class="button notchecked" mapid="4">Qualidade da internet</div>
+                </div>
+                <div id="map" class="map0">
+                    <div id="legend"></div>
+                </div>
+                <div id="questionBox">
+                    <div id="question"></div>
+                    <div class="answer notchecked" answerid="0"></div>
+                    <div class="answer notchecked" answerid="1"></div>
+                    <div class="answer notchecked" answerid="2"></div>
+                    <div class="answer notchecked" answerid="3"></div>
+                </div>
+            </div>
+            <div id="gameFeedback">
+                <div id="popup">
+                    <div id="text">TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE</div>
+                    <div id="next"></div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

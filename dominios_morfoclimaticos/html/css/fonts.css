@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'ArmataRegular';
+    src: url('../font/armata-regular-webfont.eot');
+    src: url('../font/armata-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/armata-regular-webfont.woff2') format('woff2'),
+         url('../font/armata-regular-webfont.woff') format('woff'),
+         url('../font/armata-regular-webfont.ttf') format('truetype'),
+         url('../font/armata-regular-webfont.svg#armataregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HoltwoodOneSCRegular';
+    src: url('../font/holtwoodonesc-webfont.eot');
+    src: url('../font/holtwoodonesc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/holtwoodonesc-webfont.woff2') format('woff2'),
+         url('../font/holtwoodonesc-webfont.woff') format('woff'),
+         url('../font/holtwoodonesc-webfont.ttf') format('truetype'),
+         url('../font/holtwoodonesc-webfont.svg#holtwood_one_scregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

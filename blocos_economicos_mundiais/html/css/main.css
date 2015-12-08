@@ -1,0 +1,223 @@
+body {
+    font-family: Delius-UnicaseBold;
+    color: #ffffff;
+}
+
+.btn_play { width: 150px; height: 150px; background-image: url(../img/btn_play_up.png); }
+.btn_play:hover { background-image: url(../img/btn_play_down.png); }
+
+.btn_close { width: 119px; height: 119px; background-image: url(../img/btn_fechar_up.png); }
+.btn_close:hover { background-image: url(../img/btn_fechar_down.png); }
+
+.btn_help { width: 80px; height: 80px; background-image: url(../img/btn_help_up.png); }
+.btn_help:hover { background-image: url(../img/btn_help_down.png); }
+
+.btn_option { width: 53px; height: 53px; background-image: url(../img/btn_opcao_up.png); }
+.btn_option.active { background-image: url(../img/btn_opcao_down.png); }
+
+.btn_block_info { width: 70px; height: 70px; background-image: url(../img/btn_bloco_up.png); }
+.btn_block_info.active { background-image: url(../img/btn_bloco_down.png); }
+
+.btn_more_info { width: 70px; height: 70px; background-image: url(../img/btn_mais.png); }
+.btn_more_info.active {
+            transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.btn_next { width: 139px; height: 136px; background-image: url(../img/btn_proximo_up.png); }
+.btn_next:hover { background-image: url(../img/btn_proximo_down.png); }
+
+.btn_reset { width: 150px; height: 150px; background-image: url(../img/btn_reiniciar_up.png); }
+.btn_reset:hover { background-image: url(../img/btn_reiniciar_down.png); }
+
+#background { background-image: url(../img/bg_02.png); }
+
+#intro { background-image: url(../img/bg_01.png); }
+#introContainer {
+    width: 628px;
+    height: 476px;
+    left: 198px;
+    top: 146px;
+    background-image: url(../img/img_pop_up.png);
+    font: 20px Ubuntu-Bold;
+    line-height: 24px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 195px;
+}
+#btnIntroPlay { left: 239px; bottom: -45px; }
+
+#help { background-image: url(../img/bg_01.png); }
+#helpContainer {
+    width: 628px;
+    height: 476px;
+    left: 198px;
+    top: 146px;
+    background-image: url(../img/img_pop_up.png);
+    font: 20px Ubuntu-Bold;
+    line-height: 24px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 175px;
+}
+#helpAttributes {
+    width: 500px;
+    height: 79px;
+    background-image: url(../img/img_icons.png);
+    font-size: 15px Delius-UnicaseBold;
+    line-height: 135px;
+
+}
+#helpAttributes > .attr0 { margin-left: 12px; }
+#helpAttributes > .attr1 { margin-left: 39px; }
+#helpAttributes > .attr2 { margin-left: 45px; }
+#helpAttributes > .attr3 { margin-left: 42px; }
+#btnHelpClose { right: -35px; top: 5px; }
+
+#board { background-image: url(../img/bg_032.png); }
+
+#boardScore {
+    width: 206px;
+    height: 127px;
+    left: 0px;
+    top: 20px;
+    background-image: url(../img/img_shape_placar.png);
+    font-size: 17px;
+}
+#boardScore > .title { margin-left: 20px; }
+#boardScore > .round {
+    width: 40px;
+    height: 60px;
+    background-image: url(../img/img_rodada_nao_selecionada.png);
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: #797a7d;
+    display: inline-block;
+}
+#boardScore > .round.active { background-image: url(../img/img_rodada_selecionada.png); color: #f26a21; }
+#boardScore > .round > .result {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    bottom: 22px;
+}
+#boardScore > .round > .result.correct { background-image: url(../img/img_correto.png); }
+#boardScore > .round > .result.incorrect { background-image: url(../img/img_incorreto.png); }
+
+#btnBoardHelp { right: 63px; top: 50px; }
+
+#boardCardPlayer {
+    width: 417px;
+    height: 537px;
+    left: 63px;
+    bottom: 50px;
+    background-image: url(../img/img_carta_1.png);
+}
+#boardCardPlayer > .title { left: 125px; }
+#boardCardPlayer > .description { left: 125px; }
+#boardCardPlayer > .logo { left: 133px; }
+#boardCardPlayer > .influence { left: 125px; }
+#boardCardPlayer > .btn_option { left: 15px; }
+
+#boardCardComputer {
+    width: 370px;
+    height: 537px;
+    right: 63px;
+    bottom: 50px;
+    background-image: url(../img/img_carta_1.png);
+    background-position: right center;
+}
+#boardCardComputer > .title { left: 80px; }
+#boardCardComputer > .description { left: 80px; }
+#boardCardComputer > .logo { left: 88px; }
+#boardCardComputer > .influence { left: 80px; }
+
+#boardSelectedOption {
+    width: 894px;
+    height: 60px;
+    left: 78px;
+    background-image: url(../img/img_selecao.png);
+}
+#boardSelectedOption.option_0 { top: 440px; }
+#boardSelectedOption.option_1 { top: 493px; }
+#boardSelectedOption.option_2 { top: 546px; }
+#boardSelectedOption.option_3 { width: 890px; height: 66px; left: 76px; top: 598px; background-image: url(../img/img_selecao_2.png); }
+#boardFeedBack1 { width: 54px; height: 55px; left: 355px; top: 1px; }
+#boardFeedBack1.right { background-image: url(../img/img_positivo.png); }
+#boardFeedBack1.wrong { background-image: url(../img/img_negativo.png); }
+#boardFeedBack2 { width: 54px; height: 55px; /* left: 505px; */ right: 0px; top: 1px; }
+#boardFeedBack2.right { background-image: url(../img/img_positivo.png); }
+#boardFeedBack2.wrong { background-image: url(../img/img_negativo.png); }
+#boardSelectedOption.option_3 > #boardFeedBack1 { top: 6px; }
+#boardSelectedOption.option_3 > #boardFeedBack2 { top: 6px; }
+
+.card > .title { font-size: 14px; color: #f26a21; }
+.card > .description { font-size: 16px; color: #000000; }
+.card > .line_0 { top: 33px; }
+.card > .line_1 { top: 52px; }
+.card > .logo { width: 190px; height: 120px; top: 75px; left: 133px; }
+.card > .line_2 { top: 220px; }
+.card > .line_3 { top: 239px; }
+.card > .line_4 { top: 273px; }
+.card > .line_5 { top: 292px; }
+.card > .line_6 { top: 325px; }
+.card > .line_7 { top: 344px; }
+.card > .line_8 { top: 376px; }
+.card > .line_9 { top: 395px; }
+.card > .line_10 { top: 428px; }
+.card > .influence { width: 0px; height: 22px; top: 450px; background-image: url(../img/img_estrela_v2.png); }
+.card > .influence[value="1"] { width: 26px; }
+.card > .influence[value="2"] { width: 52px; }
+.card > .influence[value="3"] { width: 78px; }
+.card > .influence[value="4"] { width: 104px; }
+.card > .influence[value="5"] { width: 130px; }
+
+#boardCardComputerBack { width: 370px; height: 537px; display: none; }
+#boardCardComputerBack.back { background-image: url(../img/img_carta_verso.png); display: block; }
+
+#btnBoardOption0 { top: 262px; }
+#btnBoardOption1 { top: 315px; }
+#btnBoardOption2 { top: 368px; }
+#btnBoardOption3 { top: 421px; }
+
+#btnBoardBlockInfo1 { left: 30px; top: -10px; }
+#btnBoardMoreInfo1 { right: 150px; bottom: -15px; }
+#btnBoardBlockInfo2 { left: -15px; top: -10px; }
+#btnBoardMoreInfo2 { right: 150px; bottom: -15px; }
+
+#btnBoardNext { left: 464px; top: 245px; }
+
+#boardBlockInfoPopUp { background-image: url(../img/img_popup_siglas.png); }
+#boardBlockInfoPopUpContainer { width: 309px; height: 64px; top: 173px; }
+#boardBlockInfoPopUpContainerText { font: 17px Ubuntu-Bold; line-height: 20px; padding: 12px 15px 12px 15px; }
+#btnBoardBlockInfoPopUpClose { top: 171px; }
+#boardBlockInfoPopUp.player { background-position: 155px 160px; }
+#boardBlockInfoPopUp.player > #boardBlockInfoPopUpContainer { left: 174px; }
+#boardBlockInfoPopUp.player > #btnBoardBlockInfoPopUpClose { left: 93px; }
+#boardBlockInfoPopUp.computer { background-position: 638px 160px; }
+#boardBlockInfoPopUp.computer > #boardBlockInfoPopUpContainer { left: 657px; }
+#boardBlockInfoPopUp.computer > #btnBoardBlockInfoPopUpClose { left: 576px; }
+
+#boardMoreInfoPopUp { background-image: url(../img/img_popup.png); }
+#boardMoreInfoPopUpContainer { width: 261px; height: 162px; top: 484px; }
+#boardMoreInfoPopUpContainerText { font: 16px Ubuntu-Bold; line-height: 18px; padding: 12px 15px 12px 15px; }
+#btnBoardMoreInfoPopUpClose { bottom: 35px; }
+#boardMoreInfoPopUp.player { background-position: 158px 475px; }
+#boardMoreInfoPopUp.player > #boardMoreInfoPopUpContainer { left: 166px; }
+#boardMoreInfoPopUp.player > #btnBoardMoreInfoPopUpClose { left: 260px; }
+#boardMoreInfoPopUp.computer { background-position: 639px 475px; }
+#boardMoreInfoPopUp.computer > #boardMoreInfoPopUpContainer { left: 647px; }
+#boardMoreInfoPopUp.computer > #btnBoardMoreInfoPopUpClose { left: 741px; }
+
+#boardFeedBackWin { background-color: rgba(0, 0, 0, 0.6); background-image: url(../img/img_pop_up.png); }
+#boardFeedBackWinText { width: 100%; left: 0px; top: 420px; font-size: 27px; text-align: center; }
+#btnBoardFeedBackWinClose { left: 742px; top: 151px; }
+
+#boardFeedBackLose { background-color: rgba(0, 0, 0, 0.6); background-image: url(../img/img_pop_up.png); }
+#boardFeedBackLoseText { left: 280px; top: 390px; font-size: 27px; line-height: 36px; }
+#btnBoardFeedBackLoseReset { left: 437px; top: 515px; }

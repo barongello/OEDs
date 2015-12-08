@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <title></title>
+    </head>
+
+    <body>
+        <div id="stage" class="default_size abs left_top">
+            <div id="board" class="default_size abs left_top visible">
+                <div id="bmap" class="default_width abs left_top bg_no_repeat bg_center_center">
+                    <div id="btnBMap1" region="0" title="AMAZÔNIA" class="abs btn btn_regioes"></div>
+                    <div id="btnBMap2" region="1" title="CAATINGA" class="abs btn btn_regioes"></div>
+                    <div id="btnBMap3" region="2" title="CERRADO" class="abs btn btn_regioes"></div>
+                    <div id="btnBMap4" region="3" title="FAIXAS DE TRANSIÇÃO" size="24" class="abs btn btn_regioes"></div>
+                    <div id="btnBMap5" region="4" title="MARES DE MORROS" class="abs btn btn_regioes"></div>
+                    <div id="btnBMap6" region="5" title="ARAUCÁRIAS" class="abs btn btn_regioes"></div>
+                    <div id="btnBMap7" region="6" title="PRADARIAS" class="abs btn btn_regioes"></div>
+                </div>
+
+                <div id="btnBHome" class="abs btn btn_home"></div>
+                <div id="btnBHelp" class="abs btn btn_ajuda"></div>
+                <div id="btnBMoveUp" class="abs btn btn_moveup disabled"></div>
+                <div id="btnBMoveDown" class="abs btn btn_movedown"></div>
+                <div id="blegends" class="abs"></div>
+                <div id="bcardinals" class="abs"></div>
+                <div id="bcredits" class="abs">Fonte: AB´SABER, Aziz. <strong>Os domínios de natureza no Brasil</strong>. São Paulo: Ateliê Editorial, 2007. Crédito: Allmaps.</div>
+            </div>
+
+            <div id="details" class="default_size abs left_top transitable invisible">
+                <div id="dannounce" class="default_width abs left_top bg_no_repeat bg_center_center">
+                    Clique nas abas do menu, em cada campo ativo, para conhecer as<br />
+                    principais características dos domínios morfoclimáticos do Brasil.
+                </div>
+
+                <div id="btnDMap" type="map" subtitle="" class="abs btn btn_mapa btnDetail"></div>
+                <div id="btnDFlora" type="flora" subtitle="FLORA" class="abs btn btn_flora btnDetail"></div>
+                <div id="btnDFauna" type="fauna" subtitle="FAUNA" class="abs btn btn_fauna btnDetail"></div>
+                <div id="btnDRelief" type="relief" subtitle="RELEVO" class="abs btn btn_relevo btnDetail"></div>
+                <div id="btnDMore" type="more" subtitle="MAIS" class="abs btn btn_mais btnDetail"></div>
+                <div id="btnDCTutorial" class="abs btn btn_ajuda"></div>
+                <div id="dcontent" class="abs">
+                    <div id="dctitle" class="abs bg_no_repeat bg_center_center">
+                        <div id="dctitle1" class="abs">TÍTULO</div>
+                        <div id="dctitle2" class="abs">SUB-TÍTULO</div>
+                    </div>
+
+                    <div region="0" class="abs detail">
+                        <div type="map" class="abs page map">
+                            <div class="abs bg_no_repeat bg_left_center detailMap detailMap0"></div>
+                            <div class="abs detailTextArea">
+                                <div number="0" class="abs detailTextAreaPiece">
+                                    Situado na porção noroeste do Brasil, é o maior domínio morfoclimático do país, abrangendo toda a região amazônica brasileira. Abriga a maior floresta úmida e a maior bacia hidrográfica do mundo, constituindo uma das principais reservas de biodiversidade do planeta. O relevo é formado principalmente por planícies aluviais (formadas por inundação) e terras baixas, de vegetação espessa e clima quente e úmido. O avanço das atividades econômicas constitui uma forte ameaça a este bioma, em virtude dos desmatamentos causados pela expansão das pastagens e do cultivo de soja, além de projetos de mineração e da atividade madeireira na região.
+                                </div>
+                                <div class="abs btn btn_moveup detailTextAreaMoveUp"></div>
+                                <div class="abs btn btn_movedown detailTextAreaMoveDown"></div>
+                            </div>
+                        </div>
+                        <div type="flora" class="abs page flora">
+                            <div class="abs bg_no_repeat detailFlora detailFlora0"></div>
+                            <div class="abs detailFloraTitle">Vegetação de clima úmido da Floresta Amazônica.</div>
+                        </div>
+                        <div type="fauna" class="abs page fauna">
+                            <div class="abs bg_no_repeat detailFauna detailFauna0">
+                                <video poster="img/amazonia_fauna.jpg" width="100%" height="100%">
+                                    <source src="video/amazonia_fauna.mp4" type="video/mp4">
+                                </video>
+
+                                <div video="video/amazonia_fauna.mp4" legend="Jaguar da Amazônia." credits="Icon Films/Photolibrary Video/Getty Images" class="abs left_top bg_no_repeat bg_center_center videoPlay">
+                                    <div class="abs videoCredits">Icon Films/Photolibrary Video/Getty Images</div>
+                                </div>
+                            </div>
+
+                            <div class="abs detailFaunaTitle">Jaguar da Amazônia.</div>
+                        </div>
+                        <div type="relief" class="abs page relief">
+                            <div class="abs bg_no_repeat detailRelief detailRelief0">
+                                <video poster="img/amazonia_relevo.jpg" width="100%" height="100%">
+                                    <source src="video/amazonia_relevo.mp4" type="video/mp4">
+                                </video>
+
+                                <div video="video/amazonia_relevo.mp4" bottom="30" legend="Vista aérea do município de São Gabriel da Cachoeira, no estado do Amazonas." credits="Paulo Gambale/Digital Vision/Getty Images" class="abs left_top bg_no_repeat bg_center_center videoPlay">
+                                    <div class="abs videoCredits">Paulo Gambale/Digital Vision/Getty Images</div>
+                                </div>
+                            </div>
+
+                            <div class="abs detailReliefTitle" style="top: 496px;">Vista aérea do município de São Gabriel da Cachoeira, no estado do Amazonas.</div>
+                        </div>
+                        <div type="more" class="abs page more">
+                            <div class="abs bg_no_repeat bg_center_center detailMore detailMore0">
+                                <video poster="img/amazonia_mais.jpg" width="100%" height="100%">
+                                    <source src="video/amazonia_mais.mp4" type="video/mp4">
+                                </video>
+
+                                <div video="video/amazonia_mais.mp4" legend="Desmatamento na Amazônia." credits="Wild Images Ltd./Photolibrary Video/Getty Images" class="abs left_top bg_no_repeat bg_center_center videoPlay">
+                                    <div class="abs videoCredits" style="font-size: 11px;">Wild Images Ltd./Photolibrary Video/Getty Images</div>
+                                </div>
+                            </div>
+                            <div class="abs bg_no_repeat bg_center_center detailMoreTitle">Desmatamento na Amazônia.</div>
+                            <div class="abs detailTextArea">
+                                <div number="0" class="abs detailTextAreaPiece" style="font-size: 19px;">Grande parte desse domínio morfoclimático encontra-se ameaçada pelo desmatamento causado principalmente pela atividade madeireira na região, além de queimadas e derrubada de árvores para cultivo agrícola e pastagens.</div>
+                                <div class="abs btn btn_moveup detailTextAreaMoveUp"></div>
+                                <div class="abs btn btn_movedown detailTextAreaMoveDown"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div region="1" class="abs detail">
+                        <div type="map" class="abs page map">
+                            <div class="abs bg_no_repeat bg_left_center detailMap detailMap1"></div>
+                            <div class="abs detailTextArea">
+                                <div number="0" class="abs detailTextAreaPiece">
+                                    Esse domínio morfoclimático é característico do sertão nordestino, de clima semiárido e vegetação de herbáceas e xerófilas. Popularmente conhecidas como cactos, as xerófilas possuem a propriedade de armazenar água como forma de adaptação ao clima seco. O relevo apresenta muitas chapadas, formadas pela ação erosiva do vento sobre os planaltos rochosos. A fauna é composta de espécies adaptadas ao clima quente e seco, como os lagartos e o cágado, uma espécie de jabuti terrestre.
+                                </div>
+                                <div class="abs btn btn_moveup detailTextAreaMoveUp"></div>
+                                <div class="abs btn btn_movedown detailTextAreaMoveDown"></div>
+                            </div>
+                        </div>
+                        <div type="flora" class="abs page flora">
+                            <div class="abs bg_no_repeat detailFlora detailFlora1"></div>
+                            <div class="abs detailFloraTitle">Vegetação do semiárido pernambucano.</div>
+                        </div>
+                        <div type="fauna" class="abs page fauna">
+                            <div class="abs bg_no_repeat detailFauna detailFauna1"></div>
+                            <div class="abs detailFaunaTitle">Cágado da caatinga.</div>
+                        </div>
+                        <div type="relief" class="abs page relief">
+                            <div class="abs bg_no_repeat detailRelief detailRelief1"></div>
+                            <div class="abs detailReliefTitle">Relevo de chapadas no semiárido baiano.</div>
+                        </div>
+                        <div type="more" class="abs page more">
+                            <div class="abs bg_no_repeat bg_center_center detailMore detailMore1"></div>
+                            <div class="abs bg_no_repeat bg_center_center detailMoreTitle">Caatinga.</div>
+                            <div class="abs detailTextArea">
+                                <div number="0" class="abs detailTextAreaPiece" style="font-size: 19px;">A caatinga é característica da região do semiárido nordestino, e sua formação está ligada à barreira formada pelo relevo que impede a chegada dos ventos carregados de umidade do litoral. Assim, as chuvas se tornam raras na região e boa parte dos rios é intermitente, isto é, fica seca por um longo período do ano. Os solos pobres dificultam o cultivo agrícola, agravando ainda mais os problemas sociais enfrentados pela população.</div>
+                                <div class="abs btn btn_moveup detailTextAreaMoveUp"></div>
+                                <div class="abs btn btn_movedown detailTextAreaMoveDown"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div region="2" class="abs detail">
+                        <div type="map" class="abs page map">
+                            <div class="abs bg_no_repeat bg_left_center detailMap detailMap2"></div>
+                            <div class="abs detailTextArea">
+                                <div number="0" class="abs detailTextAreaPiece">
+                                    O cerrado se estende por uma vasta área da porção central ao oeste do país, onde o relevo é formado por chapadas e baixos planaltos. A vegetação é constituída de arbustos e árvores de médio porte, em geral bastante retorcidos. Nas últimas décadas, o cerrado brasileiro tem passado por um forte processo de degradação ambiental, em decorrência do avanço de culturas como soja e<br />cana-de-açúcar, de pastagens, da abertura de rodovias e inúmeras queimadas. Isso tudo compromete a biodiversidade desse bioma e ameaça muitas espécies de extinção, como o lobo-guará, a onça-pintada e o tamanduá-bandeira.
+                                </div>
+                                <div class="abs btn btn_moveup detailTextAreaMoveUp"></div>
+                                <div class="abs btn btn_movedown detailTextAreaMoveDown"></div>
+                            </div>
+                        </div>
+                        <div type="flora" class="abs page flora">
+                            <div class="abs bg_no_repeat detailFlora detailFlora2"></div>
+                            <div class="abs detailFloraTitle">Vegetação do cerrado brasileiro.</div>
+                        </div>
+                        <div type="fauna" class="abs page fauna">
+                            <div class="abs bg_no_repeat detailFauna detailFauna2"></div>
+                            <div class="abs detailFaunaTitle" style="width: 722px; left: 49px; top: 496px;">Tamanduá-bandeira, espécie do cerrado brasileiro ameaçada de extinção. Parque Nacional das Emas, em Goiás.</div>
+                        </div>
+                        <div type="relief" class="abs page relief">
+                            <div class="abs bg_no_repeat detailRelief detailRelief2"></div>
+                            <div class="abs detailReliefTitle" style="top: 496px">Cultivo de café nas encostas baixas do cerrado, em Minas Gerais.</div>
+                        </div>
+                        <div type="more" class="abs page more">
+                            <div class="abs bg_no_repeat bg_center_center detailMore detailMore2"></div>
+                            <div class="abs bg_no_repeat bg_center_center detailMoreTitle">Queimada em área de cerrado.</div>
+                            <div class="abs detailTextArea">
+                                <div number="0" class="abs detailTextAreaPiece" style="font-size: 19px;">Em virtude da expansão da atividade agropecuária, especialmente o cultivo de soja e as pastagens no centro-sul e no oeste do país, da intensa ocupação humana, das queimadas e dos desmatamentos, esse domínio já apresenta menos de 20% de sua cobertura vegetal original, o que contribui para o esgotamento e a erosão dos solos, a degradação dos recursos naturais e a ameaça à biodiversidade.</div>
+                                <div class="abs btn btn_moveup detailTextAreaMoveUp"></div>
+                                <div class="abs btn btn_movedown detailTextAreaMoveDown"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div region="3" class="abs detail">
+                        <div type="map" class="abs page map">
+                            <div class="abs bg_no_repeat bg_left_center detailMap detailMap3"></div>
+                            <div class="abs detailTextArea">
+                                <div number="0" class="abs detailTextAreaPiece">
+                                    As chamadas faixas de transição entre os domínios morfoclimáticos recebem esse nome porque possuem características de mais de um bioma, como é o caso da Mata dos Cocais, que separa a região amazônica da caatinga, apresentando características climáticas e de vegetação mescladas desses dois grandes domínios. Este também é o caso dos biomas do Pantanal, na fronteira oeste do Brasil; do agreste, que separa o sertão nordestino da porção mais úmida da Zona da Mata; e dos manguezais, que constituem importantes reservas da biodiversidade brasileira.
+                                </div>
+                                <div class="abs btn btn_moveup detailTextAreaMoveUp"></div>
+                                <div class="abs btn btn_movedown detailTextAreaMoveDown"></div>
+                            </div>
+                        </div>
+                        <div type="flora" class="abs page flora">
+                            <div class="abs bg_no_repeat detailFlora detailFlora3"></div>
+                            <div class="abs detailFloraTitle">Manguezal.</div>
+                        </div>
+                        <div type="fauna" class="abs page fauna">
+                            <div class="abs bg_no_repeat detailFauna detailFauna3">
+                                <video poster="img/faixa_fauna.jpg" width="100%" height="100%">
+                                    <source src="video/faixa_fauna.mp4" type="video/mp4">
+                                </video>
+
+                                <div video="video/faixa_fauna.mp4" legend="Crocodilos no Pantanal mato-grossense." credits="Discovery Footage Source/Getty Images" class="abs left_top bg_no_repeat bg_center_center videoPlay">
+                                    <div class="abs videoCredits">Discovery Footage Source/Getty Images</div>
+                                </div>
+                            </div>
+
+                            <div class="abs detailFaunaTitle">Crocodilos no Pantanal mato-grossense.</div>
+                        </div>
+                        <div type="relief" class="abs page relief">
+                            <div class="abs bg_no_repeat detailRelief detailRelief3"></div>
+                            <div class="abs detailReliefTitle" style="top: 496px">Relevo do entorno do planalto da Borborema, em Pirpirituba, na Paraíba.</div>
+                        </div>
+                        <div type="more" class="abs page more">
+                            <div class="abs bg_no_repeat bg_center_center detailMore detailMore3"></div>
+                            <div class="abs bg_no_repeat bg_center_center detailMoreTitle">Mata dos Cocais.</div>
+                            <div class="abs detailTextArea">
+                                <div number="0" class="abs detailTextAreaPiece" style="font-size: 19px;">A região da Mata dos Cocais separa o domínio úmido da Amazônia do bioma semiárido nordestino e do cerrado, constituindo um espaço de transição entre ambientes muito diferentes. Localiza-se principalmente entre os estados do Maranhão e do Piauí, e apresenta uma formação vegetal de coqueiros e palmeiras, cuja principal atividade econômica é o extrativismo vegetal de produtos como o babaçu, a carnaúba e o buriti.</div>
+                                <div class="abs btn btn_moveup detailTextAreaMoveUp"></div>
+                                <div class="abs btn btn_movedown detailTextAreaMoveDown"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div region="4" class="abs detail">
+                        <div type="map" class="abs page map">
+                            <div class="abs bg_no_repeat bg_left_center detailMap detailMap4"></div>
+                            <div class="abs detailTextArea">
+                                <div number="0" class="abs detailTextAreaPiece">
+                                    O domínio dos mares de morros acompanha a Serra do Mar, estendendo-se ao longo de quase toda a faixa litorânea brasileira, da Paraíba até o sul do país. Apresenta morros de topos arredondados, por causa do processo erosivo causado pela ação da chuva ao longo dos anos, em decorrência dos ventos carregados de umidade que chegam do litoral e encontram uma barreira na serra, provocando precipitações. A vegetação característica desse domínio é a Mata Atlântica, a segunda maior floresta úmida do país, de clima tropical e rica em espécies vegetais e animais. O desmatamento da região tem contribuído para a extinção de algumas dessas espécies, como o mico-leão-dourado e o bicho-preguiça.
+                                </div>
+                                <div class="abs btn btn_moveup detailTextAreaMoveUp"></div>
+                                <div class="abs btn btn_movedown detailTextAreaMoveDown"></div>
+                            </div>
+                        </div>
+                        <div type="flora" class="abs page flora">
+                            <div class="abs bg_no_repeat detailFlora detailFlora4"></div>
+                            <div class="abs detailFloraTitle" style="top: 496px;">Bromélias da Mata Atlântica na Serra do Mar, no Rio de Janeiro.</div>
+                        </div>
+                        <div type="fauna" class="abs page fauna">
+                            <div class="abs bg_no_repeat detailFauna detailFauna4"></div>
+                            <div class="abs detailFaunaTitle">Mico-leão-dourado, espécie típica da Mata Atlântica.</div>
+                        </div>
+                        <div type="relief" class="abs page relief">
+                            <div class="abs bg_no_repeat detailRelief detailRelief4"></div>
+                            <div class="abs detailReliefTitle">Mares de morros na Serra do Mar, em São Paulo.</div>
+                        </div>
+                        <div type="more" class="abs page more">
+                            <div class="abs bg_no_repeat bg_center_center detailMore detailMore4_1"></div>
+                            <div class="abs bg_no_repeat bg_center_center detailMoreTitle detailMoreTitle4_1">Pica-pau-de-cara-canela.</div>
+                            <div class="abs bg_no_repeat bg_center_center detailMore detailMore4_2"></div>
+                            <div class="abs bg_no_repeat bg_center_center detailMoreTitle detailMoreTitle4_2">Distribuição da Mata Atlântica.<br /><br /><div style="font-size: 14px;">FONTE: ARAUJO, Gabriely. Mata Atlântica – Fauna, flora e fotos. Disponível em: &lt;http://www.estudopratico.com.br/wp-content/uploads/2013/03/mata-atlantica-desmatamento.jpg&gt;. Acesso em: nov. 2014.</div></div>
+                            <div class="abs btn btn_moveup detailMorePictureMoveUp" onclick="$(this).parent().find('.detailMore4_2, .detailMoreTitle4_2, .detailMorePictureMoveUp').hide(); $(this).parent().find('.detailMore4_1, .detailMoreTitle4_1, .detailMorePictureMoveDown').show();"></div>
+                            <div class="abs btn btn_movedown detailMorePictureMoveDown" onclick="$(this).parent().find('.detailMore4_1, .detailMoreTitle4_1, .detailMorePictureMoveDown').hide(); $(this).parent().find('.detailMore4_2, .detailMoreTitle4_2, .detailMorePictureMoveUp').show();"></div>
+                            <div class="abs detailTextArea">
+                                <div number="0" class="abs detailTextAreaPiece" style="font-size: 19px;">A vegetação de Mata Atlântica, típica do domínio de mares de morros, abriga uma das maiores reservas da biodiversidade mundial e uma das mais importantes áreas de manancial, mas, por concentrar-se na porção litorânea e no centro-sul do país, próximo a grandes centros urbanos e áreas industriais, vem sendo gravemente desmatada. Várias espécies nativas, como o pica-pau-de-cara-canela, estão ameaçadas de extinção.</div>
+                                <div class="abs btn btn_moveup detailTextAreaMoveUp"></div>
+                                <div class="abs btn btn_movedown detailTextAreaMoveDown"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div region="5" class="abs detail">
+                        <div type="map" class="abs page map">
+                            <div class="abs bg_no_repeat bg_left_center detailMap detailMap5"></div>
+                            <div class="abs detailTextArea">
+                                <div number="0" class="abs detailTextAreaPiece">
+                                    Situado no sul do país, o domínio das araucárias ou mata dos pinhais apresenta vegetação esparsa, cuja espécie predominante é o pinheiro-do-paraná, representante nativo da região. Ocorre em áreas de relevo mais alto e relativamente plano, ou de colinas de topo arredondado, em geral apresentando baixas temperaturas. Sofre com a exploração da indústria madeireira e de celulose, além da degradação da vegetação e do solo provocada pela atividade pecuária, muito presente na região.
+                                </div>
+                                <div class="abs btn btn_moveup detailTextAreaMoveUp"></div>
+                                <div class="abs btn btn_movedown detailTextAreaMoveDown"></div>
+                            </div>
+                        </div>
+                        <div type="flora" class="abs page flora">
+                            <div class="abs bg_no_repeat detailFlora detailFlora5"></div>
+                            <div class="abs detailFloraTitle">Vegetação de araucárias.</div>
+                        </div>
+                        <div type="fauna" class="abs page fauna">
+                            <div class="abs bg_no_repeat detailFauna detailFauna5"></div>
+                            <div class="abs detailFaunaTitle">Criação de gado nos campos do Sul.</div>
+                        </div>
+                        <div type="relief" class="abs page relief">
+                            <div class="abs bg_no_repeat detailRelief detailRelief5"></div>
+                            <div class="abs detailReliefTitle">Colinas no Rio Grande do Sul.</div>
+                        </div>
+                        <div type="more" class="abs page more">
+                            <div class="abs bg_no_repeat bg_center_center detailMore detailMore5"></div>
+                            <div class="abs bg_no_repeat bg_center_center detailMoreTitle">Araucária.</div>
+                            <div class="abs detailTextArea">
+                                <div number="0" class="abs detailTextAreaPiece" style="font-size: 19px;">A preservação das áreas de Mata de Araucária é um problema no sul do Brasil, pois proprietários rurais veem na expansão das áreas de proteção um obstáculo à exploração econômica. Segundo o Ministério do Meio Ambiente, é urgente garantir a preservação vegetal que já se encontra em extinção no local, restando apenas 3% desse ecossistema.<br /><br /><div style="font-size: 12px; text-align: right;">Fonte de pesquisa: CARAZZAI, Estelita Hass. Proteção de araucárias no sul do país está sob ameaça. Folha de S. Paulo, São Paulo, 16 maio 2011. Folha Ambiente. Disponível em: &lt;http://www1.folha.uol.com.br/ambiente/916277-protecao-de-araucarias-no-sul-do-pais-esta-sob-ameaca.shtml&gt;.<br />Acesso em: 25 nov. 2014.</div></div>
+                                <div class="abs btn btn_moveup detailTextAreaMoveUp"></div>
+                                <div class="abs btn btn_movedown detailTextAreaMoveDown"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div region="6" class="abs detail">
+                        <div type="map" class="abs page map">
+                            <div class="abs bg_no_repeat bg_left_center detailMap detailMap6"></div>
+                            <div class="abs detailTextArea">
+                                <div number="0" class="abs detailTextAreaPiece">
+                                    As pradarias constituem os chamados pampas gaúchos, de vegetação rasteira de gramíneas. Seu relevo, pouco acidentado, é formado por campos e coxilhas suavemente onduladas, e é propício para a criação de rebanhos e para a atividade agropecuária. As pradarias concentram-se no estado do Rio Grande do Sul e apresentam clima mais frio ao longo do ano.
+                                </div>
+                                <div class="abs btn btn_moveup detailTextAreaMoveUp"></div>
+                                <div class="abs btn btn_movedown detailTextAreaMoveDown"></div>
+                            </div>
+                        </div>
+                        <div type="flora" class="abs page flora">
+                            <div class="abs bg_no_repeat detailFlora detailFlora6"></div>
+                            <div class="abs detailFloraTitle">Vegetação das pradarias gaúchas.</div>
+                        </div>
+                        <div type="fauna" class="abs page fauna">
+                            <div class="abs bg_no_repeat detailFauna detailFauna6"></div>
+                            <div class="abs detailFaunaTitle">Rebanho de ovelhas nos pampas gaúchos.</div>
+                        </div>
+                        <div type="relief" class="abs page relief">
+                            <div class="abs bg_no_repeat detailRelief detailRelief6"></div>
+                            <div class="abs detailReliefTitle">Paisagem de coxilhas no Rio Grande do Sul.</div>
+                        </div>
+                        <div type="more" class="abs page more">
+                            <div class="abs bg_no_repeat bg_center_center detailMore detailMore6_1"></div>
+                            <div class="abs bg_no_repeat bg_center_center detailMoreTitle detailMoreTitle6_1">Vegetação e relevo campestres.</div>
+                            <div class="abs bg_no_repeat bg_center_center detailMore detailMore6_2"></div>
+                            <div class="abs bg_no_repeat bg_center_center detailMoreTitle detailMoreTitle6_2">Gaúcho.</div>
+                            <div class="abs btn btn_moveup detailMorePictureMoveUp" onclick="$(this).parent().find('.detailMore6_2, .detailMoreTitle6_2, .detailMorePictureMoveUp').hide(); $(this).parent().find('.detailMore6_1, .detailMoreTitle6_1, .detailMorePictureMoveDown').show();"></div>
+                            <div class="abs btn btn_movedown detailMorePictureMoveDown" onclick="$(this).parent().find('.detailMore6_1, .detailMoreTitle6_1, .detailMorePictureMoveDown').hide(); $(this).parent().find('.detailMore6_2, .detailMoreTitle6_2, .detailMorePictureMoveUp').show();"></div>
+                            <div class="abs detailTextArea">
+                                <div number="0" class="abs detailTextAreaPiece" style="font-size: 19px;">Na América do Sul, a região dos pampas estende-se pelo estado do Rio Grande do Sul, no Brasil, até o Uruguai e a Argentina. De clima temperado, essa região apresenta uma cultura muito rica, da qual se destacam: a erva-mate, com a qual se faz chimarrão; a criação equina e a pecuária bovina para o famoso churrasco; e características próprias do gaúcho, como vestuário, costumes e alimentação.</div>
+                                <div class="abs btn btn_moveup detailTextAreaMoveUp"></div>
+                                <div class="abs btn btn_movedown detailTextAreaMoveDown"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="btnDCClose" class="abs btn btn_fechar"></div>
+                </div>
+            </div>
+
+            <div id="cover" class="default_size abs left_top transitable visible">
+                <div id="cmap" class="default_size abs left_top bg_no_repeat bg_center_bottom"></div>
+                <div id="ctitle" class="abs">
+                    <div id="ctitle1" class="abs">DOMÍNIOS</div>
+                    <div id="ctitle2" class="abs">MORFOCLIMÁTICOS</div>
+                </div>
+
+                <div id="btnCStart" class="abs btn btn_iniciar">Iniciar</div>
+            </div>
+
+            <div id="intro" class="default_size abs left_top transitable invisible">
+                <div id="ibox" class="abs">
+                    O mapa de domínios morfoclimáticos foi proposto pelo
+                    geógrafo Aziz Ab’ Saber para classificar os diferentes biomas
+                    brasileiros de acordo com suas características físicas e
+                    geográficas, como clima, vegetação e relevo. Vamos conhecer
+                    melhor esses domínios morfoclimáticos?
+
+                    <div id="btnIClose" class="abs btn btn_fechar"></div>
+                </div>
+
+                <div id="btnITutorial" class="abs btn btn_tutorial">VER TUTORIAL</div>
+            </div>
+
+            <div id="tutorial" class="default_size abs left_top transitable invisible">
+                <div id="tbox" class="abs">
+                    <div id="ttitle" class="abs">TUTORIAL</div>
+
+                    Escolha um dos campos ativos do mapa e clique nele para
+                    conhecer um dos domínios morfoclimáticos. Em seguida,
+                    navegue pelo menu interativo para ver as informações
+                    relativas ao campo ativo selecionado.
+
+                    <div id="btnTClose" class="abs btn btn_fechar"></div>
+                </div>
+            </div>
+
+            <div id="theater" class="default_size abs left_top transitable invisible">
+                <div id="tlegend" class="abs">
+                    Jaguar da Amazônia.
+                </div>
+
+                <div id="tcredits" class="abs">
+                    Icon Films/Photolibrary Video/Getty Images
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="capa.js">
+            logo: 0
+        </script>
+    </body>
+
+</html>

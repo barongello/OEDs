@@ -1,0 +1,105 @@
+        </div>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <link rel="stylesheet" href="css/jquery-ui.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/main.css" />
+
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-touch-punch.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <title></title>
+    </head>
+
+    <body>
+        <div id="stage" class="default_size abs left_top">
+            <div id="background" class="default_size abs left_top bg_no_repeat bg_center_center"></div>
+
+            <div id="characters" class="default_size abs left_top transitable">
+                <div id="btn_dionisio" character="dionisio" class="abs bg_no_repeat bg_center_center transitable character btn btn_dionisio"></div>
+                <div id="btn_brecht" character="brecht" class="abs bg_no_repeat transitable character btn btn_brecht"></div>
+                <div id="btn_pierrot" character="pierrot" class="abs bg_no_repeat bg_center_center transitable character btn btn_pierrot"></div>
+                <div id="btn_phlyax" character="phlyax" class="abs bg_no_repeat bg_center_center transitable character btn btn_phlyax"></div>
+                <div id="btn_trovador" character="trovador" class="abs bg_no_repeat transitable character btn btn_trovador"></div>
+                <div id="btn_terencio" character="terencio" class="abs bg_no_repeat bg_center_center transitable character btn btn_terencio"></div>
+                <div id="btn_goethe" character="goethe" class="abs bg_no_repeat transitable character btn btn_goethe"></div>
+
+                <div id="game_overlay" class="default_size abs left_top transitable">
+                    <div id="audio_player" class="abs bg_no_repeat bg_center_center transitable">
+                        <div id="btn_audio" class="abs bg_no_repeat bg_center_center btn btn_play"></div>
+
+                        <div id="slider_audio" class="abs"></div>
+                    </div>
+
+                    <div id="character_text_wrapper" class="abs transitable">
+                        <div id="character_text"></div>
+                    </div>
+
+                    <div id="gallery" class="abs bg_no_repeat bg_center_center transitable">
+                        <div id="gallery_container" class="abs">
+                            <div id="gallery_image_1" image="0" class="bg_no_repeat bg_center_center btn thumb"></div>
+                            <div id="gallery_image_2" image="1" class="bg_no_repeat bg_center_center btn thumb"></div>
+                            <div id="gallery_image_3" image="2" class="bg_no_repeat bg_center_center btn thumb"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="movable_main_curtain" class="default_width abs bg_no_repeat bg_center_top transitable">
+                <div id="intro_text" class="abs transitable">
+                    Conheça algumas características do teatro em
+                    diferentes momentos históricos por meio deste
+                    infográfico.
+                </div>
+
+                <div id="btn_intro" class="abs bg_no_repeat bg_center_center transitable btn btn_up"></div>
+            </div>
+
+            <div id="fixed_left_curtain" class="default_height abs left_top bg_no_repeat bg_left_center fixed_lateral_curtain"></div>
+
+            <div id="fixed_right_curtain" class="default_height abs bg_no_repeat bg_right_center fixed_lateral_curtain"></div>
+
+            <div id="movable_top_curtain" class="default_width abs left_top bg_no_repeat bg_center_top transitable recoiled">
+                <div id="btn_back" class="abs bg_no_repeat bg_center_center transitable btn btn_back"></div>
+
+                <div id="description_text" class="abs transitable">
+                    O teatro é uma forma de expressão provavelmente tão antiga quanto a
+                    humanidade e desempenha um papel importante para a comunicação. Antes do
+                    surgimento das palavras, nossos ancestrais pré-históricos representavam ideias e
+                    sentimentos por meio de gestos e movimentos. Ao longo do tempo, diferentes
+                    culturas criaram novas formas de expressão empregando a linguagem teatral.
+                    Clique nas personagens em cena e conheça algumas manifestações teatrais em
+                    diferentes momentos históricos.
+                </div>
+
+                <div id="btn_description" class="abs bg_no_repeat bg_center_center transitable btn btn_down"></div>
+            </div>
+
+            <div id="gallery_image" class="abs bg_no_repeat bg_center_center transitable">
+                <div id="credit" class="abs"></div>
+
+                <div id="legend" class="abs"></div>
+
+                <div id="gallery_close" class="abs transitable btn btn_close"></div>
+            </div>
+
+            <div id="tooltip_overlay" class="default_size abs left_top">
+                <div id="tooltip" class="abs"></div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="capa.js">
+            logo: 0
+        </script>
+    </body>
+
+</html>

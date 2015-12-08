@@ -1,0 +1,385 @@
+.btn_ajuda { width: 94px; height: 69px; background-image: url(../img/btn_ajuda_up.png); }
+.btn_ajuda:hover { background-image: url(../img/btn_ajuda_down.png); }
+
+.btn_home { width: 94px; height: 69px; background-image: url(../img/btn_home_up.png); }
+.btn_home:hover { background-image: url(../img/btn_home_down.png); }
+
+.btn_fauna { width: 94px; height: 69px; background-image: url(../img/btn_fauna_up_v2.png); }
+.btn_fauna:hover { background-image: url(../img/btn_fauna_down_v2.png); }
+.btn_fauna.disabled { background-image: url(../img/btn_fauna_down_v2.png); }
+.btn_fauna.disabled:hover { background-image: url(../img/btn_fauna_down_v2.png); }
+
+.btn_fechar { width: 52px; height: 52px; background-image: url(../img/btn_fechar_up.png); }
+.btn_fechar:hover { background-image: url(../img/btn_fechar_down.png); }
+
+.btn_flora { width: 94px; height: 69px; background-image: url(../img/btn_flora_up.png); }
+.btn_flora:hover { background-image: url(../img/btn_flora_down.png); }
+.btn_flora.disabled { background-image: url(../img/btn_flora_down.png); }
+.btn_flora.disabled:hover { background-image: url(../img/btn_flora_down.png); }
+
+.btn_iniciar { width: 146px; height: 62px; background-image: url(../img/btn_iniciar_up.png); }
+.btn_iniciar:hover { background-image: url(../img/btn_iniciar_down.png); }
+
+.btn_mais { width: 94px; height: 69px; background-image: url(../img/btn_mais_up.png); }
+.btn_mais:hover { background-image: url(../img/btn_mais_down.png); }
+.btn_mais.disabled { background-image: url(../img/btn_mais_down.png); }
+.btn_mais.disabled:hover { background-image: url(../img/btn_mais_down.png); }
+
+.btn_mapa { width: 94px; height: 69px; background-image: url(../img/btn_mapa_up.png); }
+.btn_mapa:hover { background-image: url(../img/btn_mapa_down.png); }
+.btn_mapa.disabled { background-image: url(../img/btn_mapa_down.png); }
+.btn_mapa.disabled:hover { background-image: url(../img/btn_mapa_down.png); }
+
+.btn_movedown { width: 88px; height: 43px; background-image: url(../img/btn_movedown_up.png); }
+.btn_movedown:hover { background-image: url(../img/btn_movedown_down.png); }
+.btn_movedown.disabled { background-image: url(../img/btn_movedown_down.png); }
+.btn_movedown.disabled:hover { background-image: url(../img/btn_movedown_down.png); }
+
+.btn_moveup { width: 88px; height: 43px; background-image: url(../img/btn_moveup_up.png); }
+.btn_moveup:hover { background-image: url(../img/btn_moveup_down.png); }
+.btn_moveup.disabled { background-image: url(../img/btn_moveup_down.png); }
+.btn_moveup.disabled:hover { background-image: url(../img/btn_moveup_down.png); }
+
+.btn_regioes { width: 56px; height: 55px; background-image: url(../img/btn_regioes_up.png); }
+.btn_regioes:hover { background-image: url(../img/btn_regioes_down.png); }
+
+.btn_relevo { width: 94px; height: 69px; background-image: url(../img/btn_relevo_up.png); }
+.btn_relevo:hover { background-image: url(../img/btn_relevo_down.png); }
+.btn_relevo.disabled { background-image: url(../img/btn_relevo_down.png); }
+.btn_relevo.disabled:hover { background-image: url(../img/btn_relevo_down.png); }
+
+.btn_tutorial { width: 241px; height: 62px; background-image: url(../img/btn_tutorial_up.png); }
+.btn_tutorial:hover { background-image: url(../img/btn_tutorial_down.png); }
+
+video {
+    background-color: #000000;
+}
+
+#stage { background-color: #c4e7f8; }
+
+#cover { background-color: rgba(20, 34, 51, 0.95); }
+#cmap { background-image: url(../img/capa_img_v2.png); }
+#ctitle {
+    width: 666px;
+    height: 211px;
+    left: 179px;
+    top: 25px;
+    background-image: url(../img/capa_titulo.png);
+    font-family: 'HoltwoodOneSCRegular';
+    color: #ffffff;
+    text-transform: lowercase;
+}
+#ctitle1 { left: 191px; top: 30px; font-size: 46px; }
+#ctitle2 { left: 17px; top: 112px; font-size: 54px; }
+#btnCStart {
+    bottom: 25px;
+    right: 230px;
+    font: 23px 'HoltwoodOneSCRegular';
+    line-height: 62px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+#board { background-color: #c4e7f8; overflow: hidden; }
+#bmap {
+    height: 1030px;
+    background-image: url(../img/img_mapa.png);
+}
+#btnBMap1 { left: 400px; top: 230px; }
+#btnBMap2 { left: 840px; top: 340px; }
+#btnBMap3 { left: 580px; top: 480px; }
+#btnBMap4 { left: 440px; top: 570px; }
+#btnBMap5 { left: 780px; top: 660px; }
+#btnBMap6 { left: 560px; top: 780px; }
+#btnBMap7 { left: 480px; top: 900px; }
+#btnBHome { left: 15px; top: 15px; }
+#btnBHelp { left: 124px; top: 15px; }
+#btnBMoveUp { left: 18px; top: 99px; }
+#btnBMoveDown { left: 18px; top: 147px; }
+#blegends {
+    width: 304px;
+    height: 259px;
+    left: 15px;
+    bottom: 15px;
+    background-image: url(../img/img_legenda_v2.png);
+}
+#bcardinals {
+    width: 141px;
+    height: 197px;
+    right: 5px;
+    bottom: 0px;
+    background-image: url(../img/img_rosadosventos.png);
+}
+#bcredits {
+    right: -353px;
+    top: 353px;
+    font: 13px 'ArmataRegular';
+    line-height: 13px;
+    color: #3f3f3f;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -fx-transform: rotate(-90deg);
+}
+
+#details { background-color: rgba(20, 34, 51, 0.95); }
+#dannounce {
+    height: 111px;
+    background-image: url(../img/box_enunciado.png);
+    font: 24px 'ArmataRegular';
+    color: #ffffff;
+    padding: 10px 0px 0px 65px;
+    box-sizing: border-box;
+}
+#btnDMap { left: 60px; top: 150px; }
+#btnDFlora { left: 60px; top: 219px; }
+#btnDFauna { left: 60px; top: 288px; }
+#btnDRelief { left: 60px; top: 357px; }
+#btnDMore { left: 60px; top: 426px; }
+#dcontent {
+    width: 810px;
+    height: 558px;
+    left: 154px;
+    top: 150px;
+    background: #ffffff;
+}
+#dcontent > .detail {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    font: 22px 'ArmataRegular';
+    color: #3f3f3f;
+    display: none;
+}
+#dcontent > .detail > .page {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+#dcontent > .detail > .page > div > .videoPlay {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/img_play.png);
+    background-size: 150px 150px;
+}
+#dcontent > .detail > .page > div > .videoPlay > .videoCredits {
+    right: 23px;
+    top: 0px;
+    background-color: #ffffff;
+    font: 14px 'ArmataRegular';
+    line-height: 14px;
+    padding: 5px 5px 5px 5px;
+    color: #272525;
+    transform-origin: right top;
+    transform: rotate(-90deg);
+    -webkit-transform-origin: right top;
+    -webkit-transform: rotate(-90deg);
+    -fx-transform-origin: right top;
+    -fx-transform: rotate(-90deg);
+}
+#dcontent > .detail > .page > .detailMap {
+    width: 506px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+#dcontent > .detail > .page > .detailMap.detailMap0 { background-image: url(../img/img_mapa1.png); }
+#dcontent > .detail > .page > .detailMap.detailMap1 { background-image: url(../img/img_mapa2.png); }
+#dcontent > .detail > .page > .detailMap.detailMap2 { background-image: url(../img/img_mapa3.png); }
+#dcontent > .detail > .page > .detailMap.detailMap3 { background-image: url(../img/img_mapa7.png); }
+#dcontent > .detail > .page > .detailMap.detailMap4 { background-image: url(../img/img_mapa4.png); }
+#dcontent > .detail > .page > .detailMap.detailMap5 { background-image: url(../img/img_mapa5.png); }
+#dcontent > .detail > .page > .detailMap.detailMap6 { background-image: url(../img/img_mapa6.png); }
+#dcontent > .detail > .page > .detailTextArea {
+    width: 330px;
+    height: 358px;
+    left: 470px;
+    top: 100px;
+}
+#dcontent > .detail > .page.map > .detailTextArea {
+    width: 670px;
+    height: 358px;
+    left: 70px;
+    top: 100px;
+}
+#dcontent > .detail > .page > .detailTextArea > .detailTextAreaMoveUp { left: 121px; top: -43px; }
+#dcontent > .detail > .page > .detailTextArea > .detailTextAreaMoveDown { left: 121px; bottom: -43px; }
+#dcontent > .detail > .page > .detailFlora {
+    width: 662px;
+    height: 388px;
+    left: 74px;
+    top: 100px;
+    background-size: contain;
+}
+#dcontent > .detail > .page > .detailFlora0 { background-image: url(../img/mapa1_img1_v2.png); }
+#dcontent > .detail > .page > .detailFlora1 { background-image: url(../img/mapa2_img1_v2.png); }
+#dcontent > .detail > .page > .detailFlora2 { background-image: url(../img/mapa3_img1_v2.png); }
+#dcontent > .detail > .page > .detailFlora3 { background-image: url(../img/mapa7_img1_v2.png); }
+#dcontent > .detail > .page > .detailFlora4 { background-image: url(../img/mapa4_img1_v2.png); }
+#dcontent > .detail > .page > .detailFlora5 { background-image: url(../img/mapa5_img_v2.png); }
+#dcontent > .detail > .page > .detailFlora6 { background-image: url(../img/mapa6_img1_v2.png); }
+#dcontent > .detail > .page > .detailFloraTitle { 
+    width: 662px;
+    left: 74px;
+    top: 506px;
+    font: 22px 'ArmataRegular';
+    color: #3f3f3f;
+}
+#dcontent > .detail > .page > .detailFauna {
+    width: 662px;
+    height: 388px;
+    left: 74px;
+    top: 100px;
+    background-size: contain;
+}
+#dcontent > .detail > .page > .detailFauna1 { background-image: url(../img/mapa2_img2_v2.png); }
+#dcontent > .detail > .page > .detailFauna2 { background-image: url(../img/mapa3_img2_v2.png); }
+#dcontent > .detail > .page > .detailFauna4 { background-image: url(../img/mapa4_img2_v2.png); }
+#dcontent > .detail > .page > .detailFauna5 { background-image: url(../img/mapa5_img2_v2.png); }
+#dcontent > .detail > .page > .detailFauna6 { background-image: url(../img/mapa6_img2_v2.png); }
+#dcontent > .detail > .page > .detailFaunaTitle { 
+    width: 662px;
+    left: 74px;
+    top: 506px;
+    font: 22px 'ArmataRegular';
+    color: #3f3f3f;
+}
+#dcontent > .detail > .page > .detailRelief {
+    width: 662px;
+    height: 388px;
+    left: 74px;
+    top: 100px;
+    background-position: center center;
+    background-size: contain;
+}
+#dcontent > .detail > .page > .detailRelief1 { background-image: url(../img/mapa2_img3_v2.png); }
+#dcontent > .detail > .page > .detailRelief2 { background-image: url(../img/mapa3_img3_v2.png); }
+#dcontent > .detail > .page > .detailRelief3 { background-image: url(../img/mapa7_img2_v2.png); }
+#dcontent > .detail > .page > .detailRelief4 { background-image: url(../img/img_morros_v2.png); }
+#dcontent > .detail > .page > .detailRelief5 { background-image: url(../img/mapa5_img3_v2.png); }
+#dcontent > .detail > .page > .detailRelief6 { background-image: url(../img/mapa6_img3_v2.png); }
+#dcontent > .detail > .page > .detailReliefTitle { 
+    width: 662px;
+    left: 74px;
+    top: 506px;
+    font: 22px 'ArmataRegular';
+    color: #3f3f3f;
+}
+#dcontent > .detail > .page > .detailMore {
+    width: 438px;
+    height: 288px;
+    left: 16px;
+    top: 100px;
+    background-size: contain;
+}
+#dcontent > .detail > .page > .detailMore1 { background-image: url(../img/mapa2_img4_v2.png); }
+#dcontent > .detail > .page > .detailMore2 { background-image: url(../img/mapa3_img4_v2.png); }
+#dcontent > .detail > .page > .detailMore3 { background-image: url(../img/mapa7_img4_v2.png); }
+#dcontent > .detail > .page > .detailMore4_1 { background-image: url(../img/mapa4_img4_v2.png); }
+#dcontent > .detail > .page > .detailMore4_2 { background-image: url(../img/img_distribuicao_mata.png); }
+#dcontent > .detail > .page > .detailMore5 { background-image: url(../img/mapa5_img4_v2.png); }
+#dcontent > .detail > .page > .detailMore6_1 { background-image: url(../img/mapa6_img4_v2.png); }
+#dcontent > .detail > .page > .detailMore6_2 { background-image: url(../img/mapa6_img5_v2.png); }
+#dcontent > .detail > .page > .detailMoreTitle { 
+    width: 438px;
+    left: 16px;
+    top: 406px;
+    font: 22px 'ArmataRegular';
+    color: #3f3f3f;
+}
+#dcontent > .detail > .page > .detailMorePictureMoveUp { left: 191px; top: 39px; }
+#dcontent > .detail > .page > .detailMorePictureMoveDown { left: 191px; top: 446px; }
+#dctitle {
+    width: 372px;
+    height: 127px;
+    left: 219px;
+    top: -45px;
+    background-image: url(../img/img_titulo.png);
+    font: 30px 'HoltwoodOneSCRegular';
+    color: #ffffff;
+    text-align: center;
+    text-transform: lowercase;
+}
+#dctitle1 { width: 100%; height: 88px; line-height: 88px; }
+#dctitle2 { width: 320px; height: 34px; left: 47px; top: 88px; line-height: 34px; }
+#btnDCTutorial { left: 60px; bottom: 60px; }
+#btnDCClose { right: 5px; top: 5px; }
+
+#intro { background-color: rgba(20, 34, 51, 0.95); }
+#ibox {
+    width: 823px;
+    height: 239px;
+    left: 100px;
+    top: 200px;
+    background-image: url(../img/box_intro.png);
+    font: 22px 'ArmataRegular';
+    color: #3f3f3f;
+    text-align: justify;
+    padding: 65px 50px 50px 50px;
+    box-sizing: border-box;
+}
+#btnIClose { right: 5px; top: 5px; }
+#btnITutorial {
+    left: 391px;
+    bottom: 200px;
+    font: 23px 'HoltwoodOneSCRegular';
+    line-height: 62px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+#tutorial { background: rgba(22, 34, 51, 0.95); }
+#tbox {
+    width: 823px;
+    height: 239px;
+    left: 100px;
+    top: 264px;
+    background-image: url(../img/box_intro.png);
+    font: 22px 'ArmataRegular';
+    color: #3f3f3f;
+    text-align: justify;
+    padding: 90px 50px 50px 50px;
+    box-sizing: border-box;
+}
+#ttitle {
+    width: 370px;
+    height: 88px;
+    left: 226px;
+    top: -62px;
+    background-image: url(../img/img_tutorial.png);
+    font: 30px 'ArmataRegular';
+    line-height: 88px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+#btnTClose { right: 5px; top: 5px; }
+
+#theater { background-color: #000000; }
+#tlegend {
+    width: 774px;
+    bottom: 50px;
+    left: 125px;
+    font: 22px 'ArmataRegular';
+    color: #ffffff;
+}
+#tcredits {
+    right: 23px;
+    top: 0px;
+    background-color: #ffffff;
+    font: 14px 'ArmataRegular';
+    line-height: 14px;
+    color: #3f3f3f;
+    padding: 5px 5px 5px 5px;
+    transform-origin: right top;
+    transform: rotate(-90deg);
+    -webkit-transform-origin: right top;
+    -webkit-transform: rotate(-90deg);
+    -fx-transform-origin: right top;
+    -fx-transform: rotate(-90deg);
+}

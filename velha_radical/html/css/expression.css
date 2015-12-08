@@ -1,0 +1,140 @@
+.expression.box {
+    width: 150px;
+    height: 60px;
+    font-family: 'UbuntuBold';
+    text-align: center;
+    color: #454249;
+}
+
+.expression.wrapper {
+    height: 100%;
+    display: inline-block;
+}
+
+.expression.signal {
+    height: 100%;
+    float: left;
+    font-size: 40px;
+    line-height: 53px;
+    display: none;
+}
+
+.expression.wrapper.negative > .expression.signal {
+    display: inline-block;
+}
+
+.expression.container {
+    height: 100%;
+    float: left;
+    text-align: center;
+    display: inline-block;
+}
+
+.expression.wrapper.negative > .expression.container.normal {
+    padding-left: 5px;
+}
+
+.expression.container.radix {
+    width: 130px;
+    background: transparent url('../img/img_resp_radicalbb.png') no-repeat center center;
+    padding-left: 35px;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+
+.expression.wrapper.negative > .expression.container.radix {
+    margin-left: 5px;
+}
+
+.expression.bracket {
+    width: 14px;
+    height: 61px;
+    float: left;
+    background: transparent no-repeat center center;
+    display: none;
+}
+
+.expression.wrapper.negative > .expression.container.parentheses {
+    padding-left: 5px;
+}
+
+.expression.wrapper.negative > .expression.container.power {
+    padding-left: 5px;
+}
+
+.expression.container.parentheses > .expression.bracket {
+    display: inline-block;
+}
+
+.expression.bracket.left {
+    width: 14px;
+    background-image: url('../img/img_bracket_left.png');
+}
+
+.expression.bracket.right {
+    width: 15px;
+    background-image: url('../img/img_bracket_right.png');
+}
+
+.expression.numbers {
+    height: 100%;
+    float: left;
+    display: inline-block;
+}
+
+.expression.container.radix > .expression.numbers {
+    float: none;
+}
+
+.expression.numerator {
+    height: 100%;
+    font-size: 50px;
+    line-height: 61px;
+}
+
+.expression.container.radix > .expression.numbers > .expression.numerator {
+    line-height: 52px;
+}
+
+.expression.denominator {
+    display: none;
+}
+
+.expression.numbers.fraction > .expression.numerator {
+    height: 50%;
+    font-size: 26px;
+    line-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 1px solid #454249;
+}
+
+.expression.numbers.fraction > .expression.denominator {
+    height: 50%;
+    font-size: 26px;
+    line-height: 30px;
+    border-top: 1px solid #454249;
+    display: block;
+}
+
+.expression.container.radix > .expression.numbers.fraction > .expression.numerator {
+    line-height: 26px;
+}
+
+.expression.container.radix > .expression.numbers.fraction > .expression.denominator {
+    line-height: 26px;
+}
+
+.expression.exponent {
+    float: right;
+    font-size: 20px;
+    display: none;
+}
+
+.expression.container.power > .expression.exponent {
+    display: inline-block;
+}
+
+.expression.highlight {
+    background-color: #ffff99;
+}

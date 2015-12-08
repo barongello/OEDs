@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/main.css" />
+
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <title></title>
+    </head>
+
+    <body>
+        <div id="stage" class="default_size abs left_top">
+            <div id="background" class="default_size abs left_top bg_no_repeat bg_center_center"></div>
+
+            <div id="intro" class="default_size abs left_top bg_no_repeat bg_center_center visible transitable">
+                <div id="introContainer" class="abs bg_no_repeat bg_center_center border_box">
+                    Um bloco econômico é uma união econômica 
+                    e geopolítica de vários Estados-nação e tem 
+                    vários níveis de integração. Cada bloco tem 
+                    características e atributos próprios.<br />
+                    <br />
+                    Você vai confrontar os atributos de seus 
+                    blocos econômicos com os de seu oponente.<br />
+                    <br />
+                    Hora de jogar!
+
+                    <div id="btnIntroPlay" class="abs btn btn_play"></div>
+                </div>
+            </div>
+
+            <div id="help" class="default_size abs left_top bg_no_repeat bg_center_center invisible transitable">
+                <div id="helpContainer" class="abs bg_no_repeat bg_center_center border_box">
+                    Como jogar?<br />
+                    <br />
+                    Cada carta tem 4 atributos. Você deve 
+                    selecionar um deles, que será confrontado 
+                    com o mesmo atributo do adversário. O que
+                    for maior vence.<br />
+                    <br />
+                    Os atributos são:
+
+                    <div id="helpAttributes" class="bg_no_repeat bg_center_top">
+                        <span class="attr0">Integrantes</span>
+                        <span class="attr1">População</span>
+                        <span class="attr2">PIB</span>
+                        <span class="attr3">Influência</span>
+                    </div>
+
+                    <div id="btnHelpClose" class="abs btn btn_close"></div>
+                </div>
+            </div>
+
+            <div id="board" class="default_size abs left_top bg_no_repeat bg_center_center invisible transitable">
+                <div id="boardContainer" class="default_size abs left_top transitable">
+                    <div id="boardScore" class="abs">
+                        <div class="title">Placar</div>
+                        <div round="0" class="bg_no_repeat bg_center_bottom round active">
+                            1
+                            <div class="bg_no_repeat bg_center_center result"></div>
+                        </div>
+                        <div round="1" class="bg_no_repeat bg_center_bottom round">
+                            2
+                            <div class="bg_no_repeat bg_center_center result"></div>
+                        </div>
+                        <div round="2" class="bg_no_repeat bg_center_bottom round">
+                            3
+                            <div class="bg_no_repeat bg_center_center result"></div>
+                        </div>
+                    </div>
+
+                    <div id="btnBoardHelp" class="abs btn btn_help"></div>
+
+                    <div id="boardCardPlayer" class="abs bg_no_repeat bg_center_center border_box card">
+                        <div class="abs title line_0">Título</div>
+                        <div class="abs description line_1">União Européia (UE)</div>
+                        <div class="abs bg_no_repeat bg_center_center logo" style="background-image: url(img/img_logo_ue.png);"></div>
+                        <div class="abs title line_2">Ano de Surgimento</div>
+                        <div class="abs description line_3">1957</div>
+                        <div class="abs title line_4">Integrantes</div>
+                        <div class="abs description line_5">28 países</div>
+                        <div class="abs title line_6">População</div>
+                        <div class="abs description line_7">503 milhões</div>
+                        <div class="abs title line_8">PIB</div>
+                        <div class="abs description line_9">15 trilhões de dólares</div>
+                        <div class="abs title line_10">Influência</div>
+                        <div class="abs bg_repeat_x bg_left_center influence" value="5"></div>
+
+                        <div id="btnBoardOption0" option="0" class="abs btn btn_option"></div>
+                        <div id="btnBoardOption1" option="1" class="abs btn btn_option"></div>
+                        <div id="btnBoardOption2" option="2" class="abs btn btn_option"></div>
+                        <div id="btnBoardOption3" option="3" class="abs btn btn_option"></div>
+
+                        <div id="btnBoardBlockInfo1" owner="player" class="abs btn btn_block_info transitable"></div>
+                        <div id="btnBoardMoreInfo1" owner="player" class="abs btn btn_more_info transitable"></div>
+                    </div>
+
+                    <div id="boardCardComputer" class="abs bg_no_repeat bg_center_center border_box card">
+                        <div class="abs title line_0">Título</div>
+                        <div class="abs description line_1">União Européia (UE)</div>
+                        <div class="abs bg_no_repeat bg_center_center logo" style="background-image: url(img/img_logo_ue.png);"></div>
+                        <div class="abs title line_2">Ano de Surgimento</div>
+                        <div class="abs description line_3">1957</div>
+                        <div class="abs title line_4">Integrantes</div>
+                        <div class="abs description line_5">28 países</div>
+                        <div class="abs title line_6">População</div>
+                        <div class="abs description line_7">503 milhões</div>
+                        <div class="abs title line_8">PIB</div>
+                        <div class="abs description line_9">15 trilhões de dólares</div>
+                        <div class="abs title line_10">Influência</div>
+                        <div class="abs bg_repeat_x bg_left_center influence" value="5"></div>
+
+                        <div id="btnBoardBlockInfo2" owner="computer" class="abs btn btn_block_info transitable"></div>
+                        <div id="btnBoardMoreInfo2" owner="computer" class="abs btn btn_more_info transitable"></div>
+
+                        <div id="boardCardComputerBack" class="abs top_left bg_no_repeat bg_center_center back"></div>
+                    </div>
+
+                    <div id="boardSelectedOption" class="abs bg_no_repeat bg_left_center">
+                        <div id="boardFeedBack1" class="abs bg_no_repeat bg_center_center wrong transitable"></div>
+                        <div id="boardFeedBack2" class="abs bg_no_repeat bg_center_center wrong transitable"></div>
+                    </div>
+
+                    <div id="btnBoardNext" class="abs btn btn_next"></div>
+
+                    <div id="boardBlockInfoPopUp" class="default_size abs left_top bg_no_repeat transitable invisible">
+                        <div id="boardBlockInfoPopUpContainer" class="abs table">
+                            <div id="boardBlockInfoPopUpContainerText" class="cell vmiddle border_box">
+                                União Europeia
+                            </div>
+                        </div>
+
+                        <div id="btnBoardBlockInfoPopUpClose" class="abs btn btn_block_info active"></div>
+                    </div>
+
+                    <div id="boardMoreInfoPopUp" class="default_size abs left_top bg_no_repeat transitable invisible">
+                        <div id="boardMoreInfoPopUpContainer" class="abs table">
+                            <div id="boardMoreInfoPopUpContainerText" class="cell vmiddle border_box">
+                                Sua moeda é forte e há grandes economias nesse bloco.
+                                Contudo, a recente crise no continente europeu o enfraqueceu.
+                            </div>
+                        </div>
+
+                        <div id="btnBoardMoreInfoPopUpClose" class="abs btn btn_more_info active"></div>
+                    </div>
+                </div>
+
+                <div id="boardFeedBackWin" class="default_size abs left_top bg_no_repeat bg_center_center transitable invisible">
+                    <div id="boardFeedBackWinText" class="abs">
+                        Parabéns, você venceu!
+                    </div>
+
+                    <div id="btnBoardFeedBackWinClose" class="abs btn btn_close"></div>
+                </div>
+
+                <div id="boardFeedBackLose" class="default_size abs left_top bg_no_repeat bg_center_center transitable invisible">
+                    <div id="boardFeedBackLoseText" class="abs">
+                        Que pena, não foi dessa vez.<br />
+                        Tente novamente.
+                    </div>
+
+                    <div id="btnBoardFeedBackLoseReset" class="abs btn btn_reset"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="capa.js">
+            logo: 0
+        </script>
+    </body>
+
+</html>
