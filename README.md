@@ -2,8 +2,8 @@
 
 (English on bottom)
 
-Objetos Educacionais Digitais
------------------------------
+Objetos Educacionais Digitais (OEDs)
+------------------------------------
 
 Alguns projetos de OEDs feitos para editoras como a FTD e Oxford 
 utilizando HTML5, CSS3 e JavaScript
@@ -20,8 +20,8 @@ de propriedade das próprias editoras)
 
 
 
-Digital Learning Objects
-------------------------
+Digital Learning Objects (DLOs)
+-------------------------------
 
 Some projects that I made for publishers like FTD and Oxford
 using HTML5, CSS3 and JavaScript
