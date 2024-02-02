@@ -14,6 +14,8 @@ autorias variadas. Todos os direitos reservados a quem os detém
 De minha autoria, são apenas as programações (salvo as "capas" que são 
 de propriedade das próprias editoras)
 
+Veja eles funcionando [aqui](https://barongello.github.io/OEDs)
+
 
 
 =========================
@@ -31,3 +33,5 @@ by different people. All rights reserved to their original owners
 
 From my own, only the source codes (less the "covers" that were made
 by the publishers itself)
+
+See them working [here](https://barongello.github.io/OEDs)
