@@ -10,28 +10,28 @@ var GAME = {
         $('.scene_1 > .button.next').click(function () {
             if (!GAME.canInteract)
                 return;
-            
+
             GAME.endActualSceneAndShowScene(2);
         });
 
         $('.scene_2 > .button.back').click(function () {
             if (!GAME.canInteract)
                 return;
-            
+
             GAME.endActualSceneAndShowScene(1);
         });
 
         $('.scene_2 > .button.next').click(function () {
             if (!GAME.canInteract)
                 return;
-            
+
             GAME.endActualSceneAndShowScene('simulator');
         });
 
         $('#endSimulator').click(function () {
             if (!GAME.canInteract)
                 return;
-            
+
             GAME.endActualSceneAndShowScene(2);
         });
     },
@@ -52,7 +52,7 @@ var GAME = {
             GAME.showScene(scene, function () {
                 if (callback)
                     callback();
-                
+
                 GAME.canInteract = true;
             });
     },
@@ -94,7 +94,7 @@ var GAME = {
                 break;
             case 'simulator':
                 //$('#gameStage').show();
-                
+
                 $('#gameCanvas').switchClass('runningPos', 'endPos', 500, function () {
                     $('#gameCanvas').removeClass('endPos').addClass('startPos');
                 });
@@ -103,7 +103,7 @@ var GAME = {
 
                 $('#endSimulator').switchClass('runningPos', 'endPos', 500, function () {
                     $('#endSimulator').removeClass('endPos').addClass('startPos');
-                    
+
                     $('#gameSimulator').css({ zIndex: -1 });
 
                     SIMULATOR.simulating = false;
@@ -150,13 +150,13 @@ var GAME = {
                 break;
             case 'simulator':
                 SIMULATOR.simulating = true;
-                
+
                 $('#gameSimulator').css({ zIndex: 4 });
-                
+
                 $('#gameCanvas').switchClass('startPos', 'runningPos', 500);
 
                 $('#gameSimulator > .control').animate({ opacity: 1 }, 500);
-                
+
                 $('#endSimulator').switchClass('startPos', 'runningPos', 500, function () {
                     GAME.scene.actual = 'simulator';
                     if (callback)
@@ -235,9 +235,9 @@ var SIMULATOR = {
     sprites: {},
 
     loadSprites: function () {
-        this.sprites.water = new jaws.Sprite({ image: '_GAME/img/sim_h2o.png' });
-        this.sprites.k = new jaws.Sprite({ image: '_GAME/img/sim_k.png' });
-        this.sprites.na = new jaws.Sprite({ image: '_GAME/img/sim_na.png' });
+        this.sprites.water = new jaws.Sprite({ image: 'img/sim_h2o.png' });
+        this.sprites.k = new jaws.Sprite({ image: 'img/sim_k.png' });
+        this.sprites.na = new jaws.Sprite({ image: 'img/sim_na.png' });
     },
 
     doBind: function () {
@@ -309,7 +309,7 @@ var SIMULATOR = {
 
             SIMULATOR.interactable = true;
         });
-        
+
         $('#bt_l_salt_m').click(function () {
             if (!SIMULATOR.interactable || $(this).hasClass('bt_disabled'))
                 return;
@@ -401,7 +401,7 @@ var SIMULATOR = {
 
             SIMULATOR.interactable = true;
         });
-        
+
         $('#bt_r_salt_m').click(function () {
             if (!SIMULATOR.interactable || $(this).hasClass('bt_disabled'))
                 return;
@@ -438,14 +438,14 @@ var SIMULATOR = {
 }
 
 function SimulatorState() {
-    this.bg = new jaws.Sprite({ image: '_GAME/img/sim_bg.png' });
-    
+    this.bg = new jaws.Sprite({ image: 'img/sim_bg.png' });
+
     this.walls = new jaws.SpriteList();
-    this.walls.push(new jaws.Sprite({ image: '_GAME/img/sim_wall_0.png', x: 487, y: 221 }));
-    this.walls.push(new jaws.Sprite({ image: '_GAME/img/sim_wall_1.png', x: 487, y: 304 }));
-    this.walls.push(new jaws.Sprite({ image: '_GAME/img/sim_wall_1.png', x: 487, y: 383 }));
-    this.walls.push(new jaws.Sprite({ image: '_GAME/img/sim_wall_1.png', x: 487, y: 463 }));
-    this.walls.push(new jaws.Sprite({ image: '_GAME/img/sim_wall_0.png', x: 487, y: 542 }));
+    this.walls.push(new jaws.Sprite({ image: 'img/sim_wall_0.png', x: 487, y: 221 }));
+    this.walls.push(new jaws.Sprite({ image: 'img/sim_wall_1.png', x: 487, y: 304 }));
+    this.walls.push(new jaws.Sprite({ image: 'img/sim_wall_1.png', x: 487, y: 383 }));
+    this.walls.push(new jaws.Sprite({ image: 'img/sim_wall_1.png', x: 487, y: 463 }));
+    this.walls.push(new jaws.Sprite({ image: 'img/sim_wall_0.png', x: 487, y: 542 }));
 
     this.sides = {
         l: {
@@ -485,7 +485,7 @@ function SimulatorState() {
         var confs = SIMULATOR.confs.water;
         for (var i = 0; i < confs.quantities.add; i++) {
             var sprite = new jaws.Sprite({
-                image: '_GAME/img/sim_h2o.png',
+                image: 'img/sim_h2o.png',
                 x: Math.floor(Math.random() * (bounds.right - bounds.left)) + bounds.left,
                 y: Math.floor(Math.random() * (bounds.bottom - bounds.top)) + bounds.top
             });
@@ -539,7 +539,7 @@ function SimulatorState() {
         var confs = SIMULATOR.confs.salt;
         for (var i = 0; i < confs.quantities.add; i++) {
             var sprite = new jaws.Sprite({
-                image: '_GAME/img/sim_k.png',
+                image: 'img/sim_k.png',
                 x: Math.floor(Math.random() * (bounds.right - bounds.left)) + bounds.left,
                 y: Math.floor(Math.random() * (bounds.bottom - bounds.top)) + bounds.top
             });
@@ -550,7 +550,7 @@ function SimulatorState() {
             target.push(sprite);
 
             sprite = new jaws.Sprite({
-                image: '_GAME/img/sim_na.png',
+                image: 'img/sim_na.png',
                 x: Math.floor(Math.random() * (bounds.right - bounds.left)) + bounds.left,
                 y: Math.floor(Math.random() * (bounds.bottom - bounds.top)) + bounds.top
             });
@@ -858,14 +858,14 @@ function SimulatorState() {
 }
 
 $(document).ready(function () {
-    jaws.assets.add('_GAME/img/sim_bg.png');
-    jaws.assets.add('_GAME/img/sim_wall_0.png');
-    jaws.assets.add('_GAME/img/sim_wall_1.png');
-    jaws.assets.add('_GAME/img/sim_h2o.png');
-    jaws.assets.add('_GAME/img/sim_k.png');
-    jaws.assets.add('_GAME/img/sim_na.png');
-    jaws.assets.add('_GAME/img/sim_bt_p.png');
-    jaws.assets.add('_GAME/img/sim_bt_m.png');
+    jaws.assets.add('img/sim_bg.png');
+    jaws.assets.add('img/sim_wall_0.png');
+    jaws.assets.add('img/sim_wall_1.png');
+    jaws.assets.add('img/sim_h2o.png');
+    jaws.assets.add('img/sim_k.png');
+    jaws.assets.add('img/sim_na.png');
+    jaws.assets.add('img/sim_bt_p.png');
+    jaws.assets.add('img/sim_bt_m.png');
 
     GAME.init();
     SIMULATOR.doInit();

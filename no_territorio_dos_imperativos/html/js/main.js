@@ -12,7 +12,7 @@ var GAME = {
         0: {
             info: '<font size="+1"><b>Anúncio de campanha publicitária</b></font><br /><br /><br /><b>Finalidade do gênero:</b> tem a intenção de conscientizar as pessoas sobre novas condutas e valores.<br /><b>Interlocutor:</b> proprietários de veículos.<br /><b>Onde circula:</b> revistas, jornais impressos.<br /><b>Linguagem:</b> concisa, persuasiva e informativa.',
             question: 'A cor verde predomina nessa publicidade. Considerando o tema do texto, qual a intenção do autor ao usar o verde como pano de fundo?',
-            image: '_GAME/img/0_picture0.jpg',
+            image: 'img/0_picture0.jpg',
             source: 'Fonte: Detran. Governo do Estado de Sergipe.',
             answers: {
                 0: {
@@ -36,7 +36,7 @@ var GAME = {
         1: {
             info: '<font size="+1"><b>Anúncio de campanha publicitária</b></font><br /><br /><br /><b>Finalidade do gênero:</b> tem a intenção de conscientizar as pessoas sobre novas condutas e valores.<br /><b>Interlocutor:</b> proprietários de veículos.<br /><b>Onde circula:</b> revistas, jornais impressos.<br /><b>Linguagem:</b> concisa, persuasiva e informativa.',
             question: 'Qual a intenção do autor ao relacionar a segurança dos pedestres com a segurança do motorista?',
-            image: '_GAME/img/0_picture0.jpg',
+            image: 'img/0_picture0.jpg',
             source: 'Fonte: Detran. Governo do Estado de Sergipe.',
             answers: {
                 0: {
@@ -60,7 +60,7 @@ var GAME = {
         2: {
             info: '<font size="+1"><b>Anúncio de campanha publicitária</b></font><br /><br /><br /><b>Finalidade do gênero:</b> tem a intenção de conscientizar as pessoas sobre novas condutas e valores.<br /><b>Interlocutor:</b> proprietários de veículos.<br /><b>Onde circula:</b> revistas, jornais impressos.<br /><b>Linguagem:</b> concisa, persuasiva e informativa.',
             question: 'No texto, ilustrações como selo, automóveis e calendário:',
-            image: '_GAME/img/0_picture0.jpg',
+            image: 'img/0_picture0.jpg',
             source: 'Fonte: Detran. Governo do Estado de Sergipe.',
             answers: {
                 0: {
@@ -84,7 +84,7 @@ var GAME = {
         3: {
             info: '<font size="+1"><b>Anúncio de campanha publicitária</b></font><br /><br /><br /><b>Finalidade do gênero:</b> tem a intenção de conscientizar as pessoas sobre novas condutas e valores.<br /><b>Interlocutor:</b> proprietários de veículos.<br /><b>Onde circula:</b> revistas, jornais impressos.<br /><b>Linguagem:</b> concisa, persuasiva e informativa.',
             question: 'Em "pague o seu licenciamento em dia e contribua para um trânsito cada vez melhor", os verbos "pague" e "contribua", no modo imperativo, exprimem:',
-            image: '_GAME/img/0_picture0.jpg',
+            image: 'img/0_picture0.jpg',
             source: 'Fonte: Detran. Governo do Estado de Sergipe.',
             answers: {
                 0: {
@@ -108,7 +108,7 @@ var GAME = {
         4: {
             info: '<font size="+1"><b>Anúncio publicitário</b></font><br /><br /><br /><b>Finalidade do gênero:</b> tem como finalidade a divulgação de uma mensagem com objetivo comercial e institucional.<br /><b>Interlocutor:</b> empresas que atuam no mercado <i>on-line</i>.<br /><b>Onde circula:</b> revistas, jornais.<br /><b>Linguagem:</b> informativa e persuasiva.',
             question: 'A cor azul desse anúncio transmite:',
-            image: '_GAME/img/0_picture1.jpg',
+            image: 'img/0_picture1.jpg',
             source: 'Fonte: Correios. Governo Federal.',
             answers: {
                 0: {
@@ -132,7 +132,7 @@ var GAME = {
         5: {
             info: '<font size="+1"><b>Anúncio publicitário</b></font><br /><br /><br /><b>Finalidade do gênero:</b> tem como finalidade a divulgação de uma mensagem com objetivo comercial e institucional.<br /><b>Interlocutor:</b> empresas que atuam no mercado <i>on-line</i>.<br /><b>Onde circula:</b> revistas, jornais.<br /><b>Linguagem:</b> informativa e persuasiva.',
             question: 'Qual o objetivo desse anúncio?',
-            image: '_GAME/img/0_picture1.jpg',
+            image: 'img/0_picture1.jpg',
             source: 'Fonte: Correios. Governo Federal.',
             answers: {
                 0: {
@@ -156,7 +156,7 @@ var GAME = {
         6: {
             info: '<font size="+1"><b>Anúncio publicitário</b></font><br /><br /><br /><b>Finalidade do gênero:</b> tem como finalidade a divulgação de uma mensagem com objetivo comercial e institucional.<br /><b>Interlocutor:</b> empresas que atuam no mercado <i>on-line</i>.<br /><b>Onde circula:</b> revistas, jornais.<br /><b>Linguagem:</b> informativa e persuasiva.',
             question: 'Que relação se pode fazer entre a balança, o bebê e o texto desse anúncio?',
-            image: '_GAME/img/0_picture1.jpg',
+            image: 'img/0_picture1.jpg',
             source: 'Fonte: Correios. Governo Federal.',
             answers: {
                 0: {
@@ -180,7 +180,7 @@ var GAME = {
         7: {
             info: '<font size="+1"><b>Anúncio publicitário</b></font><br /><br /><br /><b>Finalidade do gênero:</b> tem como finalidade a divulgação de uma mensagem com objetivo comercial e institucional.<br /><b>Interlocutor:</b> empresas que atuam no mercado <i>on-line</i>.<br /><b>Onde circula:</b> revistas, jornais.<br /><b>Linguagem:</b> informativa e persuasiva.',
             question: 'A forma verbal "conte" em "Conte com o mais rápido, mais seguro e econômico serviço de entrega do comércio eletrônico, o e-SEDEX." indica:',
-            image: '_GAME/img/0_picture1.jpg',
+            image: 'img/0_picture1.jpg',
             source: 'Fonte: Correios. Governo Federal.',
             answers: {
                 0: {
@@ -204,7 +204,7 @@ var GAME = {
         8: {
             info: '<font size="+1"><b>Folheto</b></font><br /><br /><br /><b>Finalidade do gênero:</b> persuadir o leitor a adotar um comportamento.<br /><b>Interlocutor:</b> população em geral.<br /><b>Onde circula:</b> jornais impressos e revistas.<br /><b>Linguagem:</b> objetiva e breve com uso do imperativo e 2.<sup>a</sup> pessoa.',
             question: 'Qual a relação entre a cor vermelha, predominante no texto, e o tema a ser discutido?',
-            image: '_GAME/img/0_picture2.jpg',
+            image: 'img/0_picture2.jpg',
             source: 'Fonte: Ministério da Saúde. Governo Federal.',
             answers: {
                 0: {
@@ -228,7 +228,7 @@ var GAME = {
         9: {
             info: '<font size="+1"><b>Folheto</b></font><br /><br /><br /><b>Finalidade do gênero:</b> persuadir o leitor a adotar um comportamento.<br /><b>Interlocutor:</b> população em geral.<br /><b>Onde circula:</b> jornais impressos e revistas.<br /><b>Linguagem:</b> objetiva e breve com uso do imperativo e 2.<sup>a</sup> pessoa.',
             question: 'Com base na mensagem do anúncio, por que o autor empregou os verbos "cuidar", "falar", "conversar" e "contar" no modo imperativo?',
-            image: '_GAME/img/0_picture2.jpg',
+            image: 'img/0_picture2.jpg',
             source: 'Fonte: Ministério da Saúde. Governo Federal.',
             answers: {
                 0: {
@@ -252,7 +252,7 @@ var GAME = {
         10: {
             info: '<font size="+1"><b>Folheto</b></font><br /><br /><br /><b>Finalidade do gênero:</b> persuadir o leitor a adotar um comportamento.<br /><b>Interlocutor:</b> população em geral.<br /><b>Onde circula:</b> jornais impressos e revistas.<br /><b>Linguagem:</b> objetiva e breve com uso do imperativo e 2.<sup>a</sup> pessoa.',
             question: '<font size="+2"><b>Analise este texto:</b></font><br /><br />"Se você tiver febre alta com dor de cabeça, dor atrás dos olhos, no corpo e nas juntas, vá imediatamente a uma unidade de saúde".<br /><br />Qual a função do pronome de tratamento "você" no anúncio?',
-            image: '_GAME/img/0_picture2.jpg',
+            image: 'img/0_picture2.jpg',
             source: 'Fonte: Ministério da Saúde. Governo Federal.',
             answers: {
                 0: {
@@ -276,7 +276,7 @@ var GAME = {
         11: {
             info: '<font size="+1"><b>Folheto</b></font><br /><br /><br /><b>Finalidade do gênero:</b> persuadir o leitor a adotar um comportamento.<br /><b>Interlocutor:</b> população em geral.<br /><b>Onde circula:</b> jornais impressos e revistas.<br /><b>Linguagem:</b> objetiva e breve com uso do imperativo e 2.<sup>a</sup> pessoa.',
             question: 'A partir de sua compreensão do folheto, o que o "se" exprime em "Se você agir, podemos evitar."?',
-            image: '_GAME/img/0_picture2.jpg',
+            image: 'img/0_picture2.jpg',
             source: 'Fonte: Ministério da Saúde. Governo Federal.',
             answers: {
                 0: {
@@ -300,7 +300,7 @@ var GAME = {
         12: {
             info: '<font size="+1"><b>Receita culinária</b></font><br /><br /><br /><b>Finalidade do gênero:</b> instruir/orientar na preparação de doces, salgados, pratos diversos.<br /><b>Interlocutor:</b> chefes de cozinha, pessoas que gostam de cozinhar ou que querem aprender.<br /><b>Onde circula:</b> televisão, revista, rádio, <i>sites</i>, <i>blogs</i>, livros de culinária etc.<br /><b>Linguagem:</b> instrucional com uso do verbo no imperativo e no infinitivo.',
             question: 'A receita está dividida em "ingredientes" e "Modo de preparo". Os verbos aparecem apenas na segunda parte. Por quê?',
-            image: '_GAME/img/0_picture3.jpg',
+            image: 'img/0_picture3.jpg',
             source: 'Fonte: Alberto Jaen Jimenez. Circulação restrita.',
             answers: {
                 0: {
@@ -324,7 +324,7 @@ var GAME = {
         13: {
             info: '<font size="+1"><b>Receita culinária</b></font><br /><br /><br /><b>Finalidade do gênero:</b> instruir/orientar na preparação de doces, salgados, pratos diversos.<br /><b>Interlocutor:</b> chefes de cozinha, pessoas que gostam de cozinhar ou que querem aprender.<br /><b>Onde circula:</b> televisão, revista, rádio, <i>sites</i>, <i>blogs</i>, livros de culinária etc.<br /><b>Linguagem:</b> instrucional com uso do verbo no imperativo e no infinitivo.',
             question: 'Identifique a ordem dos verbos que indicam as etapas do processo temporal (primeiro passo, segundo passo etc.).',
-            image: '_GAME/img/0_picture3.jpg',
+            image: 'img/0_picture3.jpg',
             source: 'Fonte: Alberto Jaen Jimenez. Circulação restrita.',
             answers: {
                 0: {
@@ -348,7 +348,7 @@ var GAME = {
         14: {
             info: '<font size="+1"><b>Receita culinária</b></font><br /><br /><br /><b>Finalidade do gênero:</b> instruir/orientar na preparação de doces, salgados, pratos diversos.<br /><b>Interlocutor:</b> chefes de cozinha, pessoas que gostam de cozinhar ou que querem aprender.<br /><b>Onde circula:</b> televisão, revista, rádio, <i>sites</i>, <i>blogs</i>, livros de culinária etc.<br /><b>Linguagem:</b> instrucional com uso do verbo no imperativo e no infinitivo.',
             question: 'Nas receitas culinárias, por que é necessário utilizar a quantidade e seguir o passo a passo sugeridos?',
-            image: '_GAME/img/0_picture3.jpg',
+            image: 'img/0_picture3.jpg',
             source: 'Fonte: Alberto Jaen Jimenez. Circulação restrita.',
             answers: {
                 0: {
@@ -372,7 +372,7 @@ var GAME = {
         15: {
             info: '<font size="+1"><b>Receita culinária</b></font><br /><br /><br /><b>Finalidade do gênero:</b> instruir/orientar na preparação de doces, salgados, pratos diversos.<br /><b>Interlocutor:</b> chefes de cozinha, pessoas que gostam de cozinhar ou que querem aprender.<br /><b>Onde circula:</b> televisão, revista, rádio, <i>sites</i>, <i>blogs</i>, livros de culinária etc.<br /><b>Linguagem:</b> instrucional com uso do verbo no imperativo e no infinitivo.',
             question: 'Considerando que as receitas culinárias orientam as pessoas a cozinharem, por que predomina nesse tipo de texto o modo imperativo?',
-            image: '_GAME/img/0_picture3.jpg',
+            image: 'img/0_picture3.jpg',
             source: 'Fonte: Alberto Jaen Jimenez. Circulação restrita.',
             answers: {
                 0: {
@@ -396,7 +396,7 @@ var GAME = {
         16: {
             info: '<font size="+1"><b>Manual de instrução</b></font><br /><br /><br /><b>Finalidade do gênero:</b> orientar o usuário acerca do uso, do funcionamento, da instalação do aparelho etc.<br /><b>Interlocutor:</b> a pessoa que comprou o produto.<br /><b>Onde circula:</b> residências em geral.<br /><b>Linguagem:</b> objetiva, instrucional e informativa.',
             question: 'No trecho "Ao fazer isso, você poderá danificar o telefone", o que exprime a forma verbal "poderá"?',
-            image: '_GAME/img/0_picture4.jpg',
+            image: 'img/0_picture4.jpg',
             source: 'Fonte: Manual do usuário da Samsung, p. 12.',
             answers: {
                 0: {
@@ -420,7 +420,7 @@ var GAME = {
         17: {
             info: '<font size="+1"><b>Manual de instrução</b></font><br /><br /><br /><b>Finalidade do gênero:</b> orientar o usuário acerca do uso, do funcionamento, da instalação do aparelho etc.<br /><b>Interlocutor:</b> a pessoa que comprou o produto.<br /><b>Onde circula:</b> residências em geral.<br /><b>Linguagem:</b> objetiva, instrucional e informativa.',
             question: 'No texto, qual a série de formas verbais indica advertência?',
-            image: '_GAME/img/0_picture4.jpg',
+            image: 'img/0_picture4.jpg',
             source: 'Fonte: Manual do usuário da Samsung, p. 12.',
             answers: {
                 0: {
@@ -444,7 +444,7 @@ var GAME = {
         18: {
             info: '<font size="+1"><b>Manual de instrução</b></font><br /><br /><br /><b>Finalidade do gênero:</b> orientar o usuário acerca do uso, do funcionamento, da instalação do aparelho etc.<br /><b>Interlocutor:</b> a pessoa que comprou o produto.<br /><b>Onde circula:</b> residências em geral.<br /><b>Linguagem:</b> objetiva, instrucional e informativa.',
             question: 'O manual de instrução apresenta uma série de procedimentos. Se o texto fosse escrito com verbos no modo subjuntivo, seria interpretado da mesma forma pelo usuário?',
-            image: '_GAME/img/0_picture4.jpg',
+            image: 'img/0_picture4.jpg',
             source: 'Fonte: Manual do usuário da Samsung, p. 12.',
             answers: {
                 0: {
@@ -468,7 +468,7 @@ var GAME = {
         19: {
             info: '<font size="+1"><b>Manual de instrução</b></font><br /><br /><br /><b>Finalidade do gênero:</b> orientar o usuário acerca do uso, do funcionamento, da instalação do aparelho etc.<br /><b>Interlocutor:</b> a pessoa que comprou o produto.<br /><b>Onde circula:</b> residências em geral.<br /><b>Linguagem:</b> objetiva, instrucional e informativa.',
             question: 'Sabendo que o manual de instrução apresenta um conjunto de orientações, por que o modo verbal predominante é imperativo?',
-            image: '_GAME/img/0_picture4.jpg',
+            image: 'img/0_picture4.jpg',
             source: 'Fonte: Manual do usuário da Samsung, p. 12.',
             answers: {
                 0: {
@@ -492,7 +492,7 @@ var GAME = {
         20: {
             info: '<font size="+1"><b>Guia de combate a incêndio</b></font><br /><br /><br /><b>Finalidade do gênero:</b> apresentar instruções úteis sobre como proceder em caso de incêndio.<br /><b>Interlocutor:</b> funcionários de empresas.<br /><b>Onde circula:</b> empresas em geral.<br /><b>Linguagem: objetiva, direta, instrucional e informativa.</b>',
             question: 'Lendo o título "Recomendações úteis", pode-se afirmar que o objetivo do texto é:',
-            image: '_GAME/img/0_picture5.jpg',
+            image: 'img/0_picture5.jpg',
             source: 'Fonte: Rochácara Ecofire. Manual de combate a incêndio e primeiros socorros. p. 11.',
             answers: {
                 0: {
@@ -516,7 +516,7 @@ var GAME = {
         21: {
             info: '<font size="+1"><b>Guia de combate a incêndio</b></font><br /><br /><br /><b>Finalidade do gênero:</b> apresentar instruções úteis sobre como proceder em caso de incêndio.<br /><b>Interlocutor:</b> funcionários de empresas.<br /><b>Onde circula:</b> empresas em geral.<br /><b>Linguagem: objetiva, direta, instrucional e informativa.</b>',
             question: 'No texto "Recomendações úteis", as instruções foram apresentadas em tópicos. Por quê?',
-            image: '_GAME/img/0_picture5.jpg',
+            image: 'img/0_picture5.jpg',
             source: 'Fonte: Rochácara Ecofire. Manual de combate a incêndio e primeiros socorros. p. 11.',
             answers: {
                 0: {
@@ -540,7 +540,7 @@ var GAME = {
         22: {
             info: '<font size="+1"><b>Guia de combate a incêndio</b></font><br /><br /><br /><b>Finalidade do gênero:</b> apresentar instruções úteis sobre como proceder em caso de incêndio.<br /><b>Interlocutor:</b> funcionários de empresas.<br /><b>Onde circula:</b> empresas em geral.<br /><b>Linguagem: objetiva, direta, instrucional e informativa.</b>',
             question: 'Em quais situações esses guias de instrução são utilizados?',
-            image: '_GAME/img/0_picture5.jpg',
+            image: 'img/0_picture5.jpg',
             source: 'Fonte: Rochácara Ecofire. Manual de combate a incêndio e primeiros socorros. p. 11.',
             answers: {
                 0: {
@@ -564,7 +564,7 @@ var GAME = {
         23: {
             info: '<font size="+1"><b>Guia de combate a incêndio</b></font><br /><br /><br /><b>Finalidade do gênero:</b> apresentar instruções úteis sobre como proceder em caso de incêndio.<br /><b>Interlocutor:</b> funcionários de empresas.<br /><b>Onde circula:</b> empresas em geral.<br /><b>Linguagem: objetiva, direta, instrucional e informativa.</b>',
             question: 'No guia de instrução, por que predomina a forma verbal do imperativo?',
-            image: '_GAME/img/0_picture5.jpg',
+            image: 'img/0_picture5.jpg',
             source: 'Fonte: Rochácara Ecofire. Manual de combate a incêndio e primeiros socorros. p. 11.',
             answers: {
                 0: {
@@ -650,7 +650,7 @@ var GAME = {
         $('<img class="image">')
             .css('background-image', 'url(' + q.image + ')')
             .attr('data-zoom-image', q.image)
-            .appendTo('#gameStage > #gameScene0')        
+            .appendTo('#gameStage > #gameScene0')
             .elevateZoom({
                 zoomType: 'inner',
                 cursor: 'crosshair',

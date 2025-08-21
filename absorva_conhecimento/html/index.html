@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 
 <html>
-    
+
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
         <title>Absorva Conhecimento</title>
-        
-        <link type="text/css" rel="stylesheet" href="_GAME/css/reset.css" />
-        <link type="text/css" rel="stylesheet" href="_GAME/css/stylesheet.css" />
-        <link type="text/css" rel="stylesheet" href="_GAME/css/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
 
-        <script type="text/javascript" src="_GAME/js/jquery-1.10.2.min.js"></script><!-- Uso da Jquery recomendado -->
-        <script type="text/javascript" src="_GAME/js/jquery-ui-1.10.3.custom.min.js"></script><!-- Uso da Jquery UI recomendado -->
-        <script type="text/javascript" src="_GAME/js/jquery.ui.touch-punch.js"></script>
-        <script type="text/javascript" src="_GAME/js/jaws.js"></script>
-        <script type="text/javascript" src="_GAME/js/sprite_list.js"></script>
-        <script type="text/javascript" src="_GAME/js/main.js"></script><!-- Arquivo de JavaScript principal do OED -->
+        <link type="text/css" rel="stylesheet" href="css/reset.css" />
+        <link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
+        <link type="text/css" rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
+
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script><!-- Uso da Jquery recomendado -->
+        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script><!-- Uso da Jquery UI recomendado -->
+        <script type="text/javascript" src="js/jquery.ui.touch-punch.js"></script>
+        <script type="text/javascript" src="js/jaws.js"></script>
+        <script type="text/javascript" src="js/sprite_list.js"></script>
+        <script type="text/javascript" src="js/main.js"></script><!-- Arquivo de JavaScript principal do OED -->
     </head>
 
     <body>
@@ -59,10 +59,10 @@
                     <div class="cation cation_pos_3"></div>
                     <div class="cation cation_pos_4"></div>
                 </div>
-            
+
                 <div class="scene_2 legend_solvent startPos"></div>
                 <div class="scene_2 legend_solute startPos"></div>
-            
+
                 <div class="scene_2 textbox startPos">
                     <div class="textbox_content">
                         <p>Osmose &eacute; a transfer&ecirc;ncia de solvente atrav&eacute;s de uma membrana semiperme&aacute;vel, motivada pela diferen&ccedil;a de concentra&ccedil;&atilde;o entre o meio menos concentrado e o meio mais concentrado.</p>
@@ -74,12 +74,12 @@
                 </div>
             </div>
         </div>
-        
+
         <div id="gameSimulator">
             <canvas id="gameCanvas" class="startPos" width="1024" height="768"></canvas>
-            
+
             <div id="explanationText" class="control">Use os botões para regular a concentração em ambos os lados da membrana.</div>
-            
+
             <div id="bt_l_h2o_p" class="bt_plus control"></div>
             <div id="bt_l_h2o_m" class="bt_minus control"></div>
             <div id="bt_l_salt_p" class="bt_plus control"></div>
@@ -89,12 +89,12 @@
             <div id="bt_r_h2o_m" class="bt_minus control"></div>
             <div id="bt_r_salt_p" class="bt_plus control"></div>
             <div id="bt_r_salt_m" class="bt_minus control"></div>
-            
+
             <div id="endSimulator" class="startPos"></div>
         </div>
 
-        
-    
+
+
         <script src="capa.min.js"></script><!-- *Arquivo de JavaScript que carrega a capa FTD -->
         <script type="text/javascript">
             _capa.start();
