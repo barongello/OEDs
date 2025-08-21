@@ -5,13 +5,13 @@
 Objetos Educacionais Digitais (OEDs)
 ------------------------------------
 
-Alguns projetos de OEDs feitos para editoras como a FTD e Oxford 
+Alguns projetos de OEDs feitos para editoras como a FTD e Oxford
 utilizando HTML5, CSS3 e JavaScript
 
-As artes, concepções, designs e etc. não são de minha autoria e são de 
+As artes, concepções, designs e etc. não são de minha autoria e são de
 autorias variadas. Todos os direitos reservados a quem os detém
 
-De minha autoria, são apenas as programações (salvo as "capas" que são 
+De minha autoria, são apenas as programações (salvo as "capas" que são
 de propriedade das próprias editoras)
 
 Veja eles funcionando [aqui](https://barongello.github.io/OEDs)
